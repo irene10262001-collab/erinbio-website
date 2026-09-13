@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>艾琳智農生技 Érinbio | 植萃保養代工與永續農業領導品牌</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        celadon: '#7da198', /* 核心天青色 */
+                        mist: '#4a6b6c',    /* 薄霧深藍綠 */
+                        gold: '#d4a32b',    /* 金黃點綴色 */
+                        cream: '#fcfbfa',   /* 奶油白背景 */
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Netlify Identity Widget for CMS Admin Login -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="bg-cream text-gray-800 font-sans antialiased">
+
+    <!-- 導覽列 Navigation -->
+    <nav class="fixed w-full z-50 bg-cream/90 backdrop-blur-md border-b border-celadon/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <span class="font-serif text-2xl font-bold tracking-widest text-mist">ÉRINBIO</span>
+                <span class="text-xs tracking-wider text-celadon border-l border-celadon/40 pl-3 uppercase hidden sm:inline">Aileen Agritech Bio</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+                <a href="#about" class="hover:text-celadon transition-colors">品牌理念</a>
+                <a href="#services" class="hover:text-celadon transition-colors">代工服務 OEM/ODM</a>
+                <a href="#sustainability" class="hover:text-celadon transition-colors">永續循環</a>
+                <a href="blog.html" class="hover:text-celadon transition-colors">最新動態</a>
+                <a href="#contact" class="px-5 py-2.5 bg-mist text-white rounded-full hover:bg-celadon transition-all shadow-sm">立即諮詢</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主視覺區 Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-6 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=2000&q=80" alt="植萃原料背景" class="w-full h-full object-cover opacity-15">
+            <div class="absolute inset-0 bg-gradient-to-b from-cream/60 via-cream/80 to-cream"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center space-y-8">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-celadon/15 text-mist text-xs font-semibold tracking-wider uppercase border border-celadon/30">
+                <i data-lucide="sprout" class="w-4 h-4"></i>
+                以金柑與在地植萃，翻轉綠色保養美學
+            </div>
+            
+            <h1 class="font-serif text-4xl sm:text-6xl font-semibold tracking-wide text-gray-900 leading-tight">
+                琢磨在地農作如寶石<br>
+                <span class="text-mist font-bold">打造高品質專業植萃保養代工</span>
+            </h1>
+
+            <p class="text-lg sm:text-xl text-gray-600 font-light max-w-2xl mx-auto leading-relaxed">
+                艾琳智農生技結合五十年的果實加工底蘊與現代科學萃取技術，為您的品牌提供從配方研發、永續原料開發到量產包裝的一站式 OEM/ODM 解決方案。
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-mist text-white rounded-full hover:bg-celadon transition-all font-medium text-lg shadow-md hover:shadow-lg">
+                    洽詢代工合作
+                </a>
+                <a href="#services" class="w-full sm:w-auto px-8 py-4 border border-mist/40 text-mist rounded-full hover:bg-mist/10 transition-all font-medium text-lg">
+                    了解服務項目
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 品牌優勢/特色 Core Advantages -->
+    <section id="about" class="py-24 bg-white/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-gray-900 mb-4">為什麼選擇艾琳智農？</h2>
+                <div class="w-12 h-0.5 bg-gold mx-auto mb-6"></div>
+                <p class="text-gray-600">深耕農藝與研發技術，賦予保養品自然而純淨的療癒力量。</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 特色 1 -->
+                <div class="p-8 rounded-2xl bg-cream border border-celadon/20 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-celadon/20 text-mist flex items-center justify-center mb-6">
+                        <i data-lucide="flask-conical" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-gray-900 mb-3">專利植萃研發技術</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        精準萃取金柑及多樣台灣優質農作物活性成分，高效留存植物修護因子，打造具備市場差異化的獨家配方。
+                    </p>
+                </div>
+
+                <!-- 特色 2 -->
+                <div class="p-8 rounded-2xl bg-cream border border-celadon/20 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-celadon/20 text-mist flex items-center justify-center mb-6">
+                        <i data-lucide="recycle" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-gray-900 mb-3">農業副產物高值化</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        貫徹全果利用與永續循環經濟，將農藝資材轉化為頂級生物炭與保養品原料，協助品牌符合 ESG 綠色永續浪潮。
+                    </p>
+                </div>
+
+                <!-- 特色 3 -->
+                <div class="p-8 rounded-2xl bg-cream border border-celadon/20 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-celadon/20 text-mist flex items-center justify-center mb-6">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-gray-900 mb-3">國際品質認證廠房</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        嚴格控管從原料檢驗、調配、充填至成品出廠的每一道工序，提供穩定且安全的高規格保養品代工品質。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 代工服務 Services Section -->
+    <section id="services" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <span class="text-celadon font-semibold text-sm tracking-wider uppercase">OEM / ODM Services</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-gray-900 mt-2">一站式代工客製化服務</h2>
+                </div>
+                <p class="text-gray-600 max-w-md mt-4 md:mt-0">無論是新銳品牌開發首款產品，或是既有品牌擴充產線，我們都能為您量身打造。</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:border-celadon transition-all">
+                    <span class="text-gold font-serif font-bold text-2xl">01</span>
+                    <h4 class="font-serif text-lg font-semibold text-gray-900 mt-4 mb-2">配方客製研發</h4>
+                    <p class="text-gray-500 text-sm">抗老修護、美白亮膚、敏弱肌保濕與綠色純素配方客製服務。</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:border-celadon transition-all">
+                    <span class="text-gold font-serif font-bold text-2xl">02</span>
+                    <h4 class="font-serif text-lg font-semibold text-gray-900 mt-4 mb-2">專屬原料開發</h4>
+                    <p class="text-gray-500 text-sm">結合在地農作精粹，提供專利性及話題性十足的優質特色原料。</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:border-celadon transition-all">
+                    <span class="text-gold font-serif font-bold text-2xl">03</span>
+                    <h4 class="font-serif text-lg font-semibold text-gray-900 mt-4 mb-2">充填與包裝設計</h4>
+                    <p class="text-gray-500 text-sm">支援瓶容器挑選、永續包材採購與符合規範的標籤容器包裝設計。</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:border-celadon transition-all">
+                    <span class="text-gold font-serif font-bold text-2xl">04</span>
+                    <h4 class="font-serif text-lg font-semibold text-gray-900 mt-4 mb-2">法規與檢驗申報</h4>
+                    <p class="text-gray-500 text-sm">協助化粧品 PIF 檔案建置、SGS 多項安全檢驗及法規合規諮詢。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 諮詢表單 Contact Section -->
+    <section id="contact" class="py-24 bg-mist text-white relative">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl sm:text-4xl font-semibold mb-4">開始您的植萃保養品牌計畫</h2>
+                <p class="text-cream/80">歡迎留下您的聯絡資訊與需求，我們的專案團隊將盡快與您聯繫。</p>
+            </div>
+
+            <form class="space-y-6 bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/20">
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-2 text-cream">姓名 / 聯絡人</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-cream/50 focus:outline-none focus:ring-2 focus:ring-gold" placeholder="請輸入姓名">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2 text-cream">公司 / 品牌名稱</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-cream/50 focus:outline-none focus:ring-2 focus:ring-gold" placeholder="請輸入品牌名稱">
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-2 text-cream">電子郵件</label>
+                        <input type="email" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-cream/50 focus:outline-none focus:ring-2 focus:ring-gold" placeholder="example@domain.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2 text-cream">聯絡電話</label>
+                        <input type="tel" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-cream/50 focus:outline-none focus:ring-2 focus:ring-gold" placeholder="0912-345-678">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-2 text-cream">諮詢需求說明</label>
+                    <textarea rows="4" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-cream/50 focus:outline-none focus:ring-2 focus:ring-gold" placeholder="請簡述您的代工品項、預計數量或合作想法..."></textarea>
+                </div>
+
+                <button type="button" class="w-full py-4 bg-gold text-gray-900 font-semibold rounded-lg hover:bg-gold/90 transition-all text-lg shadow-md">
+                    送出諮詢訊息
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 頁尾 Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <span class="font-serif text-xl font-bold text-white tracking-widest">ÉRINBIO</span>
+                <p class="text-xs mt-1 text-gray-500">艾琳智農生技股份有限公司 Aileen Agritech Bio Co., Ltd.</p>
+            </div>
+            <p class="text-xs text-gray-500">© 2026 Érinbio All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
