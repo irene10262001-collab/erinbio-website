@@ -3,448 +3,241 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>關於 ÉRINBIO 艾琳智農生技｜植物萃取與保養生技研發製造</title>
-  <meta name="description" content="艾琳智農生技（ÉRINBIO）深耕植物萃取技術、保養品配方研發與永續循環經濟。於宜蘭科學園區設立研發中心，提供國際化 OEM / ODM 與植萃共同開發服務。">
+  <title>關於我們 | ÉRINBIO 艾琳智農生技</title>
+  <meta name="description" content="了解艾琳智農生技如何結合五十載農業加工底蘊與二十載美妝研發實力，引領永續生技與天然草木純化。">
   <link rel="canonical" href="https://erinbio.com.tw/about.html">
   <link rel="alternate" hreflang="zh-TW" href="https://erinbio.com.tw/about.html">
   <link rel="alternate" hreflang="en" href="https://erinbio.com.tw/en/about.html">
-  
+
   <style>
     :root {
       --eb-bg-light: #F9F8F6;
       --eb-bg-white: #FFFFFF;
-      --eb-primary: #8EA8B5; /* 汝窯天青色 */
+      --eb-primary: #8EA8B5; /* Celadon Blue */
       --eb-primary-dark: #5C7480;
-      --eb-accent-orange: #E2703A; /* 金棗橘 */
-      --eb-accent-gold: #F4C430; /* 晨光金黃圓點 */
+      --eb-accent-orange: #E2703A; /* Kumquat Orange */
+      --eb-accent-gold: #F4C430;
       --eb-text-dark: #2C3539;
       --eb-text-muted: #667085;
       --eb-border: #E4E7EC;
     }
-/* 發光小黃點樣式 */
-    .glow-dot {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      background-color: var(--eb-accent-orange);
-      border-radius: 50%;
-      box-shadow: 0 0 8px rgba(226, 112, 58, 0.7), 0 0 16px rgba(226, 112, 58, 0.4);
-      margin-left: 6px;
-      vertical-align: middle;
-    }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Serif TC", "Noto Sans TC", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       background-color: var(--eb-bg-light);
       color: var(--eb-text-dark);
       line-height: 1.8;
-      letter-spacing: 0.05em;
     }
 
-    /* Header 導覽列 */
+    /* 頂部導覽列 */
     header {
-      background-color: var(--eb-bg-white);
-      border-bottom: 1px solid var(--eb-border);
-      position: sticky;
+      position: absolute;
       top: 0;
+      left: 0;
+      width: 100%;
       z-index: 100;
-    }
-    .header-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
+      padding: 30px 50px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      background-color: transparent;
     }
+
     .brand-logo {
-      font-size: 1.4rem;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      color: var(--eb-text-dark);
+      position: relative;
       text-decoration: none;
-    }
-    .brand-logo span { color: var(--eb-primary); font-size: 0.85rem; font-weight: 400; margin-left: 6px; }
-    nav ul { display: flex; list-style: none; gap: 32px; align-items: center; }
-    nav a { text-decoration: none; color: var(--eb-text-dark); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
-    nav a:hover, nav a.active { color: var(--eb-primary); }
-    .lang-switch { border: 1px solid var(--eb-border); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; }
-
-    /* 通用容器與標題 */
-    .container { max-width: 1100px; margin: 0 auto; padding: 80px 20px; }
-    .section-title {
-      font-size: 2rem;
-      font-weight: 600;
+      color: var(--eb-text-dark);
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: 4px;
+      display: inline-block;
       text-align: center;
-      margin-bottom: 16px;
+    }
+
+    .brand-logo span.sub-text {
+      display: block;
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: var(--eb-text-muted);
+      margin-top: 2px;
+    }
+
+    .glow-dot-top {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 6px;
+      height: 6px;
+      background-color: var(--eb-accent-gold);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--eb-accent-gold), 0 0 16px rgba(244, 196, 48, 0.6);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 35px;
+      align-items: center;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--eb-text-muted);
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover, nav ul li a.active {
       color: var(--eb-text-dark);
     }
-    .section-title::after {
-      content: '';
-      display: block;
-      width: 36px;
-      height: 3px;
-      background-color: var(--eb-accent-gold);
-      margin: 16px auto 0;
+
+    .btn-inquiry {
+      border: 1px solid var(--eb-text-dark);
+      padding: 10px 24px;
       border-radius: 2px;
-    }
-    .section-subtitle {
-      text-align: center;
-      color: var(--eb-text-muted);
-      font-size: 1.05rem;
-      margin-bottom: 60px;
+      letter-spacing: 2px;
+      transition: all 0.3s;
     }
 
-    /* Page Hero */
-    .about-hero {
-      background: linear-gradient(180deg, #FFFFFF 0%, #F4F7F9 100%);
-      padding: 100px 20px 80px;
-      text-align: center;
-      border-bottom: 1px solid var(--eb-border);
+    .btn-inquiry:hover {
+      background-color: var(--eb-text-dark);
+      color: #fff;
     }
-    .about-hero-tag {
-      font-size: 0.9rem;
-      letter-spacing: 0.2em;
-      color: var(--eb-primary-dark);
-      font-weight: 600;
-      margin-bottom: 16px;
+
+    /* 內容區塊 */
+    .page-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 160px 20px 100px 20px;
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 70px;
+    }
+
+    .page-header h1 {
+      font-size: 38px;
+      font-weight: 300;
+      letter-spacing: 5px;
+      color: var(--eb-text-dark);
+      margin-bottom: 10px;
+    }
+
+    .page-header p {
+      font-size: 14px;
+      letter-spacing: 3px;
+      color: var(--eb-accent-orange);
       text-transform: uppercase;
     }
-    .about-hero-title {
-      font-size: 2.6rem;
-      font-weight: 700;
-      color: var(--eb-text-dark);
-      margin-bottom: 20px;
-      line-height: 1.35;
-    }
-    .about-hero-desc {
-      max-width: 720px;
-      margin: 0 auto;
-      color: var(--eb-text-muted);
-      font-size: 1.1rem;
-    }
 
-    /* 企業故事與底蘊 Grid */
-    .heritage-section { background-color: var(--eb-bg-white); }
-    .heritage-grid {
+    .content-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 60px;
       align-items: center;
+      margin-bottom: 80px;
     }
-    .heritage-content h3 {
-      font-size: 1.6rem;
+
+    .content-text h2 {
+      font-size: 24px;
+      font-weight: 300;
+      letter-spacing: 2px;
       margin-bottom: 20px;
       color: var(--eb-text-dark);
     }
-    .heritage-content p {
+
+    .content-text p {
+      font-size: 15px;
       color: var(--eb-text-muted);
-      margin-bottom: 16px;
+      margin-bottom: 20px;
       text-align: justify;
     }
-    .heritage-box {
-      background-color: var(--eb-bg-light);
-      padding: 40px;
-      border-radius: 8px;
-      border-left: 4px solid var(--eb-primary);
-    }
-    .heritage-box h4 {
-      font-size: 1.2rem;
-      margin-bottom: 12px;
-      color: var(--eb-primary-dark);
-    }
 
-    /* 研發與技術核心 (4 Cards) */
-    .capability-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
-    }
-    .capability-card {
+    .content-image {
       background-color: var(--eb-bg-white);
+      border: 1px solid var(--eb-border);
+      border-radius: 8px;
+      height: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--eb-text-muted);
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+
+    .heritage-box {
+      background-color: var(--eb-bg-white);
+      border-left: 3px solid var(--eb-accent-orange);
       padding: 40px;
-      border-radius: 8px;
-      border: 1px solid var(--eb-border);
+      margin-top: 50px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.02);
     }
-    .capability-card-tag {
-      font-size: 0.85rem;
-      color: var(--eb-primary-dark);
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      margin-bottom: 8px;
+
+    .heritage-box h3 {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 15px;
+      letter-spacing: 2px;
     }
-    .capability-card h4 {
-      font-size: 1.3rem;
-      margin-bottom: 16px;
-      color: var(--eb-text-dark);
-    }
-    .capability-card p {
+
+    .heritage-box p {
       color: var(--eb-text-muted);
-      font-size: 0.95rem;
-    }
-
-    /* 永續全株利用 Upcycling */
-    .sustainability-section { background-color: var(--eb-bg-white); }
-    .sustainability-card {
-      background-color: var(--eb-bg-light);
-      padding: 50px;
-      border-radius: 8px;
-      text-align: center;
-      max-width: 900px;
-      margin: 0 auto;
-      border: 1px solid var(--eb-border);
-    }
-    .sustainability-card h3 {
-      font-size: 1.6rem;
-      margin-bottom: 20px;
-    }
-    .sustainability-card p {
-      color: var(--eb-text-muted);
-      max-width: 760px;
-      margin: 0 auto 30px;
-      text-align: justify;
-    }
-
-    /* 品質與合規 Quality & Compliance */
-    .quality-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-top: 40px;
-    }
-    .quality-item {
-      background: var(--eb-bg-white);
-      padding: 30px;
-      border-radius: 6px;
-      border: 1px solid var(--eb-border);
-      text-align: center;
-    }
-    .quality-item h5 {
-      font-size: 1.1rem;
-      margin-bottom: 8px;
-      color: var(--eb-primary-dark);
-    }
-    .quality-item p {
-      font-size: 0.9rem;
-      color: var(--eb-text-muted);
-    }
-
-    /* CTA Section */
-    .cta-section {
-      background: linear-gradient(135deg, var(--eb-primary-dark) 0%, var(--eb-primary) 100%);
-      color: white;
-      text-align: center;
-      padding: 80px 20px;
-    }
-    .cta-section h2 { font-size: 2rem; margin-bottom: 16px; }
-    .cta-section p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 32px; }
-    .btn-cta {
-      display: inline-block;
-      background-color: var(--eb-accent-orange);
-      color: white;
-      padding: 14px 36px;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: background 0.3s;
-    }
-    .btn-cta:hover { background-color: #c95927; }
-
-    /* Footer */
-    footer {
-      background-color: #1F282C;
-      color: #98A2B3;
-      padding: 60px 20px 40px;
-      font-size: 0.9rem;
-    }
-    .footer-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 40px;
-      padding-bottom: 40px;
-      border-bottom: 1px solid #344054;
-    }
-    .footer-info h4 { color: white; font-size: 1.2rem; margin-bottom: 12px; }
-    .footer-nav ul { list-style: none; display: flex; gap: 24px; }
-    .footer-nav a { color: #98A2B3; text-decoration: none; }
-    .footer-nav a:hover { color: white; }
-    .footer-bottom {
-      max-width: 1200px;
-      margin: 30px auto 0;
-      text-align: center;
-      font-size: 0.85rem;
-    }
-
-    /* RWD 響應式 */
-    @media (max-width: 768px) {
-      .heritage-grid, .capability-grid, .quality-grid, .footer-container {
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
-      .about-hero-title { font-size: 2rem; }
-      nav ul { gap: 16px; }
-      .sustainability-card { padding: 30px 20px; }
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
 
-  <!-- 導覽列 -->
+  <!-- 頂部導覽列 -->
   <header>
-    <div class="header-container">
-      <a href="index.html" class="brand-logo">ÉRINBIO <span>Aileen Agritech Bio</span></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html" class="active">ABOUT</a></li>
-          <li><a href="erin.html">ÉRIN</a></li>
-          <li><a href="oem-odm.html">OEM / ODM</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="en/about.html" class="lang-switch">EN</a></li>
-        </ul>
-      </nav>
-    </div>
+    <a href="index.html" class="brand-logo">
+      <span class="glow-dot-top"></span>
+      ÉRINBIO
+      <span class="sub-text">AILEEN AGRITECH BIO</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="about.html" class="active" style="color:var(--eb-text-dark); border-bottom: 1px solid var(--eb-text-dark);">關於我們</a></li>
+        <li><a href="erin.html">ÉRIN 品牌</a></li>
+        <li><a href="oem-odm.html">OEM / ODM</a></li>
+        <li><a href="blog.html">最新消息</a></li>
+        <li><a href="contact.html" class="btn-inquiry">聯絡我們</a></li>
+        <li><a href="en/index.html" style="font-size: 11px; border-bottom: 1px solid;">EN</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Hero 區塊 -->
-  <section class="about-hero">
-    <div class="about-hero-tag">Aileen Agritech Bio Co., Ltd.</div>
-    <h1 class="about-hero-title">以科學淬鍊自然<br>驅動永續生技與研發製造</h1>
-    <p class="about-hero-desc">艾琳智農生技（ÉRINBIO）專注於植物萃取、配方研發與保養品製造，結合宜蘭在地農業資產與生物科技，為全球夥伴提供客製化與高價值的開發解決方案。</p>
-  </section>
+  <!-- 關於我們主內容 -->
+  <main class="page-container">
+    <div class="page-header">
+      <h1>關於艾琳智農</h1>
+      <p>Heritage &amp; Innovation in Sustainable Bio-Tech</p>
+    </div>
 
-  <!-- 企業故事與背景 -->
-  <section class="heritage-section">
-    <div class="container">
-      <div class="heritage-grid">
-        <div class="heritage-content">
-          <h3>土地底蘊與生物科技的結合</h3>
-          <p>艾琳智農生技根植於宜蘭，承襲數十年農產加工與果實調理的專業累積。我們深刻理解農業資產的價值，並導入現代生物科技，將天然植物成分轉化為高功效、穩定的保養與健康配方。</p>
-          <p>從農田土壤到實驗室萃取，我們嚴密把關原料來源與製程品質，致力於搭起土地資產與國際美粧市場之間的專業橋樑。</p>
-        </div>
-        <div class="heritage-box">
-          <h4>宜蘭科學園區研發基地</h4>
-          <p>ÉRINBIO 研發與營運中心設立於宜蘭科學園區，配備標準化實驗室與精緻萃取設備，專注於綠色萃取製程、活性成分分離與配方穩定性研究。</p>
-        </div>
+    <div class="content-grid">
+      <div class="content-text">
+        <h2>源自自然的永續智慧，淬鍊頂級生技</h2>
+        <p>艾琳智農生技承襲半世紀的農業加工底蘊與二十載美妝研發實力，座落於好山好水、孕育豐富果物精華的蘭陽平原。</p>
+        <p>我們堅信「取之於自然，用之於自然」的理念，透過綠色萃取技術與農業副產物的高值化循環經濟，將在地天然草木與金柑精華精準純化，轉化為符合國際法規的高端永續生技與保養產品。</p>
+      </div>
+      <div class="content-image">
+        [圖：品牌故事與宜蘭在地農產研發基地視覺]
       </div>
     </div>
-  </section>
 
-  <!-- 研發與技術核心 -->
-  <section>
-    <div class="container">
-      <h2 class="section-title">核心生技與製造能力</h2>
-      <p class="section-subtitle">Core Capabilities in Bio-technology & Skincare Development</p>
-
-      <div class="capability-grid">
-        <div class="capability-card">
-          <div class="capability-card-tag">BOTANICAL EXTRACTION</div>
-          <h4>植物成分專利萃取</h4>
-          <p>針對特定植物部位進行低溫、高效與綠色溶劑萃取，保留植物活性與關鍵生理成分，提供安定度高的原料活性液。</p>
-        </div>
-
-        <div class="capability-card">
-          <div class="capability-card-tag">FORMULATION R&D</div>
-          <h4>精準配方研發</h4>
-          <p>具備現代保養品配方開發能力，嚴選無害、低敏且極具體感效益的活性因子，根據客戶訴求設計專屬感官與質地體驗。</p>
-        </div>
-
-        <div class="capability-card">
-          <div class="capability-card-tag">SKINCARE DEVELOPMENT</div>
-          <h4>全方位保養品開發</h4>
-          <p>涵蓋水乳、精華、面霜、清潔與特殊護理產品開發。專注於 Pure、Precise 與 Radiant 的高規格劑型調製。</p>
-        </div>
-
-        <div class="capability-card">
-          <div class="capability-card-tag">CO-DEVELOPMENT</div>
-          <h4>農業與植物素材共同開發</h4>
-          <p>協助品牌商、農業合作社或原料供應商，將在地作物或特色農業資產轉化為符合市場需求的保養原料與商品。</p>
-        </div>
-      </div>
+    <div class="heritage-box">
+      <h3>五十載工藝與現代生技的交會</h3>
+      <p>從土地到科學，我們以對待寶石般嚴謹的工藝精神，打磨每一項植物萃取成分。不添加不必要的負擔，只留下純淨、極簡而強效的修護力量，為全球客戶提供兼具永續與高效的 OEM / ODM 解決方案。</p>
     </div>
-  </section>
-
-  <!-- 全株利用與永續循環經濟 -->
-  <section class="sustainability-section">
-    <div class="container">
-      <div class="sustainability-card">
-        <h3>全株利用與農業副產物加值（Upcycling）</h3>
-        <p>ÉRINBIO 積極實踐永續循環經濟思維。我們運用生物萃取技術，將果皮、枝葉與農業加工副產物進行二次價值開發，萃取其中隱藏的高濃度多酚與抗氧化因子。從源頭減少廢棄物，賦予自然資源全新的綠色生命價值。</p>
-        
-        <div class="quality-grid">
-          <div class="quality-item">
-            <h5>低碳綠色製程</h5>
-            <p>減少萃取耗能與有機溶劑使用</p>
-          </div>
-          <div class="quality-item">
-            <h5>全株高值化應用</h5>
-            <p>將作物資源效益最大化</p>
-          </div>
-          <div class="quality-item">
-            <h5>ESG 企業夥伴支援</h5>
-            <p>協助品牌構建完整永續故事</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 品質與合規管理 -->
-  <section>
-    <div class="container">
-      <h2 class="section-title">品質控管與國際合規</h2>
-      <p class="section-subtitle">Strict Quality Assurance & Regulatory Compliance</p>
-      
-      <div class="quality-grid">
-        <div class="quality-item">
-          <h5>原料溯源管理</h5>
-          <p>嚴選安全透明的植物來源，確保原料生產無重金屬與農藥殘留風險。</p>
-        </div>
-        <div class="quality-item">
-          <h5>安全與功效測試</h5>
-          <p>產品均通過安定性測試、微生物檢驗與皮膚相容性評估。</p>
-        </div>
-        <div class="quality-item">
-          <h5>法規與出口支援</h5>
-          <p>提供完整 PIF 檔案與成分合規文件，支援品牌開啟國際市場。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA 區塊 -->
-  <section class="cta-section">
-    <h2>開啟您的植物生技開發計畫</h2>
-    <p>無論您尋求 OEM / ODM 製造，或是農業素材共同開發，ÉRINBIO 皆能為您提供專業解答。</p>
-    <a href="contact.html" class="btn-cta">洽詢研發合作</a>
-  </section>
-
-  <!-- Footer 頁尾 -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-info">
-        <h4>ÉRINBIO 艾琳智農生技股份有限公司</h4>
-        <p>Aileen Agritech Bio Co., Ltd.</p>
-        <p style="margin-top: 8px;">TEL: <a href="tel:+88639255985" style="color: inherit; text-decoration: none;">+886 3 925 5985</a></p>
-        <p>EMAIL: <a href="mailto:service@erinbio.com.tw" style="color: inherit; text-decoration: none;">service@erinbio.com.tw</a></p>
-        <p>ADD: 宜蘭縣宜蘭市宜科南路15號2樓之1 (宜蘭科學園區)</p>
-      </div>
-      <div class="footer-nav">
-        <ul>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="erin.html">ÉRIN</a></li>
-          <li><a href="oem-odm.html">OEM / ODM</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Aileen Agritech Bio Co., Ltd. All Rights Reserved.</p>
-    </div>
-  </footer>
+  </main>
 
 </body>
 </html>
