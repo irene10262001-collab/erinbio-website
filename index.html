@@ -39,7 +39,6 @@
 
         .font-serif-title { font-family: 'Playfair Display', 'Noto Serif TC', serif; }
         .tracking-ultra   { letter-spacing: 0.28em; }
-        .tracking-mega    { letter-spacing: 0.38em; }
 
         .mountain-gradient {
             background: linear-gradient(175deg,
@@ -102,12 +101,6 @@
         }
         #mobile-menu.open { max-height: 480px; opacity: 1; }
 
-        nav a.nav-active { color: #7da198; }
-
-        ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-track { background: #fcfbfa; }
-        ::-webkit-scrollbar-thumb { background: #b8cac4; border-radius: 2px; }
-
         @keyframes pulseSlow {
             0%,100% { opacity: 0.06; transform: scale(1); }
             50%     { opacity: 0.12; transform: scale(1.06); }
@@ -120,13 +113,13 @@
 <body class="bg-cream text-gray-800 antialiased overflow-x-hidden">
 
 <!-- ═══════════════════════════════
-     NAVBAR
+     NAVBAR (已串聯獨立分頁)
 ═══════════════════════════════ -->
 <nav id="navbar" class="fixed w-full bg-cream/90 backdrop-blur-xl z-50 border-b border-gray-100/70 transition-shadow duration-400">
     <div class="max-w-7xl mx-auto px-6 md:px-10 h-[76px] flex justify-between items-center">
 
         <!-- Logo -->
-        <a href="#hero" class="flex flex-col items-center group">
+        <a href="index.html" class="flex flex-col items-center group">
             <div class="gold-dot-sm mb-1.5 group-hover:scale-125 transition-transform duration-300"></div>
             <span class="text-lg md:text-xl font-serif-title font-light tracking-ultra text-mist group-hover:text-celadon transition-colors duration-300">ÉRIN</span>
             <span class="text-[8px] tracking-widest text-gray-400 uppercase font-light mt-0.5 hidden md:block">ÉRINBIO Capability</span>
@@ -134,11 +127,10 @@
 
         <!-- Desktop Nav -->
         <div class="hidden md:flex items-center space-x-10 text-[10.5px] uppercase tracking-widest text-gray-600 font-medium">
-            <a href="#story" class="hover:text-celadon transition-colors">Brand Story</a>
-            <a href="#pillars" class="hover:text-celadon transition-colors">Four Pillars</a>
-            <a href="#capability" class="hover:text-celadon transition-colors">ÉRINBIO Capability</a>
-            <a href="#partnership" class="hover:text-celadon transition-colors">Partnership</a>
-            <a href="#contact" class="px-5 py-2 border border-celadon text-celadon rounded-full hover:bg-celadon hover:text-white transition-all">Contact Us</a>
+            <a href="index.html" class="text-celadon">首頁</a>
+            <a href="brand.html" class="hover:text-celadon transition-colors">品牌故事</a>
+            <a href="oem-odm.html" class="hover:text-celadon transition-colors">研發製造</a>
+            <a href="contact.html" class="hover:text-celadon transition-colors">聯絡我們</a>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -151,11 +143,10 @@
 
     <!-- Mobile Dropdown -->
     <div id="mobile-menu" class="md:hidden bg-cream/98 border-b border-gray-200/80 px-6 py-6 space-y-4 text-xs uppercase tracking-widest">
-        <a href="#story" class="block py-2 text-gray-700 hover:text-celadon mobile-link">Brand Story</a>
-        <a href="#pillars" class="block py-2 text-gray-700 hover:text-celadon mobile-link">Four Pillars</a>
-        <a href="#capability" class="block py-2 text-gray-700 hover:text-celadon mobile-link">ÉRINBIO Capability</a>
-        <a href="#partnership" class="block py-2 text-gray-700 hover:text-celadon mobile-link">Partnership</a>
-        <a href="#contact" class="block py-2 text-celadon font-medium mobile-link">Contact Us</a>
+        <a href="index.html" class="block py-2 text-celadon font-medium mobile-link">首頁</a>
+        <a href="brand.html" class="block py-2 text-gray-700 hover:text-celadon mobile-link">品牌故事</a>
+        <a href="oem-odm.html" class="block py-2 text-gray-700 hover:text-celadon mobile-link">研發製造</a>
+        <a href="contact.html" class="block py-2 text-gray-700 hover:text-celadon mobile-link">聯絡我們</a>
     </div>
 </nav>
 
@@ -163,7 +154,6 @@
      HERO SECTION
 ═══════════════════════════════ -->
 <header id="hero" class="relative min-h-screen mountain-gradient flex flex-col justify-center items-center text-center px-6 pt-20 overflow-hidden">
-    <!-- Ambient Mist Blobs -->
     <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl mist-blob pointer-events-none"></div>
     <div class="absolute bottom-1/3 right-1/4 w-80 h-80 bg-celadon/20 rounded-full blur-3xl mist-blob-2 pointer-events-none"></div>
 
@@ -183,16 +173,15 @@
         </p>
 
         <div class="pt-6 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 reveal reveal-d4">
-            <a href="#story" class="px-8 py-3.5 bg-mist text-white text-xs uppercase tracking-widest rounded-full hover:bg-mistDark transition-all shadow-lg shadow-mist/15">
-                Explore Brand Story
+            <a href="brand.html" class="px-8 py-3.5 bg-mist text-white text-xs uppercase tracking-widest rounded-full hover:bg-mistDark transition-all shadow-lg shadow-mist/15">
+                探索品牌故事
             </a>
-            <a href="#capability" class="px-8 py-3.5 bg-white/80 border border-celadon/40 text-mist text-xs uppercase tracking-widest rounded-full hover:bg-white hover:border-celadon transition-all">
-                ÉRINBIO R&D Capability
+            <a href="oem-odm.html" class="px-8 py-3.5 bg-white/80 border border-celadon/40 text-mist text-xs uppercase tracking-widest rounded-full hover:bg-white hover:border-celadon transition-all">
+                了解研發製造
             </a>
         </div>
     </div>
 
-    <!-- Bottom Scroll Indicator -->
     <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center space-y-2 opacity-60">
         <span class="text-[9px] uppercase tracking-widest text-mist">Scroll</span>
         <div class="w-px h-8 bg-mist"></div>
@@ -200,12 +189,12 @@
 </header>
 
 <!-- ═══════════════════════════════
-     BRAND STORY SECTION
+     BRAND STORY PREVIEW SECTION
 ═══════════════════════════════ -->
-<section id="story" class="py-32 px-6 md:px-10 max-w-5xl mx-auto">
+<section class="py-32 px-6 md:px-10 max-w-5xl mx-auto">
     <div class="text-center space-y-4 mb-20 reveal">
         <div class="gold-dot mx-auto mb-4"></div>
-        <span class="text-xs uppercase tracking-ultra text-celadon font-medium">Brand Story</span>
+        <span class="text-xs uppercase tracking-ultra text-celadon font-medium">Brand Philosophy</span>
         <h2 class="text-3xl md:text-5xl font-serif-title font-light text-mistDark">源自大地，淬鍊成光</h2>
         <div class="gold-line w-28 mx-auto mt-6"></div>
     </div>
@@ -218,9 +207,12 @@
             <p>
                 從一株植物、一顆果實，到一滴被淬鍊出的精華，ÉRIN 從植物出發，以科學探索自然，將大地孕育的純粹與生命力，轉化為肌膚與日常中的美好。
             </p>
-            <p class="text-mist font-serif-title italic text-lg pt-2">
-                「從大地的一株植物，到生活裡的一點光。」
-            </p>
+            <div class="pt-4">
+                <a href="brand.html" class="text-xs uppercase tracking-widest text-celadon hover:text-mist font-medium flex items-center space-x-2">
+                    <span>閱讀完整品牌故事</span>
+                    <span>→</span>
+                </a>
+            </div>
         </div>
 
         <div class="bg-white/80 p-8 md:p-12 border border-celadon/20 rounded-sm shadow-xl shadow-celadon/10 reveal reveal-d2 space-y-6 relative overflow-hidden">
@@ -241,7 +233,7 @@
 <!-- ═══════════════════════════════
      FOUR BRAND PILLARS
 ═══════════════════════════════ -->
-<section id="pillars" class="py-28 bg-creamD/50 border-y border-gray-200/80 px-6 md:px-10">
+<section class="py-28 bg-creamD/50 border-y border-gray-200/80 px-6 md:px-10">
     <div class="max-w-7xl mx-auto">
         <div class="text-center space-y-4 mb-20 reveal">
             <span class="text-xs uppercase tracking-ultra text-celadon font-medium">Four Brand Pillars</span>
@@ -250,7 +242,6 @@
         </div>
 
         <div class="grid md:grid-cols-4 gap-8">
-            <!-- Pillar 1 -->
             <div class="bg-cream p-8 border border-celadon/15 card-lift reveal reveal-d1 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between mb-6">
@@ -266,7 +257,6 @@
                 <div class="mt-8 pt-4 border-t border-gray-100 text-[10px] text-gray-400 uppercase tracking-widest">Source of Life</div>
             </div>
 
-            <!-- Pillar 2 -->
             <div class="bg-cream p-8 border border-celadon/15 card-lift reveal reveal-d2 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between mb-6">
@@ -282,7 +272,6 @@
                 <div class="mt-8 pt-4 border-t border-gray-100 text-[10px] text-gray-400 uppercase tracking-widest">Natural Essence</div>
             </div>
 
-            <!-- Pillar 3 -->
             <div class="bg-cream p-8 border border-celadon/15 card-lift reveal reveal-d3 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between mb-6">
@@ -298,7 +287,6 @@
                 <div class="mt-8 pt-4 border-t border-gray-100 text-[10px] text-gray-400 uppercase tracking-widest">Scientific R&D</div>
             </div>
 
-            <!-- Pillar 4 -->
             <div class="bg-cream p-8 border border-celadon/15 card-lift reveal reveal-d4 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between mb-6">
@@ -320,7 +308,7 @@
 <!-- ═══════════════════════════════
      CAPABILITY & DUAL PATHWAY
 ═══════════════════════════════ -->
-<section id="capability" class="py-32 px-6 md:px-10 max-w-6xl mx-auto">
+<section class="py-32 px-6 md:px-10 max-w-6xl mx-auto">
     <div class="text-center space-y-4 mb-20 reveal">
         <div class="gold-dot mx-auto mb-4"></div>
         <span class="text-xs uppercase tracking-ultra text-celadon font-medium">Dual Structure</span>
@@ -329,104 +317,43 @@
     </div>
 
     <div class="grid md:grid-cols-2 gap-10">
-        <!-- ÉRINBIO B2B -->
         <div class="bg-white p-10 border border-celadon/20 shadow-lg shadow-celadon/10 reveal reveal-d1 flex flex-col justify-between">
             <div class="space-y-6">
                 <div class="flex items-center justify-between">
                     <span class="text-xs uppercase tracking-ultra text-mist font-semibold">B2B Manufacturing</span>
                     <span class="text-[10px] uppercase tracking-widest px-3 py-1 bg-celadon/10 text-celadon rounded-full">Capability</span>
                 </div>
-                <h3 class="text-2xl font-serif-title text-mistDark">ÉRINBIO</h3>
+                <h3 class="text-2xl font-serif-title text-mistDark">ÉRINBIO 研發製造</h3>
                 <p class="text-xs text-gray-600 leading-relaxed font-light">
-                    背後的研發與製造能力，專注於植物萃取、配方研發、OEM/ODM、永續應用與產品共同開發。
+                    專注於植物萃取、配方研發、OEM/ODM、永續應用與產品共同開發，提供高規格的生技代工服務。
                 </p>
-                <ul class="space-y-2 text-xs text-gray-500 font-light border-t border-gray-100 pt-4">
-                    <li>• Botanical Extraction & Formulation R&D</li>
-                    <li>• OEM / ODM Services</li>
-                    <li>• Sustainable Applications & Co-development</li>
-                </ul>
             </div>
             <div class="mt-8 pt-6 border-t border-gray-100">
-                <a href="#contact" class="text-xs uppercase tracking-widest text-mist hover:text-celadon font-medium flex items-center space-x-2">
-                    <span>Inquire OEM / ODM Partnership</span>
+                <a href="oem-odm.html" class="text-xs uppercase tracking-widest text-mist hover:text-celadon font-medium flex items-center space-x-2">
+                    <span>了解詳細研發實力</span>
                     <span>→</span>
                 </a>
             </div>
         </div>
 
-        <!-- ÉRIN Brand -->
         <div class="bg-white p-10 border border-celadon/20 shadow-lg shadow-celadon/10 reveal reveal-d2 flex flex-col justify-between">
             <div class="space-y-6">
                 <div class="flex items-center justify-between">
                     <span class="text-xs uppercase tracking-ultra text-celadon font-semibold">Skincare Brand</span>
                     <span class="text-[10px] uppercase tracking-widest px-3 py-1 bg-goldPoint/20 text-goldPoint rounded-full">Brand</span>
                 </div>
-                <h3 class="text-2xl font-serif-title text-mistDark">ÉRIN</h3>
+                <h3 class="text-2xl font-serif-title text-mistDark">ÉRIN 品牌專區</h3>
                 <p class="text-xs text-gray-600 leading-relaxed font-light">
-                    ÉRINBIO 所建立的自有保養品牌，具備完整的 Brand Story、產品系列與視覺識別，向全球市場展現研發實力的結晶。
+                    ÉRINBIO 所建立的自有保養品牌，具備完整的 Brand Story、產品系列與視覺識別，向全球市場展現純淨美學。
                 </p>
-                <ul class="space-y-2 text-xs text-gray-500 font-light border-t border-gray-100 pt-4">
-                    <li>• Brand Distribution & Agency Opportunities</li>
-                    <li>• Retail Partnership & Global Expansion</li>
-                    <li>• Quiet Beauty & Botanical Skincare</li>
-                </ul>
             </div>
             <div class="mt-8 pt-6 border-t border-gray-100">
-                <a href="#contact" class="text-xs uppercase tracking-widest text-celadon hover:text-mist font-medium flex items-center space-x-2">
-                    <span>Explore Distribution & Agency</span>
+                <a href="brand.html" class="text-xs uppercase tracking-widest text-celadon hover:text-mist font-medium flex items-center space-x-2">
+                    <span>探索品牌故事與經銷</span>
                     <span>→</span>
                 </a>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════
-     PARTNERSHIP & CONTACT
-═══════════════════════════════ -->
-<section id="partnership" class="py-28 bg-creamD/50 border-t border-gray-200/80 px-6 md:px-10">
-    <div id="contact" class="max-w-4xl mx-auto bg-white p-8 md:p-14 border border-celadon/20 shadow-xl reveal">
-        <div class="text-center space-y-4 mb-12">
-            <div class="gold-dot-sm mx-auto"></div>
-            <h2 class="text-2xl md:text-4xl font-serif-title font-light text-mistDark">展開合作與洽詢</h2>
-            <p class="text-xs text-gray-500 uppercase tracking-widest">
-                無論是品牌代理經銷（Brand Distribution）或研發代工合作（OEM / ODM），我們期待與您聯繫。
-            </p>
-        </div>
-
-        <form class="space-y-6 max-w-2xl mx-auto" onsubmit="event.preventDefault(); alert('感謝您的洽詢，我們將盡快與您聯繫。');">
-            <div class="grid md:grid-cols-2 gap-6">
-                <div>
-                    <label class="block text-[10.5px] uppercase tracking-widest text-gray-500 mb-2">Name / 姓名</label>
-                    <input type="text" required class="w-full px-4 py-3 bg-cream border border-gray-200 text-xs focus:outline-none focus:border-celadon transition-colors" placeholder="請輸入您的姓名">
-                </div>
-                <div>
-                    <label class="block text-[10.5px] uppercase tracking-widest text-gray-500 mb-2">Email / 電子郵件</label>
-                    <input type="email" required class="w-full px-4 py-3 bg-cream border border-gray-200 text-xs focus:outline-none focus:border-celadon transition-colors" placeholder="name@example.com">
-                </div>
-            </div>
-
-            <div>
-                <label class="block text-[10.5px] uppercase tracking-widest text-gray-500 mb-2">Inquiry Type / 洽詢項目</label>
-                <select class="w-full px-4 py-3 bg-cream border border-gray-200 text-xs focus:outline-none focus:border-celadon transition-colors">
-                    <option>ÉRIN Brand Distribution / 品牌經銷與代理洽詢</option>
-                    <option>ÉRINBIO OEM / ODM / 研發與代工合作</option>
-                    <option>Botanical Development / 植物素材共同開發</option>
-                    <option>Other Inquiries / 其他合作</option>
-                </select>
-            </div>
-
-            <div>
-                <label class="block text-[10.5px] uppercase tracking-widest text-gray-500 mb-2">Message / 訊息內容</label>
-                <textarea rows="4" required class="w-full px-4 py-3 bg-cream border border-gray-200 text-xs focus:outline-none focus:border-celadon transition-colors resize-none" placeholder="請簡述您的需求與合作方向..."></textarea>
-            </div>
-
-            <div class="text-center pt-4">
-                <button type="submit" class="px-10 py-3.5 bg-mist text-white text-xs uppercase tracking-widest rounded-full hover:bg-mistDark transition-all shadow-lg shadow-mist/15">
-                    Send Inquiry
-                </button>
-            </div>
-        </form>
     </div>
 </section>
 
@@ -446,28 +373,28 @@
         </div>
 
         <div>
-            <h4 class="uppercase tracking-widest font-semibold text-gray-700 mb-4 text-[11px]">Brand & Story</h4>
+            <h4 class="uppercase tracking-widest font-semibold text-gray-700 mb-4 text-[11px]">Navigation</h4>
             <ul class="space-y-2.5 text-gray-500 font-light">
-                <li><a href="#story" class="hover:text-celadon transition-colors">Brand Story</a></li>
-                <li><a href="#pillars" class="hover:text-celadon transition-colors">Four Pillars</a></li>
-                <li><a href="#hero" class="hover:text-celadon transition-colors">Master Slogan</a></li>
+                <li><a href="index.html" class="hover:text-celadon transition-colors">首頁</a></li>
+                <li><a href="brand.html" class="hover:text-celadon transition-colors">品牌故事</a></li>
+                <li><a href="oem-odm.html" class="hover:text-celadon transition-colors">研發製造</a></li>
+                <li><a href="contact.html" class="hover:text-celadon transition-colors">聯絡我們</a></li>
             </ul>
         </div>
 
         <div>
-            <h4 class="uppercase tracking-widest font-semibold text-gray-700 mb-4 text-[11px]">ÉRINBIO Capability</h4>
+            <h4 class="uppercase tracking-widest font-semibold text-gray-700 mb-4 text-[11px]">Business</h4>
             <ul class="space-y-2.5 text-gray-500 font-light">
-                <li><a href="#capability" class="hover:text-celadon transition-colors">Botanical Extraction</a></li>
-                <li><a href="#capability" class="hover:text-celadon transition-colors">OEM / ODM Services</a></li>
-                <li><a href="#capability" class="hover:text-celadon transition-colors">Sustainable Applications</a></li>
+                <li><a href="contact.html" class="hover:text-celadon transition-colors">品牌經銷與代理洽詢</a></li>
+                <li><a href="oem-odm.html" class="hover:text-celadon transition-colors">OEM / ODM 合作</a></li>
             </ul>
         </div>
 
         <div>
             <h4 class="uppercase tracking-widest font-semibold text-gray-700 mb-4 text-[11px]">Legal & Privacy</h4>
             <ul class="space-y-2.5 text-gray-500 font-light">
-                <li><a href="privacy.html" class="hover:text-celadon transition-colors">Privacy Policy / 隱私權政策</a></li>
-                <li><a href="disclaimer.html" class="hover:text-celadon transition-colors">Disclaimer / 免責聲明</a></li>
+                <li><a href="privacy.html" class="hover:text-celadon transition-colors">隱私權政策 (Privacy Policy)</a></li>
+                <li><a href="disclaimer.html" class="hover:text-celadon transition-colors">免責聲明 (Disclaimer)</a></li>
             </ul>
         </div>
     </div>
@@ -479,10 +406,9 @@
 </footer>
 
 <!-- ═══════════════════════════════
-     JAVASCRIPT INTERACTIVITY
+     JAVASCRIPT
 ═══════════════════════════════ -->
 <script>
-    // Mobile menu toggle
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const bar1 = document.getElementById('bar1');
@@ -506,7 +432,6 @@
         });
     });
 
-    // Scroll reveal observer
     const observerOptions = { threshold: 0.12, rootMargin: '0px 0px -40px 0px' };
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -519,7 +444,6 @@
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // Navbar shadow on scroll
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 20) {
