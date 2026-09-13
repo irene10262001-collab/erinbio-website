@@ -1,378 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OEM / ODM & Upcycling Solutions｜ÉRINBIO Aileen Agritech Bio</title>
-  <meta name="description" content="Explore ÉRINBIO's professional skincare OEM/ODM services, green extraction technology, and sustainable agricultural upcycling solutions for global brands.">
-  <link rel="canonical" href="https://erinbio.com.tw/en/oem-odm.html">
-  <link rel="alternate" hreflang="zh-TW" href="https://erinbio.com.tw/oem-odm.html">
-  <link rel="alternate" hreflang="en" href="https://erinbio.com.tw/en/oem-odm.html">
-  
-  <style>
-    :root {
-      --eb-bg-light: #F4F7F5; /* 帶有極淡青綠感的柔和背景 */
-      --eb-bg-white: #FFFFFF;
-      --eb-primary: #7A9E8D; /* 經典高雅的天青綠（Celadon Green），完美平衡藍綠調並帶有植物生命力 */
-      --eb-primary-dark: #507362; /* 深青綠色，用於滑鼠互動與強調 */
-      --eb-accent-orange: #E2703A; /* Kumquat Orange 金柑橘 */
-      --eb-accent-gold: #F4C430; /* 發光金點 */
-      --eb-text-dark: #2C3539;
-      --eb-text-muted: #667085;
-      --eb-border: #E4E7EC;
-    }
-    /* 發光小黃點樣式 */
-    .glow-dot {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      background-color: var(--eb-accent-orange);
-      border-radius: 50%;
-      box-shadow: 0 0 8px rgba(226, 112, 58, 0.7), 0 0 16px rgba(226, 112, 58, 0.4);
-      margin-left: 6px;
-      vertical-align: middle;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", sans-serif;
-      background-color: var(--eb-bg-light);
-      color: var(--eb-text-dark);
-      line-height: 1.8;
-      letter-spacing: 0.03em;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R&D & OEM/ODM ｜ ÉRINBIO — Aileen Agritech Bio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Inter:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet">
 
-    /* Header */
-    header {
-      background-color: var(--eb-bg-white);
-      border-bottom: 1px solid var(--eb-border);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .header-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .brand-logo {
-      font-size: 1.4rem;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      color: var(--eb-text-dark);
-      text-decoration: none;
-    }
-    .brand-logo span { color: var(--eb-primary); font-size: 0.85rem; font-weight: 400; margin-left: 6px; }
-    nav ul { display: flex; list-style: none; gap: 32px; align-items: center; }
-    nav a { text-decoration: none; color: var(--eb-text-dark); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
-    nav a:hover, nav a.active { color: var(--eb-primary); }
-    .lang-switch { border: 1px solid var(--eb-border); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; }
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        celadon:   '#7da198',
+                        celadonL:  '#a8c5be',
+                        mist:      '#4a6b6c',
+                        mistDark:  '#2e4647',
+                        goldPoint: '#d4a32b',
+                        goldLight: '#f0c84a',
+                        cream:     '#fcfbfa',
+                        creamD:    '#f0eeeb',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', '"Noto Serif TC"', 'Georgia', 'serif'],
+                        sans:  ['Inter', '"Noto Serif TC"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
 
-    /* Hero */
-    .page-hero {
-      background: linear-gradient(135deg, #F4F7F9 0%, #FFFFFF 100%);
-      padding: 80px 20px;
-      text-align: center;
-      border-bottom: 1px solid var(--eb-border);
-    }
-    .page-hero-tag {
-      font-size: 0.85rem;
-      letter-spacing: 0.25em;
-      color: var(--eb-primary-dark);
-      font-weight: 600;
-      margin-bottom: 12px;
-      text-transform: uppercase;
-    }
-    .page-hero h1 {
-      font-size: 2.6rem;
-      font-weight: 700;
-      color: var(--eb-text-dark);
-      margin-bottom: 16px;
-    }
-    .page-hero p {
-      max-width: 700px;
-      margin: 0 auto;
-      color: var(--eb-text-muted);
-      font-size: 1.05rem;
-    }
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', 'Noto Serif TC', sans-serif; background: #fcfbfa; color: #2e3a3b; -webkit-font-smoothing: antialiased; }
 
-    /* Container */
-    .container { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+        .font-serif-title { font-family: 'Playfair Display', 'Noto Serif TC', serif; }
+        .tracking-ultra   { letter-spacing: 0.28em; }
 
-    /* Services Grid */
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 40px;
-      margin-bottom: 80px;
-    }
-    .service-card {
-      background-color: var(--eb-bg-white);
-      border: 1px solid var(--eb-border);
-      border-radius: 8px;
-      padding: 40px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.02);
-    }
-    .service-card h3 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      color: var(--eb-text-dark);
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .service-card h3 span {
-      font-size: 0.9rem;
-      background-color: #F0F4F7;
-      color: var(--eb-primary-dark);
-      padding: 4px 10px;
-      border-radius: 4px;
-    }
-    .service-card p {
-      color: var(--eb-text-muted);
-      margin-bottom: 20px;
-      font-size: 0.98rem;
-    }
-    .service-list {
-      list-style: none;
-      margin-top: 16px;
-    }
-    .service-list li {
-      position: relative;
-      padding-left: 20px;
-      margin-bottom: 10px;
-      color: var(--eb-text-dark);
-      font-size: 0.95rem;
-    }
-    .service-list li::before {
-      content: "•";
-      color: var(--eb-accent-orange);
-      font-weight: bold;
-      position: absolute;
-      left: 0;
-    }
+        .mountain-gradient {
+            background: linear-gradient(175deg, #fcfbfa 0%, #eaf0ed 30%, #d3e0db 60%, #b8cac4 85%, #9ab5ae 100%);
+        }
 
-    /* Process Flow */
-    .process-section {
-      background-color: var(--eb-bg-white);
-      border-top: 1px solid var(--eb-border);
-      border-bottom: 1px solid var(--eb-border);
-      padding: 80px 20px;
-    }
-    .process-title {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 50px;
-      color: var(--eb-text-dark);
-    }
-    .process-steps {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-    }
-    .step-card {
-      border: 1px solid var(--eb-border);
-      padding: 30px 24px;
-      border-radius: 8px;
-      background-color: var(--eb-bg-light);
-    }
-    .step-number {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--eb-primary);
-      margin-bottom: 12px;
-    }
-    .step-card h4 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-      color: var(--eb-text-dark);
-    }
-    .step-card p {
-      font-size: 0.9rem;
-      color: var(--eb-text-muted);
-    }
+        .gold-dot {
+            width: 12px; height: 12px; background: #d4a32b; border-radius: 50%;
+            box-shadow: 0 0 0 3px rgba(212,163,43,0.18), 0 0 16px 5px rgba(212,163,43,0.42);
+            animation: goldPulse 2.8s ease-in-out infinite; flex-shrink: 0;
+        }
+        .gold-dot-sm {
+            width: 6px; height: 6px; background: #d4a32b; border-radius: 50%;
+            box-shadow: 0 0 0 2px rgba(212,163,43,0.15), 0 0 9px 3px rgba(212,163,43,0.36);
+            animation: goldPulse 3.2s ease-in-out infinite; flex-shrink: 0;
+        }
+        @keyframes goldPulse {
+            0%,100% { box-shadow: 0 0 0 2px rgba(212,163,43,0.15), 0 0 8px 3px rgba(212,163,43,0.3); }
+            50%     { box-shadow: 0 0 0 5px rgba(212,163,43,0.22), 0 0 22px 8px rgba(212,163,43,0.56); }
+        }
 
-    /* CTA Banner */
-    .cta-banner {
-      text-align: center;
-      padding: 80px 20px;
-    }
-    .cta-banner h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-    }
-    .cta-banner p {
-      color: var(--eb-text-muted);
-      margin-bottom: 30px;
-      font-size: 1.05rem;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 32px;
-      background-color: var(--eb-text-dark);
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: 600;
-      transition: background-color 0.2s;
-    }
-    .btn:hover { background-color: var(--eb-primary-dark); }
+        .gold-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d4a32b 40%, #d4a32b 60%, transparent);
+            opacity: 0.45;
+        }
 
-    /* Footer */
-    footer {
-      background-color: #1F282C;
-      color: #98A2B3;
-      padding: 60px 20px 40px;
-      font-size: 0.9rem;
-    }
-    .footer-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 40px;
-      padding-bottom: 40px;
-      border-bottom: 1px solid #344054;
-    }
-    .footer-info h4 { color: white; font-size: 1.2rem; margin-bottom: 12px; }
-    .footer-nav ul { list-style: none; display: flex; gap: 24px; }
-    .footer-nav a { color: #98A2B3; text-decoration: none; }
-    .footer-nav a:hover { color: white; }
-    .footer-bottom {
-      max-width: 1200px;
-      margin: 30px auto 0;
-      text-align: center;
-      font-size: 0.85rem;
-    }
+        .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.9s cubic-bezier(0.22,1,0.36,1), transform 0.9s cubic-bezier(0.22,1,0.36,1); }
+        .reveal.visible { opacity: 1; transform: none; }
+        .reveal-d1 { transition-delay: 0.10s; }
+        .reveal-d2 { transition-delay: 0.20s; }
+        .reveal-d3 { transition-delay: 0.30s; }
 
-    @media (max-width: 992px) {
-      .service-grid, .process-steps { grid-template-columns: 1fr; }
-    }
-  </style>
+        .card-lift { transition: transform 0.38s cubic-bezier(0.22,1,0.36,1), box-shadow 0.38s ease; }
+        .card-lift:hover { transform: translateY(-5px); box-shadow: 0 22px 60px rgba(74,107,108,0.11); }
+
+        #mobile-menu { transition: max-height 0.38s ease, opacity 0.28s ease; max-height: 0; opacity: 0; overflow: hidden; }
+        #mobile-menu.open { max-height: 480px; opacity: 1; }
+    </style>
 </head>
-<body>
 
-  <!-- Header -->
-  <header>
-    <div class="header-container">
-      <a href="index.html" class="brand-logo">ÉRINBIO <span>Aileen Agritech Bio</span></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="erin.html">ÉRIN</a></li>
-          <li><a href="oem-odm.html" class="active">OEM / ODM</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="../oem-odm.html" class="lang-switch">繁中</a></li>
-        </ul>
-      </nav>
+<body class="bg-cream text-gray-800 antialiased overflow-x-hidden">
+
+<!-- ═══════════════════════════════
+     NAVBAR
+═══════════════════════════════ -->
+<nav id="navbar" class="fixed w-full bg-cream/90 backdrop-blur-xl z-50 border-b border-gray-100/70 transition-shadow duration-400">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 h-[76px] flex justify-between items-center">
+        <a href="index.html" class="flex flex-col items-center group">
+            <div class="gold-dot-sm mb-1.5 group-hover:scale-125 transition-transform duration-300"></div>
+            <span class="text-lg md:text-xl font-serif-title font-light tracking-ultra text-mist group-hover:text-celadon transition-colors duration-300">ÉRIN</span>
+            <span class="text-[8px] tracking-widest text-gray-400 uppercase font-light mt-0.5 hidden md:block">With True Joy</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center space-x-8 text-[10.5px] uppercase tracking-widest text-gray-600 font-medium">
+            <a href="index.html" class="hover:text-celadon transition-colors">Home</a>
+            <a href="brand.html" class="hover:text-celadon transition-colors">Our Story</a>
+            <a href="oem-odm.html" class="text-celadon font-semibold">R&D & OEM</a>
+            <a href="blog.html" class="hover:text-celadon transition-colors">Journal</a>
+            <a href="contact.html" class="hover:text-celadon transition-colors">Contact</a>
+            <!-- Language Switcher -->
+            <div class="pl-4 border-l border-gray-200 flex items-center space-x-2">
+                <a href="../oem-odm.html" class="text-gray-400 hover:text-mist">中文</a>
+                <span class="text-gray-300">/</span>
+                <span class="text-celadon font-semibold">EN</span>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" aria-label="Open menu" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none">
+            <span class="w-6 h-px bg-mist transition-transform duration-300" id="bar1"></span>
+            <span class="w-6 h-px bg-mist transition-opacity duration-300" id="bar2"></span>
+            <span class="w-6 h-px bg-mist transition-transform duration-300" id="bar3"></span>
+        </button>
     </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="page-hero">
-    <div class="page-hero-tag">B2B Manufacturing & Solutions</div>
-    <h1>OEM / ODM & Agricultural Upcycling</h1>
-    <p>Empowering global beauty and wellness brands with patented green extraction, circular economy ingredients, and certified cosmetic manufacturing.</p>
-  </section>
-
-  <!-- Services Grid -->
-  <main class="container">
-    <div class="service-grid">
-      <!-- Service 1 -->
-      <div class="service-card">
-        <h3>Skincare OEM / ODM <span>Custom Solutions</span></h3>
-        <p>From concept formulation to mass production, we provide comprehensive manufacturing services tailored to your brand's unique specifications under stringent quality controls.</p>
-        <ul class="service-list">
-          <li>Custom Formula Development & Botanical Blending</li>
-          <li>Low-MOQ Trial Batches for Startups & Scaling Brands</li>
-          <li>ISO22716 & GMP Certified Cleanroom Manufacturing</li>
-          <li>Stability, Microbiological, and Safety Testing</li>
-        </ul>
-      </div>
-
-      <!-- Service 2 -->
-      <div class="service-card">
-        <h3>Agricultural Upcycling <span>Circular Economy</span></h3>
-        <p>We transform agricultural side-streams—such as Yilan kumquat peels and botanical by-products—into high-value bioactive cosmetic ingredients through advanced green technologies.</p>
-        <ul class="service-list">
-          <li>Low-Temperature Ultrasonic & Green Solvent Extraction</li>
-          <li>High-Purity Bioactive Flavonoids & Antioxidants</li>
-          <li>Zero-Waste Circular Supply Chain Integration</li>
-          <li>ESG-Aligned Raw Material Certification Support</li>
-        </ul>
-      </div>
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="md:hidden bg-cream/98 border-b border-gray-200/80 px-6 py-6 space-y-4 text-xs uppercase tracking-widest">
+        <a href="index.html" class="block py-2 text-gray-700 hover:text-celadon mobile-link">Home</a>
+        <a href="brand.html" class="block py-2 text-gray-700 hover:text-celadon mobile-link">Our Story</a>
+        <a href="oem-odm.html" class="block py-2 text-celadon font-medium mobile-link">R&D & OEM</a>
+        <a href="blog.html" class="block py-2 text-gray-700 hover:text-celadon mobile-link">Journal</a>
+        <a href="contact.html" class="block py-2 text-gray-700 hover:text-celadon mobile-link">Contact</a>
+        <div class="pt-2 border-t border-gray-100 flex items-center space-x-4">
+            <a href="../oem-odm.html" class="text-gray-500">中文 (Traditional Chinese)</a>
+            <span class="text-celadon font-bold">English</span>
+        </div>
     </div>
-  </main>
+</nav>
 
-  <!-- Process Section -->
-  <section class="process-section">
-    <h2 class="process-title">Collaboration Process</h2>
-    <div class="process-steps">
-      <div class="step-card">
-        <div class="step-number">01</div>
-        <h4>Consultation & Needs</h4>
-        <p>Discuss your target market, concept, formulation requirements, and expected volume.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-number">02</div>
-        <h4>Sample Development</h4>
-        <p>Our R&D team formulates customized samples and conducts initial stability testing.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-number">03</div>
-        <h4>Validation & Trial</h4>
-        <p>Sample approval, packaging alignment, and small-batch trial production.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-number">04</div>
-        <h4>Manufacturing</h4>
-        <p>Full-scale production under ISO22716 standards with strict quality assurance.</p>
-      </div>
+<!-- ═══════════════════════════════
+     HEADER INTRO
+═══════════════════════════════ -->
+<header class="pt-36 pb-20 mountain-gradient text-center px-6">
+    <div class="max-w-3xl mx-auto space-y-4">
+        <div class="gold-dot mx-auto mb-4"></div>
+        <span class="text-xs uppercase tracking-ultra text-celadon font-medium">B2B Manufacturing & R&D</span>
+        <h1 class="text-4xl md:text-6xl font-serif-title font-light text-mistDark">ÉRINBIO R&D & OEM/ODM</h1>
+        <div class="gold-line w-32 mx-auto mt-6"></div>
+        <p class="text-gray-600 font-light text-sm md:text-base max-w-xl mx-auto pt-4 leading-relaxed">
+            Advanced botanical extraction, circular biotechnology, and customized formulation development by Aileen Agritech Bio.
+        </p>
     </div>
-  </section>
+</header>
 
-  <!-- CTA Banner -->
-  <section class="cta-banner">
-    <h2>Ready to Build Your Sustainable Brand?</h2>
-    <p>Partner with ÉRINBIO for world-class botanical OEM and green upcycling solutions.</p>
-    <a href="contact.html" class="btn">Inquire with Our Team</a>
-  </section>
+<!-- ═══════════════════════════════
+     CORE CAPABILITIES
+═══════════════════════════════ -->
+<section class="py-28 px-6 md:px-10 max-w-6xl mx-auto">
+    <div class="text-center space-y-4 mb-20 reveal">
+        <span class="text-[10px] uppercase tracking-ultra text-celadon font-semibold">Core Expertise</span>
+        <h2 class="text-3xl md:text-4xl font-serif-title text-mistDark">Scientific Precision & Natural Innovation</h2>
+        <div class="gold-line w-24 mx-auto mt-4"></div>
+    </div>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-info">
-        <h4>Aileen Agritech Bio Co., Ltd.</h4>
-        <p>ÉRINBIO 艾琳智農生技股份有限公司</p>
-        <p style="margin-top: 8px;">TEL: <a href="tel:+88639255985" style="color: inherit; text-decoration: none;">+886 3 925 5985</a></p>
-        <p>EMAIL: <a href="mailto:service@erinbio.com.tw" style="color: inherit; text-decoration: none;">service@erinbio.com.tw</a></p>
-        <p>ADD: 2F-1, No. 15, Yike South Rd., Yilan City, Yilan County (Yilan Science Park)</p>
-      </div>
-      <div class="footer-nav">
-        <ul>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="erin.html">ÉRIN</a></li>
-          <li><a href="oem-odm.html">OEM / ODM</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </div>
+    <div class="grid md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white p-8 border border-celadon/20 shadow-sm card-lift reveal reveal-d1 space-y-4">
+            <span class="text-xs uppercase tracking-widest text-goldPoint font-semibold block">01 / Extraction</span>
+            <h3 class="text-xl font-serif-title text-mistDark">Botanical Extraction</h3>
+            <p class="text-xs text-gray-600 font-light leading-relaxed">
+                Specialized green extraction techniques that isolate active antioxidant compounds from citrus and regional flora while maintaining molecular purity.
+            </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-8 border border-celadon/20 shadow-sm card-lift reveal reveal-d2 space-y-4">
+            <span class="text-xs uppercase tracking-widest text-goldPoint font-semibold block">02 / Upcycling</span>
+            <h3 class="text-xl font-serif-title text-mistDark">Circular Bio-Economy</h3>
+            <p class="text-xs text-gray-600 font-light leading-relaxed">
+                Transforming agricultural byproducts and precious botanical residues into high-value functional cosmetic ingredients and sustainable packaging solutions.
+            </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-8 border border-celadon/20 shadow-sm card-lift reveal reveal-d3 space-y-4">
+            <span class="text-xs uppercase tracking-widest text-goldPoint font-semibold block">03 / Formulation</span>
+            <h3 class="text-xl font-serif-title text-mistDark">OEM / ODM Services</h3>
+            <p class="text-xs text-gray-600 font-light leading-relaxed">
+                End-to-end contract manufacturing and custom formulation development tailored for global skincare brands seeking clean-beauty standards.
+            </p>
+        </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Aileen Agritech Bio Co., Ltd. All Rights Reserved.</p>
+</section>
+
+<!-- ═══════════════════════════════
+     COOPERATION PROCESS
+═══════════════════════════════ -->
+<section class="py-28 bg-creamD/50 border-y border-gray-200/80 px-6 md:px-10">
+    <div class="max-w-5xl mx-auto">
+        <div class="text-center space-y-4 mb-16 reveal">
+            <span class="text-[10px] uppercase tracking-ultra text-celadon font-semibold">Partnership Workflow</span>
+            <h2 class="text-3xl md:text-4xl font-serif-title text-mistDark">How We Collaborate</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-white p-6 border border-celadon/20 shadow-sm space-y-3">
+                <span class="text-lg font-serif-title text-celadon block">Step 01</span>
+                <h4 class="text-xs uppercase tracking-widest text-mist font-semibold">Inquiry & Consultation</h4>
+                <p class="text-[11px] text-gray-500 font-light">Discuss your project scope, target market, and formulation requirements.</p>
+            </div>
+            <div class="bg-white p-6 border border-celadon/20 shadow-sm space-y-3">
+                <span class="text-lg font-serif-title text-celadon block">Step 02</span>
+                <h4 class="text-xs uppercase tracking-widest text-mist font-semibold">Sample & R&D</h4>
+                <p class="text-[11px] text-gray-500 font-light">Custom formula testing, botanical active selection, and prototyping.</p>
+            </div>
+            <div class="bg-white p-6 border border-celadon/20 shadow-sm space-y-3">
+                <span class="text-lg font-serif-title text-celadon block">Step 03</span>
+                <h4 class="text-xs uppercase tracking-widest text-mist font-semibold">Validation & Pilot</h4>
+                <p class="text-[11px] text-gray-500 font-light">Stability testing, safety assessment, and final formula sign-off.</p>
+            </div>
+            <div class="bg-white p-6 border border-celadon/20 shadow-sm space-y-3">
+                <span class="text-lg font-serif-title text-celadon block">Step 04</span>
+                <h4 class="text-xs uppercase tracking-widest text-mist font-semibold">Production & Delivery</h4>
+                <p class="text-[11px] text-gray-500 font-light">Batch manufacturing under strict quality control standards.</p>
+            </div>
+        </div>
+
+        <div class="text-center pt-12">
+            <a href="contact.html" class="px-8 py-3.5 bg-mist text-white text-xs uppercase tracking-widest rounded-full hover:bg-mistDark transition-all shadow-md">
+                Inquire for OEM / ODM Partnership
+            </a>
+        </div>
     </div>
-  </footer>
+</section>
+
+<!-- ═══════════════════════════════
+     FOOTER
+═══════════════════════════════ -->
+<footer class="bg-creamD border-t border-gray-200 py-16 px-6 md:px-10 text-xs">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10 mb-12">
+        <div class="space-y-4">
+            <div class="flex items-center space-x-2">
+                <div class="gold-dot-sm"></div>
+                <span class="font-serif-title font-light tracking-ultra text-mist text-base">ÉRIN</span>
+            </div>
+            <p class="text-gray-500 font-light leading-relaxed text-[11px]">
+                A botanical skincare brand from Taiwan, rooted in nature and refined through science. With True Joy.
+            </p>
+        </div>
+
+        <div>
+            <h4 class="uppercase tracking-widest font-semibold text-gray-700 mb-4 text-[11px]">Navigation</h4>
+            <ul class="space-y-2.5 text-gray-500 font-light">
+                <li><a href="index.html" class="hover:text-celadon transition-colors">Home</a></li>
+                <li><a href="brand.html" class="hover:text-celadon transition-colors">Our Story</a></li>
+                <li><a href="oem-odm.html" class="hover:text-celadon transition-colors">R&D & OEM</a></li>
+                <li><a href="blog.html" class="hover:text-celadon transition-colors">Journal</a></li>
+                <li><a href="contact.html" class="hover:text-celadon transition-colors">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="uppercase tracking-widest font-semibold text-gray-700 mb-4 text-[11px]">Business</h4>
+            <ul class="space-y-2.5 text-gray-500 font-light">
+                <li><a href="contact.html" class="hover:text-celadon transition-colors">Distribution & Agency</a></li>
+                <li><a href="oem-odm.html" class="hover:text-celadon transition-colors">OEM / ODM Partnership</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="uppercase tracking-widest font-semibold text-gray-700 mb-4 text-[11px]">Contact Info</h4>
+            <ul class="space-y-2.5 text-gray-500 font-light">
+                <li>Address: 2F-1, No. 15, Yike South Rd., Yilan City, Yilan County, Taiwan</li>
+                <li>Phone: +886 972-122-513</li>
+                <li>Email: service@erinbio.com.tw</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-8 border-t border-gray-200/60 flex flex-col sm:flex-row justify-between items-center text-[10px] text-gray-400 tracking-wider">
+        <p>&copy; 2026 Aileen Agritech Bio Co., Ltd. All Rights Reserved.</p>
+        <p class="mt-2 sm:mt-0">Rooted in Yilan, Taiwan.</p>
+    </div>
+</footer>
+
+<!-- ═══════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════ -->
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const bar1 = document.getElementById('bar1');
+    const bar2 = document.getElementById('bar2');
+    const bar3 = document.getElementById('bar3');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+        const isOpen = mobileMenu.classList.contains('open');
+        bar1.style.transform = isOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none';
+        bar2.style.opacity = isOpen ? '0' : '1';
+        bar3.style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : 'none';
+    });
+
+    const observerOptions = { threshold: 0.12, rootMargin: '0px 0px -40px 0px' };
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
