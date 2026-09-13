@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustainable Insights & Blog｜ÉRINBIO Aileen Agritech Bio</title>
+  <meta name="description" content="Explore articles on green extraction technology, agricultural upcycling, and clean skincare insights by ÉRINBIO.">
+  <link rel="canonical" href="https://erinbio.com.tw/en/blog.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://erinbio.com.tw/blog.html">
+  <link rel="alternate" hreflang="en" href="https://erinbio.com.tw/en/blog.html">
+  
+  <style>
+    :root {
+      --eb-bg-light: #F9F8F6;
+      --eb-bg-white: #FFFFFF;
+      --eb-primary: #8EA8B5; /* Celadon Blue */
+      --eb-primary-dark: #5C7480;
+      --eb-accent-orange: #E2703A; /* Kumquat Orange */
+      --eb-text-dark: #2C3539;
+      --eb-text-muted: #667085;
+      --eb-border: #E4E7EC;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", sans-serif;
+      background-color: var(--eb-bg-light);
+      color: var(--eb-text-dark);
+      line-height: 1.8;
+      letter-spacing: 0.03em;
+    }
+
+    /* Header */
+    header {
+      background-color: var(--eb-bg-white);
+      border-bottom: 1px solid var(--eb-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand-logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: var(--eb-text-dark);
+      text-decoration: none;
+    }
+    .brand-logo span { color: var(--eb-primary); font-size: 0.85rem; font-weight: 400; margin-left: 6px; }
+    nav ul { display: flex; list-style: none; gap: 32px; align-items: center; }
+    nav a { text-decoration: none; color: var(--eb-text-dark); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: var(--eb-primary); }
+    .lang-switch { border: 1px solid var(--eb-border); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; }
+
+    /* Hero */
+    .page-hero {
+      background: linear-gradient(135deg, #F4F7F9 0%, #FFFFFF 100%);
+      padding: 80px 20px;
+      text-align: center;
+      border-bottom: 1px solid var(--eb-border);
+    }
+    .page-hero-tag {
+      font-size: 0.85rem;
+      letter-spacing: 0.25em;
+      color: var(--eb-primary-dark);
+      font-weight: 600;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    .page-hero h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: var(--eb-text-dark);
+      margin-bottom: 16px;
+    }
+    .page-hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--eb-text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Container */
+    .container { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+
+    /* Blog Grid */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .blog-card {
+      background-color: var(--eb-bg-white);
+      border: 1px solid var(--eb-border);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.05);
+    }
+    .blog-img {
+      height: 200px;
+      background-color: #F0F4F7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--eb-primary-dark);
+      font-size: 0.85rem;
+    }
+    .blog-body {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .blog-meta {
+      font-size: 0.8rem;
+      color: var(--eb-text-muted);
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .blog-body h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--eb-text-dark);
+      line-height: 1.4;
+    }
+    .blog-body p {
+      color: var(--eb-text-muted);
+      font-size: 0.93rem;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    .blog-link {
+      color: var(--eb-primary-dark);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .blog-link:hover { color: var(--eb-accent-orange); }
+
+    /* Footer */
+    footer {
+      background-color: #1F282C;
+      color: #98A2B3;
+      padding: 60px 20px 40px;
+      font-size: 0.9rem;
+      margin-top: 80px;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #344054;
+    }
+    .footer-info h4 { color: white; font-size: 1.2rem; margin-bottom: 12px; }
+    .footer-nav ul { list-style: none; display: flex; gap: 24px; }
+    .footer-nav a { color: #98A2B3; text-decoration: none; }
+    .footer-nav a:hover { color: white; }
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 30px auto 0;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 992px) {
+      .blog-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">ÉRINBIO <span>Aileen Agritech Bio</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="erin.html">ÉRIN</a></li>
+          <li><a href="oem-odm.html">OEM / ODM</a></li>
+          <li><a href="blog.html" class="active">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="../blog.html" class="lang-switch">繁中</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="page-hero-tag">Sustainable Insights</div>
+    <h1>Latest News & Articles</h1>
+    <p>Discover our latest breakthroughs in agricultural upcycling, green extraction science, and clean beauty standards.</p>
+  </section>
+
+  <!-- Main Container -->
+  <main class="container">
+    <div class="blog-grid">
+      
+      <!-- Article 1 -->
+      <article class="blog-card">
+        <div class="blog-img">[ Article Image: Upcycling ]</div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span>Sustainability</span>
+            <span>May 15, 2026</span>
+          </div>
+          <h3>From Orchard By-Products to High-Value Skincare Actives</h3>
+          <p>Discover how we transform agricultural side-streams like Yilan kumquat peels into nutrient-rich botanical ingredients through zero-waste circular economy practices.</p>
+          <a href="#" class="blog-link">Read More &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="blog-card">
+        <div class="blog-img">[ Article Image: Green Extraction ]</div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span>Technology</span>
+            <span>April 28, 2026</span>
+          </div>
+          <h3>The Science of Low-Temperature Green Extraction</h3>
+          <p>Why conventional solvent extraction is being replaced by eco-friendly ultrasonic and green solvent techniques to preserve delicate botanical flavonoids.</p>
+          <a href="#" class="blog-link">Read More &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="blog-card">
+        <div class="blog-img">[ Article Image: Minimalist Skincare ]</div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span>Clean Beauty</span>
+            <span>April 10, 2026</span>
+          </div>
+          <h3>Embracing Minimalism in Modern Skincare Formulation</h3>
+          <p>Exploring why less is more when it comes to skin health, barrier repair, and reducing unnecessary chemical burdens on sensitive skin.</p>
+          <a href="#" class="blog-link">Read More &rarr;</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <h4>Aileen Agritech Bio Co., Ltd.</h4>
+        <p>ÉRINBIO 艾琳智農生技股份有限公司</p>
+        <p style="margin-top: 8px;">TEL: <a href="tel:+88639255985" style="color: inherit; text-decoration: none;">+886 3 925 5985</a></p>
+        <p>EMAIL: <a href="mailto:service@erinbio.com.tw" style="color: inherit; text-decoration: none;">service@erinbio.com.tw</a></p>
+        <p>ADD: 2F-1, No. 15, Yike South Rd., Yilan City, Yilan County (Yilan Science Park)</p>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="erin.html">ÉRIN</a></li>
+          <li><a href="oem-odm.html">OEM / ODM</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aileen Agritech Bio Co., Ltd. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
