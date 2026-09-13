@@ -3,179 +3,265 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ÉRINBIO 艾琳智農生技｜Botanical Extraction & Skincare R&D</title>
-  <meta name="description" content="ÉRINBIO 艾琳智農生技專注於植物萃取、保養品配方研發與 OEM/ODM 製造；旗下自有植萃保養品牌 ÉRIN，照亮你的生活。">
-  <link rel="canonical" href="https://erinbio.com.tw/">
+  <title>ÉRINBIO 艾琳智農生技 | Sustainable Agri-Tech & Botanical Skincare OEM/ODM</title>
+  <meta name="description" content="Aileen Agritech Bio 結合五十載農業加工底蘊與二十載美妝研發實力，將自然草木精準純化為符合國際法規的高端永續生技產品。">
+  <link rel="canonical" href="https://erinbio.com.tw/index.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://erinbio.com.tw/index.html">
+  <link rel="alternate" hreflang="en" href="https://erinbio.com.tw/en/index.html">
+
   <style>
     :root {
-      --xigan-bg-light: #F9F8F6;
-      --xigan-bg-white: #FFFFFF;
-      --xigan-primary: #8EA8B5;
-      --xigan-primary-dark: #6C8592;
-      --xigan-accent-orange: #E2703A;
-      --xigan-accent-yellow: #F4C430;
-      --xigan-text-dark: #2C3539;
-      --xigan-text-muted: #667085;
-      --xigan-border: #E4E7EC;
+      --eb-bg-light: #F9F8F6;
+      --eb-bg-white: #FFFFFF;
+      --eb-primary: #8EA8B5; /* Celadon Blue */
+      --eb-primary-dark: #5C7480;
+      --eb-accent-orange: #E2703A; /* Kumquat Orange */
+      --eb-accent-gold: #F4C430;
+      --eb-text-dark: #2C3539;
+      --eb-text-muted: #667085;
+      --eb-border: #E4E7EC;
     }
-     /* 發光小黃點樣式 */
-    .glow-dot {
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--eb-bg-light);
+      color: var(--eb-text-dark);
+      line-height: 1.6;
+    }
+
+    /* Header 導覽列 */
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      padding: 30px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-logo {
+      position: relative;
+      text-decoration: none;
+      color: var(--eb-text-dark);
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: 4px;
       display: inline-block;
+      text-align: center;
+    }
+
+    .brand-logo span.sub-text {
+      display: block;
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: var(--eb-text-muted);
+      margin-top: 2px;
+    }
+
+    /* 頂部發光小金點 */
+    .glow-dot-top {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 6px;
+      height: 6px;
+      background-color: var(--eb-accent-gold);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--eb-accent-gold), 0 0 16px rgba(244, 196, 48, 0.6);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 35px;
+      align-items: center;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--eb-text-muted);
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: var(--eb-text-dark);
+    }
+
+    .btn-inquiry {
+      border: 1px solid var(--eb-text-dark);
+      padding: 10px 24px;
+      border-radius: 2px;
+      letter-spacing: 2px;
+      transition: all 0.3s;
+    }
+
+    .btn-inquiry:hover {
+      background-color: var(--eb-text-dark);
+      color: #fff;
+    }
+
+    /* Hero 視覺主區塊 */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 120px 20px 80px 20px;
+      background: radial-gradient(circle at 50% 30%, rgba(255,255,255,0.8) 0%, rgba(142,168,181,0.15) 100%);
+    }
+
+    .hero-title-area {
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    .hero-dot-center {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
       width: 8px;
       height: 8px;
-      background-color: var(--eb-accent-orange);
+      background-color: var(--eb-accent-gold);
       border-radius: 50%;
-      box-shadow: 0 0 8px rgba(226, 112, 58, 0.7), 0 0 16px rgba(226, 112, 58, 0.4);
-      margin-left: 6px;
-      vertical-align: middle;
-      }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; padding: 0;
-      font-family: "Noto Serif TC", "Noto Sans TC", -apple-system, sans-serif;
-      background-color: var(--xigan-bg-light);
-      color: var(--xigan-text-dark);
-      line-height: 1.8;
-      letter-spacing: 0.05em;
+      box-shadow: 0 0 12px var(--eb-accent-gold), 0 0 24px rgba(244, 196, 48, 0.7);
     }
-    /* 導覽列 */
-    header {
-      background: var(--xigan-bg-white);
-      border-bottom: 1px solid var(--xigan-border);
-      position: sticky; top: 0; z-index: 100;
-    }
-    .nav-container {
-      max-width: 1140px; margin: 0 auto; padding: 16px 20px;
-      display: flex; justify-content: space-between; align-items: center;
-    }
-    .logo {
-      font-size: 1.25rem; font-weight: 700; color: var(--xigan-text-dark);
-      text-decoration: none; letter-spacing: 0.15em;
-    }
-    .logo span { color: var(--xigan-primary-dark); font-weight: 400; font-size: 0.9rem; margin-left: 6px; }
-    nav { display: flex; gap: 24px; align-items: center; }
-    nav a { text-decoration: none; color: var(--xigan-text-dark); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
-    nav a:hover, nav a.active { color: var(--xigan-primary); }
-    .lang-switch { font-size: 0.85rem; color: var(--xigan-text-muted); padding-left: 12px; border-left: 1px solid var(--xigan-border); }
-    .lang-switch a { color: var(--xigan-text-muted); }
-    
-    /* 區塊通用 */
-    .container { max-width: 1140px; margin: 0 auto; padding: 70px 20px; }
-    .section-title { font-size: 2rem; font-weight: 600; text-align: center; margin-bottom: 12px; }
-    .section-title::after { content: ''; display: block; width: 40px; height: 2px; background-color: var(--xigan-accent-yellow); margin: 12px auto 0; }
-    .section-subtitle { font-size: 1.05rem; color: var(--xigan-text-muted); text-align: center; margin-bottom: 48px; }
-    
-    /* Hero */
-    .hero { background: linear-gradient(135deg, #E6EFF3 0%, #F4F7F9 100%); text-align: center; padding: 100px 20px; }
-    .hero-brand { font-size: 1rem; color: var(--xigan-primary-dark); letter-spacing: 0.25em; margin-bottom: 16px; font-weight: 600; }
-    .hero-title { font-size: 2.6rem; font-weight: 700; margin-bottom: 16px; color: var(--xigan-text-dark); }
-    .hero-subtitle { font-size: 1.2rem; color: var(--xigan-text-muted); margin-bottom: 36px; }
-    .btn { display: inline-block; padding: 12px 28px; border-radius: 4px; text-decoration: none; font-weight: 500; transition: all 0.3s; }
-    .btn-primary { background: var(--xigan-primary); color: white; }
-    .btn-primary:hover { background: var(--xigan-primary-dark); }
-    .btn-outline { border: 1px solid var(--xigan-primary); color: var(--xigan-primary); margin-left: 12px; }
-    .btn-outline:hover { background: var(--xigan-primary); color: white; }
 
-    /* 三條合作路徑 */
-    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 36px; }
-    @media (max-width: 768px) { .grid-3 { grid-template-columns: 1fr; } }
-    .card { background: var(--xigan-bg-white); padding: 36px 28px; border-radius: 8px; border-top: 4px solid var(--xigan-primary); box-shadow: 0 4px 12px rgba(0,0,0,0.02); }
-    .card-title { font-size: 1.25rem; font-weight: 600; margin-bottom: 12px; }
-    .card-desc { font-size: 0.95rem; color: var(--xigan-text-muted); margin-bottom: 24px; }
-    
-    /* ÉRIN 品牌預覽 */
-    .erin-preview { background: var(--xigan-bg-white); border-top: 1px solid var(--xigan-border); border-bottom: 1px solid var(--xigan-border); text-align: center; }
-    .pillars { display: flex; justify-content: center; gap: 20px; font-weight: 600; color: var(--xigan-primary-dark); letter-spacing: 0.2em; margin-bottom: 24px; flex-wrap: wrap; }
-    .pillars span { font-size: 0.9rem; }
-    
-    /* Footer */
-    footer { background: var(--xigan-text-dark); color: #A0AEC0; padding: 60px 20px 30px; font-size: 0.9rem; }
-    .footer-container { max-width: 1140px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px; }
-    .footer-left h4 { color: white; margin-top: 0; font-size: 1.2rem; }
-    .footer-nav a { color: #CBD5E0; text-decoration: none; margin-right: 20px; }
-    .footer-bottom { border-top: 1px solid #4A5568; max-width: 1140px; margin: 40px auto 0; padding-top: 20px; text-align: center; font-size: 0.85rem; }
+    .hero h1 {
+      font-size: 42px;
+      font-weight: 300;
+      letter-spacing: 6px;
+      color: var(--eb-text-dark);
+      margin-bottom: 12px;
+    }
+
+    .hero .company-sub {
+      font-size: 12px;
+      letter-spacing: 3px;
+      color: var(--eb-text-muted);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .hero .keywords {
+      font-size: 13px;
+      letter-spacing: 4px;
+      color: var(--eb-text-muted);
+      margin-bottom: 40px;
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      max-width: 900px;
+      margin-bottom: 15px;
+      color: var(--eb-text-dark);
+    }
+
+    .hero h3 {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--eb-accent-orange);
+      letter-spacing: 3px;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      font-size: 14px;
+      color: var(--eb-text-muted);
+      max-width: 750px;
+      margin-bottom: 50px;
+      letter-spacing: 1px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn-primary-action {
+      background-color: #5C7480;
+      color: #FFFFFF;
+      padding: 16px 36px;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 2px;
+      transition: background 0.3s;
+    }
+
+    .btn-primary-action:hover {
+      background-color: var(--eb-text-dark);
+    }
+
+    .btn-secondary-action {
+      background: transparent;
+      border: 1px solid var(--eb-border);
+      color: var(--eb-text-dark);
+      padding: 16px 36px;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 2px;
+      transition: all 0.3s;
+    }
+
+    .btn-secondary-action:hover {
+      border-color: var(--eb-text-dark);
+    }
   </style>
 </head>
 <body>
 
+  <!-- 頂部導覽列 -->
   <header>
-    <div class="nav-container">
-      <a href="/index.html" class="logo">ÉRINBIO <span>艾琳智農生技</span></a>
-      <nav>
-        <a href="/index.html" class="active">HOME</a>
-        <a href="/about.html">ABOUT</a>
-        <a href="/erin.html">ÉRIN</a>
-        <a href="/oem-odm.html">OEM / ODM</a>
-        <a href="/contact.html">CONTACT</a>
-        <div class="lang-switch"><a href="/en/index.html">EN</a></div>
-      </nav>
-    </div>
+    <a href="index.html" class="brand-logo">
+      <span class="glow-dot-top"></span>
+      ÉRINBIO
+      <span class="sub-text">AILEEN AGRITECH BIO</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="about.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="erin.html">Pipeline</a></li>
+        <li><a href="oem-odm.html">Services</a></li>
+        <li><a href="blog.html">Cases</a></li>
+        <li><a href="contact.html" class="btn-inquiry">Inquiry</a></li>
+        <li><a href="en/index.html" style="font-size: 11px; border-bottom: 1px solid;">EN</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-brand">ÉRINBIO · AILEEN AGRITECH BIO</div>
-      <h1 class="hero-title">照亮你的生活</h1>
-      <p class="hero-subtitle">Botanical Extraction × Skincare R&D × Bio-manufacturing</p>
-      <div>
-        <a href="/contact.html" class="btn btn-primary">探索 B2B 合作方案</a>
-        <a href="/erin.html" class="btn btn-outline">了解 ÉRIN 品牌</a>
-      </div>
-    </section>
-
-    <section class="container">
-      <h2 class="section-title">B2B 合作夥伴導引</h2>
-      <p class="section-subtitle">我們提供彈性多元的研發、經銷與共同開發整合服務</p>
-
-      <div class="grid-3">
-        <div class="card">
-          <h3 class="card-title">代理經銷 ÉRIN 品牌</h3>
-          <p class="card-desc">探索具有明確視覺識別、完整配方故事與高品質植物力的台灣原創保養品牌 ÉRIN。</p>
-          <a href="/erin.html" class="btn btn-outline" style="margin-left:0;">品牌經銷諮詢 →</a>
-        </div>
-        <div class="card">
-          <h3 class="card-title">ÉRINBIO OEM / ODM</h3>
-          <p class="card-desc">為品牌客製專屬保養品，從植物萃取、配方研發、樣品測試至量產市場化。 </p>
-          <a href="/oem-odm.html" class="btn btn-outline" style="margin-left:0;">代工開發方案 →</a>
-        </div>
-        <div class="card">
-          <h3 class="card-title">植物原料與共同開發</h3>
-          <p class="card-desc">結合農業素材加值、全株利用與農業副產物萃取，共同拓展循環經濟生技新應用。</p>
-          <a href="/contact.html" class="btn btn-outline" style="margin-left:0;">共同開發洽詢 →</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="erin-preview">
-      <div class="container">
-        <div class="pillars">
-          <span>BOTANICAL</span> · <span>PURE</span> · <span>PRECISE</span> · <span>RADIANT</span>
-        </div>
-        <h2 style="font-size: 1.8rem; margin-bottom: 16px;">從大地的一株植物，到生活裡的一點光。</h2>
-        <p style="color: var(--xigan-text-muted); max-width: 680px; margin: 0 auto 32px;">ÉRIN 從植物出發，以科學探索自然，將大地孕育的純粹與生命力，轉化為肌膚與日常中的美好。</p>
-        <a href="/erin.html" class="btn btn-primary">DISCOVER ÉRIN →</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-left">
-        <h4>ÉRINBIO</h4>
-        <p>艾琳智農生技股份有限公司<br>Aileen Agritech Bio Co., Ltd.</p>
-        <p>TEL: +886 3 925 5985<br>EMAIL: service@erinbio.com.tw<br>LOCATION: Yilan, Taiwan</p>
-      </div>
-      <div class="footer-nav">
-        <p><a href="/about.html">ABOUT</a></p>
-        <p><a href="/erin.html">ÉRIN</a></p>
-        <p><a href="/oem-odm.html">OEM / ODM</a></p>
-        <p><a href="/contact.html">CONTACT</a></p>
-      </div>
+  <!-- 首頁主視覺 Hero 區塊 -->
+  <section class="hero">
+    <div class="hero-title-area">
+      <div class="hero-dot-center"></div>
+      <h1>ÉRINBIO</h1>
+      <div class="company-sub">Aileen Agritech Bio Co., Ltd.</div>
+      <div class="keywords">Botanical Extraction &nbsp;•&nbsp; Pure &nbsp;•&nbsp; Precise &nbsp;•&nbsp; Powerful</div>
     </div>
-    <div class="footer-bottom">
-      &copy; Aileen Agritech Bio Co., Ltd. All Rights Reserved.
+
+    <h2>Refining Nature, Powerring Global OEM/ODM Sustainable Bio-Manufacturing</h2>
+    <h3>淬鍊自然，開創全球 OEM/ODM 永續生技製造</h3>
+    
+    <p>Bridging half a century of agri-processing heritage with 20 years of advanced skincare R&amp;D.<br>結合五十載農業加工底蘊與二十載美妝研發實力，將自然草木精準純化為符合國際法規的高端永續生技術品。</p>
+
+    <div class="hero-actions">
+      <a href="erin.html" class="btn-primary-action">Explore Pipeline / 一條龍服務</a>
+      <a href="contact.html" class="btn-secondary-action">Request Inquiry / 立即詢盤</a>
     </div>
-  </footer>
+  </section>
 
 </body>
 </html>
