@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>品牌故事 ｜ ÉRIN 品牌專區</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Inter:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        celadon:   '#7da198',
+                        mist:      '#4a6b6c',
+                        mistDark:  '#2e4647',
+                        goldPoint: '#d4a32b',
+                        cream:     '#fcfbfa',
+                        creamD:    '#f0eeeb',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', '"Noto Serif TC"', 'Georgia', 'serif'],
+                        sans:  ['Inter', '"Noto Serif TC"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-dot { width: 12px; height: 12px; background: #d4a32b; border-radius: 50%; display: inline-block; }
+        .gold-line { height: 1px; background: linear-gradient(90deg, transparent, #d4a32b 40%, #d4a32b 60%, transparent); opacity: 0.45; }
+    </style>
+</head>
+<body class="bg-cream text-gray-800 font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-cream/90 backdrop-blur-xl z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 md:px-10 h-[76px] flex justify-between items-center">
+            <a href="index.html" class="flex flex-col items-center">
+                <span class="text-lg font-serif tracking-ultra text-mist">ÉRIN</span>
+            </a>
+            <div class="flex items-center space-x-8 text-xs uppercase tracking-widest text-gray-600 font-medium">
+                <a href="index.html" class="hover:text-celadon transition-colors">首頁</a>
+                <a href="brand.html" class="text-celadon">品牌故事</a>
+                <a href="oem-odm.html" class="hover:text-celadon transition-colors">研發製造</a>
+                <a href="contact.html" class="hover:text-celadon transition-colors">聯絡我們</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-36 pb-24 px-6 md:px-10 max-w-4xl mx-auto">
+        <div class="text-center space-y-4 mb-20">
+            <div class="gold-dot mx-auto mb-2"></div>
+            <span class="text-xs uppercase tracking-widest text-celadon font-medium">Brand Story</span>
+            <h1 class="text-3xl md:text-5xl font-serif text-mistDark">源自大地，淬鍊成光</h1>
+            <div class="gold-line w-28 mx-auto mt-6"></div>
+        </div>
+
+        <div class="space-y-12 text-gray-600 font-light leading-relaxed text-sm md:text-base bg-white p-8 md:p-16 border border-celadon/20 shadow-sm">
+            <p>
+                ÉRIN 的名字，源自愛爾蘭的詩意稱呼 Erin，承載著對大地、自然與生命的想像。我們選擇這個名字，因為相信，每一份美好的生活能量，都孕育自大地。
+            </p>
+            <p>
+                從一株植物、一顆果實，到一滴被淬鍊出的精華，ÉRIN 從植物出發，以科學探索自然，將大地孕育的純粹與生命力，轉化為肌膚與日常中的美好。
+            </p>
+            <blockquote class="border-l-2 border-celadon pl-6 py-2 my-8 text-mist font-serif italic text-lg">
+                「從大地的一株植物，到生活裡的一點光。」
+            </blockquote>
+            <p>
+                我們堅持以植物本源（Botanical）為起點，透過純粹（Pure）的減法哲學，結合精準（Precise）的生物科技，讓每位使用者在日常保養中，綻放最自然的光采（Radiant）。這就是 ÉRIN 始終如一的品牌核心與承諾。
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-creamD border-t border-gray-200 py-12 px-6 text-center text-[10px] text-gray-400 tracking-wider">
+        <p>&copy; 2026 Aileen Agritech Bio Co., Ltd. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
