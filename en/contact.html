@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us｜ÉRINBIO Aileen Agritech Bio</title>
+  <meta name="description" content="Get in touch with Aileen Agritech Bio (ÉRINBIO) in Yilan Science Park for OEM/ODM partnerships, botanical skincare inquiries, and sustainable collaborations.">
+  <link rel="canonical" href="https://erinbio.com.tw/en/contact.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://erinbio.com.tw/contact.html">
+  <link rel="alternate" hreflang="en" href="https://erinbio.com.tw/en/contact.html">
+  
+  <style>
+    :root {
+      --eb-bg-light: #F9F8F6;
+      --eb-bg-white: #FFFFFF;
+      --eb-primary: #8EA8B5; /* Celadon Blue */
+      --eb-primary-dark: #5C7480;
+      --eb-accent-orange: #E2703A; /* Kumquat Orange */
+      --eb-text-dark: #2C3539;
+      --eb-text-muted: #667085;
+      --eb-border: #E4E7EC;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", sans-serif;
+      background-color: var(--eb-bg-light);
+      color: var(--eb-text-dark);
+      line-height: 1.8;
+      letter-spacing: 0.03em;
+    }
+
+    /* Header */
+    header {
+      background-color: var(--eb-bg-white);
+      border-bottom: 1px solid var(--eb-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand-logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: var(--eb-text-dark);
+      text-decoration: none;
+    }
+    .brand-logo span { color: var(--eb-primary); font-size: 0.85rem; font-weight: 400; margin-left: 6px; }
+    nav ul { display: flex; list-style: none; gap: 32px; align-items: center; }
+    nav a { text-decoration: none; color: var(--eb-text-dark); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: var(--eb-primary); }
+    .lang-switch { border: 1px solid var(--eb-border); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; }
+
+    /* Hero */
+    .page-hero {
+      background: linear-gradient(135deg, #F4F7F9 0%, #FFFFFF 100%);
+      padding: 80px 20px;
+      text-align: center;
+      border-bottom: 1px solid var(--eb-border);
+    }
+    .page-hero-tag {
+      font-size: 0.85rem;
+      letter-spacing: 0.25em;
+      color: var(--eb-primary-dark);
+      font-weight: 600;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    .page-hero h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: var(--eb-text-dark);
+      margin-bottom: 16px;
+    }
+    .page-hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--eb-text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Container */
+    .container { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+
+    /* Contact Grid */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    /* Info Column */
+    .contact-info-card {
+      background-color: var(--eb-bg-white);
+      border: 1px solid var(--eb-border);
+      border-radius: 8px;
+      padding: 40px;
+    }
+    .contact-info-card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: var(--eb-text-dark);
+    }
+    .info-item {
+      margin-bottom: 24px;
+    }
+    .info-item h4 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--eb-primary-dark);
+      margin-bottom: 6px;
+    }
+    .info-item p, .info-item a {
+      color: var(--eb-text-dark);
+      font-size: 1.05rem;
+      text-decoration: none;
+    }
+    .info-item a:hover { color: var(--eb-primary); }
+
+    /* Form Column (Embedded Google Form) */
+    .contact-form-card {
+      background-color: var(--eb-bg-white);
+      border: 1px solid var(--eb-border);
+      border-radius: 8px;
+      padding: 24px;
+    }
+    .contact-form-card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--eb-text-dark);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1F282C;
+      color: #98A2B3;
+      padding: 60px 20px 40px;
+      font-size: 0.9rem;
+      margin-top: 80px;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #344054;
+    }
+    .footer-info h4 { color: white; font-size: 1.2rem; margin-bottom: 12px; }
+    .footer-nav ul { list-style: none; display: flex; gap: 24px; }
+    .footer-nav a { color: #98A2B3; text-decoration: none; }
+    .footer-nav a:hover { color: white; }
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 30px auto 0;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 992px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">ÉRINBIO <span>Aileen Agritech Bio</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="erin.html">ÉRIN</a></li>
+          <li><a href="oem-odm.html">OEM / ODM</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html" class="active">CONTACT</a></li>
+          <li><a href="../contact.html" class="lang-switch">繁中</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="page-hero-tag">Get in Touch</div>
+    <h1>Contact Us</h1>
+    <p>We welcome global partnerships, OEM/ODM inquiries, and sustainable skincare collaborations.</p>
+  </section>
+
+  <!-- Main Container -->
+  <main class="container">
+    <div class="contact-grid">
+      
+      <!-- Company Information -->
+      <div class="contact-info-card">
+        <h3>Headquarters & Info</h3>
+        
+        <div class="info-item">
+          <h4>Company Name</h4>
+          <p>Aileen Agritech Bio Co., Ltd.<br>艾琳智農生技股份有限公司</p>
+        </div>
+
+        <div class="info-item">
+          <h4>Address</h4>
+          <p>2F-1, No. 15, Yike South Rd., Yilan City, Yilan County 260, Taiwan (Yilan Science Park)</p>
+        </div>
+
+        <div class="info-item">
+          <h4>Phone</h4>
+          <p><a href="tel:+88639255985">+886 3 925 5985</a></p>
+        </div>
+
+        <div class="info-item">
+          <h4>Email</h4>
+          <p><a href="mailto:service@erinbio.com.tw">service@erinbio.com.tw</a></p>
+        </div>
+
+        <div class="info-item">
+          <h4>Business Hours</h4>
+          <p>Monday – Friday, 09:00 – 18:00 (GMT+8)</p>
+        </div>
+      </div>
+
+      <!-- Inquiry Form (Embedded Google Form) -->
+      <div class="contact-form-card">
+        <h3>Send Us a Message</h3>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdK3k09h_yvOCEVFBiRRtKOjjvebakSEU9955jXdKawjjf3bA/viewform?embedded=true" width="100%" height="1466" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <h4>Aileen Agritech Bio Co., Ltd.</h4>
+        <p>ÉRINBIO 艾琳智農生技股份有限公司</p>
+        <p style="margin-top: 8px;">TEL: <a href="tel:+88639255985" style="color: inherit; text-decoration: none;">+886 3 925 5985</a></p>
+        <p>EMAIL: <a href="mailto:service@erinbio.com.tw" style="color: inherit; text-decoration: none;">service@erinbio.com.tw</a></p>
+        <p>ADD: 2F-1, No. 15, Yike South Rd., Yilan City, Yilan County (Yilan Science Park)</p>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="erin.html">ÉRIN</a></li>
+          <li><a href="oem-odm.html">OEM / ODM</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aileen Agritech Bio Co., Ltd. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
