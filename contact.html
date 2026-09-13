@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡我們｜ÉRINBIO 艾琳智農生技</title>
+  <meta name="description" content="與艾琳智農生技（ÉRINBIO）取得聯繫。提供保養品 OEM / ODM 代工諮詢、ÉRIN 品牌經銷合作與植萃技術共同開發洽詢。">
+  <link rel="canonical" href="https://erinbio.com.tw/contact.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://erinbio.com.tw/contact.html">
+  <link rel="alternate" hreflang="en" href="https://erinbio.com.tw/en/contact.html">
+  
+  <style>
+    :root {
+      --eb-bg-light: #F9F8F6;
+      --eb-bg-white: #FFFFFF;
+      --eb-primary: #8EA8B5; /* 汝窯天青色 */
+      --eb-primary-dark: #5C7480;
+      --eb-accent-orange: #E2703A; /* 金棗橘 */
+      --eb-accent-gold: #F4C430; /* 晨光金黃圓點 */
+      --eb-text-dark: #2C3539;
+      --eb-text-muted: #667085;
+      --eb-border: #E4E7EC;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Serif TC", "Noto Sans TC", sans-serif;
+      background-color: var(--eb-bg-light);
+      color: var(--eb-text-dark);
+      line-height: 1.8;
+      letter-spacing: 0.05em;
+    }
+
+    /* Header 導覽列 */
+    header {
+      background-color: var(--eb-bg-white);
+      border-bottom: 1px solid var(--eb-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand-logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: var(--eb-text-dark);
+      text-decoration: none;
+    }
+    .brand-logo span { color: var(--eb-primary); font-size: 0.85rem; font-weight: 400; margin-left: 6px; }
+    nav ul { display: flex; list-style: none; gap: 32px; align-items: center; }
+    nav a { text-decoration: none; color: var(--eb-text-dark); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: var(--eb-primary); }
+    .lang-switch { border: 1px solid var(--eb-border); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; }
+
+    /* 通用容器與標題 */
+    .container { max-width: 1100px; margin: 0 auto; padding: 80px 20px; }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 16px;
+      color: var(--eb-text-dark);
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 36px;
+      height: 3px;
+      background-color: var(--eb-accent-gold);
+      margin: 16px auto 0;
+      border-radius: 2px;
+    }
+    .section-subtitle {
+      text-align: center;
+      color: var(--eb-text-muted);
+      font-size: 1.05rem;
+      margin-bottom: 60px;
+    }
+
+    /* Hero Section */
+    .contact-hero {
+      background: linear-gradient(180deg, #FFFFFF 0%, #F4F7F9 100%);
+      padding: 100px 20px 60px;
+      text-align: center;
+      border-bottom: 1px solid var(--eb-border);
+    }
+    .contact-hero-tag {
+      font-size: 0.9rem;
+      letter-spacing: 0.2em;
+      color: var(--eb-primary-dark);
+      font-weight: 600;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+    .contact-hero-title {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: var(--eb-text-dark);
+      margin-bottom: 20px;
+      line-height: 1.35;
+    }
+    .contact-hero-desc {
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--eb-text-muted);
+      font-size: 1.1rem;
+    }
+
+    /* 聯絡資訊 + 表單 Layout */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 50px;
+    }
+
+    /* 左側：官方聯絡資訊 */
+    .contact-info-card {
+      background-color: var(--eb-bg-white);
+      padding: 40px;
+      border-radius: 8px;
+      border: 1px solid var(--eb-border);
+      height: fit-content;
+    }
+    .contact-info-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 24px;
+      color: var(--eb-primary-dark);
+      border-bottom: 2px solid var(--eb-bg-light);
+      padding-bottom: 12px;
+    }
+    .info-item {
+      margin-bottom: 24px;
+    }
+    .info-item label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--eb-text-muted);
+      letter-spacing: 0.1em;
+      display: block;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+    .info-item p, .info-item a {
+      font-size: 1rem;
+      color: var(--eb-text-dark);
+      text-decoration: none;
+    }
+    .info-item a:hover {
+      color: var(--eb-primary);
+    }
+
+    /* 右側：洽詢表單 */
+    .contact-form-card {
+      background-color: var(--eb-bg-white);
+      padding: 40px;
+      border-radius: 8px;
+      border: 1px solid var(--eb-border);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--eb-text-dark);
+    }
+    .form-group label span {
+      color: var(--eb-accent-orange);
+    }
+    .form-control {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 0.95rem;
+      border: 1px solid var(--eb-border);
+      border-radius: 4px;
+      background-color: #FAFAFA;
+      color: var(--eb-text-dark);
+      transition: border-color 0.2s, background-color 0.2s;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--eb-primary);
+      background-color: #FFFFFF;
+    }
+    textarea.form-control {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .btn-submit {
+      width: 100%;
+      background-color: var(--eb-primary);
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .btn-submit:hover {
+      background-color: var(--eb-primary-dark);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1F282C;
+      color: #98A2B3;
+      padding: 60px 20px 40px;
+      font-size: 0.9rem;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #344054;
+    }
+    .footer-info h4 { color: white; font-size: 1.2rem; margin-bottom: 12px; }
+    .footer-nav ul { list-style: none; display: flex; gap: 24px; }
+    .footer-nav a { color: #98A2B3; text-decoration: none; }
+    .footer-nav a:hover { color: white; }
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 30px auto 0;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    /* RWD 響應式 */
+    @media (max-width: 768px) {
+      .contact-grid, .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .contact-hero-title { font-size: 2rem; }
+      nav ul { gap: 16px; }
+      .contact-info-card, .contact-form-card { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 導覽列 -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">ÉRINBIO <span>Aileen Agritech Bio</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="erin.html">ÉRIN</a></li>
+          <li><a href="oem-odm.html">OEM / ODM</a></li>
+          <li><a href="contact.html" class="active">CONTACT</a></li>
+          <li><a href="en/contact.html" class="lang-switch">EN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero 區塊 -->
+  <section class="contact-hero">
+    <div class="contact-hero-tag">Get in Touch</div>
+    <h1 class="contact-hero-title">聯絡 ÉRINBIO 研發與業務團隊</h1>
+    <p class="contact-hero-desc">無論您需要保養品代工研發諮詢、ÉRIN 品牌經銷合作，或是農業成分共同開發，請填寫以下表單，我們將於 1-2 個工作天內由專人與您聯繫。</p>
+  </section>
+
+  <!-- 聯絡區塊 -->
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- 左側：官方資訊 -->
+        <div class="contact-info-card">
+          <h3>公司資訊</h3>
+          
+          <div class="info-item">
+            <label>Company Name</label>
+            <p>艾琳智農生技股份有限公司<br><small style="color:var(--eb-text-muted);">Aileen Agritech Bio Co., Ltd.</small></p>
+          </div>
+
+          <div class="info-item">
+            <label>Address</label>
+            <p>宜蘭縣宜蘭市宜科南路15號2樓之1<br><small style="color:var(--eb-text-muted);">(宜蘭科學園區研發中心)</small></p>
+          </div>
+
+          <div class="info-item">
+            <label>Telephone</label>
+            <p><a href="tel:+88639255985">+886 3 925 5985</a></p>
+          </div>
+
+          <div class="info-item">
+            <label>Email</label>
+            <p><a href="mailto:service@erinbio.com.tw">service@erinbio.com.tw</a></p>
+          </div>
+
+          <div class="info-item">
+            <label>Office Hours</label>
+            <p>週一至週五 09:00 - 18:00 (GMT+8)</p>
+          </div>
+        </div>
+
+        <!-- 右側：表單 -->
+        <div class="contact-form-card">
+          <form action="#" method="POST" onsubmit="alert('感謝您的來訊！我們將盡快由專人與您聯繫。'); return false;">
+            
+            <div class="form-group">
+              <label for="category">諮詢類別 <span>*</span></label>
+              <select id="category" name="category" class="form-control" required>
+                <option value="">請選擇諮詢項目...</option>
+                <option value="oem-odm">保養品 OEM / ODM 代工製造</option>
+                <option value="extraction">植物成分專利萃取與原料採購</option>
+                <option value="upcycling">農業資產 Upcycling 永續共同開發</option>
+                <option value="erin-distributor">ÉRIN 品牌經銷與通路合作</option>
+                <option value="other">其他業務合作</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="company">公司 / 單位名稱 <span>*</span></label>
+              <input type="text" id="company" name="company" class="form-control" placeholder="例：艾琳生物科技有限公司" required>
+            </div>
+
+            <div class="form-group">
+              <label for="name">聯絡人姓名 <span>*</span></label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="例：王小明 先生/小姐" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">電子信箱 Email <span>*</span></label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="example@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">聯絡電話 <span>*</span></label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="0912-345678 或 03-9255985" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">需求說明與合作想法 <span>*</span></label>
+              <textarea id="message" name="message" class="form-control" placeholder="請簡述您的需求、預計開發產品、目標數量或合作構想..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">送出諮詢訊息</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer 頁尾 -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <h4>ÉRINBIO 艾琳智農生技股份有限公司</h4>
+        <p>Aileen Agritech Bio Co., Ltd.</p>
+        <p style="margin-top: 8px;">TEL: <a href="tel:+88639255985" style="color: inherit; text-decoration: none;">+886 3 925 5985</a></p>
+        <p>EMAIL: <a href="mailto:service@erinbio.com.tw" style="color: inherit; text-decoration: none;">service@erinbio.com.tw</a></p>
+        <p>ADD: 宜蘭縣宜蘭市宜科南路15號2樓之1 (宜蘭科學園區)</p>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="erin.html">ÉRIN</a></li>
+          <li><a href="oem-odm.html">OEM / ODM</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aileen Agritech Bio Co., Ltd. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
