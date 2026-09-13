@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ÉRINBIO ｜ Sustainable Agri-Tech & Botanical Skincare OEM/ODM</title>
-  <meta name="description" content="Aileen Agritech Bio specializes in green extraction technology, agricultural upcycling, and premium botanical skincare OEM/ODM solutions from Yilan, Taiwan.">
+  <title>ÉRINBIO | Sustainable Agri-Tech & Botanical Skincare OEM/ODM</title>
+  <meta name="description" content="Aileen Agritech Bio specializes in green extraction technology, agricultural upcycling, and premium sustainable skincare OEM/ODM manufacturing.">
   <link rel="canonical" href="https://erinbio.com.tw/en/index.html">
   <link rel="alternate" hreflang="zh-TW" href="https://erinbio.com.tw/index.html">
   <link rel="alternate" hreflang="en" href="https://erinbio.com.tw/en/index.html">
-  
+
   <style>
-:root {
+    :root {
       --eb-bg-light: #F9F8F6;
       --eb-bg-white: #FFFFFF;
       --eb-primary: #8EA8B5; /* Celadon Blue */
@@ -22,233 +22,202 @@
       --eb-border: #E4E7EC;
     }
 
-    /* 發光小黃點樣式 */
-    .glow-dot {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      background-color: var(--eb-accent-orange);
-      border-radius: 50%;
-      box-shadow: 0 0 8px rgba(226, 112, 58, 0.7), 0 0 16px rgba(226, 112, 58, 0.4);
-      margin-left: 6px;
-      vertical-align: middle;
-    }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       background-color: var(--eb-bg-light);
       color: var(--eb-text-dark);
-      line-height: 1.8;
-      letter-spacing: 0.03em;
+      line-height: 1.6;
     }
 
-    /* Header */
+    /* Header Navigation */
     header {
-      background-color: var(--eb-bg-white);
-      border-bottom: 1px solid var(--eb-border);
-      position: sticky;
+      position: absolute;
       top: 0;
+      left: 0;
+      width: 100%;
       z-index: 100;
-    }
-    .header-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
+      padding: 30px 50px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
+
     .brand-logo {
-      font-size: 1.4rem;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      color: var(--eb-text-dark);
+      position: relative;
       text-decoration: none;
+      color: var(--eb-text-dark);
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: 4px;
+      display: inline-block;
+      text-align: center;
     }
-    .brand-logo span { color: var(--eb-primary); font-size: 0.85rem; font-weight: 400; margin-left: 6px; }
-    nav ul { display: flex; list-style: none; gap: 32px; align-items: center; }
-    nav a { text-decoration: none; color: var(--eb-text-dark); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
-    nav a:hover, nav a.active { color: var(--eb-primary); }
-    .lang-switch { border: 1px solid var(--eb-border); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; }
+
+    .brand-logo span.sub-text {
+      display: block;
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: var(--eb-text-muted);
+      margin-top: 2px;
+    }
+
+    /* Top Glowing Gold Dot */
+    .glow-dot-top {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 6px;
+      height: 6px;
+      background-color: var(--eb-accent-gold);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--eb-accent-gold), 0 0 16px rgba(244, 196, 48, 0.6);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 35px;
+      align-items: center;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--eb-text-muted);
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: var(--eb-text-dark);
+    }
+
+    .btn-inquiry {
+      border: 1px solid var(--eb-text-dark);
+      padding: 10px 24px;
+      border-radius: 2px;
+      letter-spacing: 2px;
+      transition: all 0.3s;
+    }
+
+    .btn-inquiry:hover {
+      background-color: var(--eb-text-dark);
+      color: #fff;
+    }
 
     /* Hero Section */
     .hero {
-      background: linear-gradient(135deg, #F4F7F9 0%, #FFFFFF 100%);
-      padding: 100px 20px 80px;
-      text-align: center;
-      border-bottom: 1px solid var(--eb-border);
-    }
-    .hero-tag {
-      font-size: 0.85rem;
-      letter-spacing: 0.25em;
-      color: var(--eb-primary-dark);
-      font-weight: 600;
-      margin-bottom: 16px;
-      text-transform: uppercase;
-    }
-    .hero h1 {
-      font-size: 2.8rem;
-      font-weight: 700;
-      color: var(--eb-text-dark);
-      margin-bottom: 20px;
-      line-height: 1.3;
-    }
-    .hero p {
-      max-width: 720px;
-      margin: 0 auto 36px;
-      color: var(--eb-text-muted);
-      font-size: 1.1rem;
-    }
-    .hero-cta {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-    }
-    .btn {
-      padding: 12px 28px;
-      border-radius: 4px;
-      font-size: 0.95rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.2s;
-    }
-    .btn-primary {
-      background-color: var(--eb-text-dark);
-      color: white;
-    }
-    .btn-primary:hover { background-color: var(--eb-primary-dark); }
-    .btn-outline {
-      border: 1px solid var(--eb-border);
-      background-color: white;
-      color: var(--eb-text-dark);
-    }
-    .btn-outline:hover { border-color: var(--eb-primary-dark); color: var(--eb-primary-dark); }
-
-    /* Container */
-    .container { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
-    
-    .section-title {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      color: var(--eb-text-dark);
-    }
-    .section-subtitle {
-      text-align: center;
-      color: var(--eb-text-muted);
-      margin-bottom: 60px;
-      font-size: 1rem;
-    }
-
-    /* Dual Pillars (B2B vs B2C) */
-    .pillars-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-    }
-    .pillar-card {
-      background-color: var(--eb-bg-white);
-      border: 1px solid var(--eb-border);
-      border-radius: 8px;
-      padding: 48px 40px;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.02);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .pillar-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 32px rgba(0,0,0,0.05);
-    }
-    .pillar-tag {
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      color: var(--eb-accent-orange);
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-    .pillar-card h3 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      color: var(--eb-text-dark);
-    }
-    .pillar-card p {
-      color: var(--eb-text-muted);
-      font-size: 1rem;
-      margin-bottom: 32px;
-    }
-    .pillar-link {
-      font-weight: 600;
-      color: var(--eb-primary-dark);
-      text-decoration: none;
-      display: inline-flex;
+      justify-content: center;
       align-items: center;
-      gap: 8px;
+      text-align: center;
+      padding: 120px 20px 80px 20px;
+      background: radial-gradient(circle at 50% 30%, rgba(255,255,255,0.8) 0%, rgba(142,168,181,0.15) 100%);
     }
-    .pillar-link:hover { text-decoration: underline; }
 
-    /* Values / Highlights */
-    .highlights {
-      background-color: var(--eb-bg-white);
-      border-top: 1px solid var(--eb-border);
-      border-bottom: 1px solid var(--eb-border);
-      padding: 80px 20px;
+    .hero-title-area {
+      position: relative;
+      margin-bottom: 40px;
     }
-    .highlights-grid {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 40px;
+
+    .hero-dot-center {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      background-color: var(--eb-accent-gold);
+      border-radius: 50%;
+      box-shadow: 0 0 12px var(--eb-accent-gold), 0 0 24px rgba(244, 196, 48, 0.7);
     }
-    .highlight-item h4 {
-      font-size: 1.2rem;
-      font-weight: 700;
+
+    .hero h1 {
+      font-size: 42px;
+      font-weight: 300;
+      letter-spacing: 6px;
+      color: var(--eb-text-dark);
       margin-bottom: 12px;
+    }
+
+    .hero .company-sub {
+      font-size: 12px;
+      letter-spacing: 3px;
+      color: var(--eb-text-muted);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .hero .keywords {
+      font-size: 13px;
+      letter-spacing: 4px;
+      color: var(--eb-text-muted);
+      margin-bottom: 40px;
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      max-width: 900px;
+      margin-bottom: 15px;
       color: var(--eb-text-dark);
     }
-    .highlight-item p {
+
+    .hero h3 {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--eb-accent-orange);
+      letter-spacing: 3px;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      font-size: 14px;
       color: var(--eb-text-muted);
-      font-size: 0.95rem;
+      max-width: 750px;
+      margin-bottom: 50px;
+      letter-spacing: 1px;
     }
 
-    /* Footer */
-    footer {
-      background-color: #1F282C;
-      color: #98A2B3;
-      padding: 60px 20px 40px;
-      font-size: 0.9rem;
-    }
-    .footer-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 40px;
-      padding-bottom: 40px;
-      border-bottom: 1px solid #344054;
-    }
-    .footer-info h4 { color: white; font-size: 1.2rem; margin-bottom: 12px; }
-    .footer-nav ul { list-style: none; display: flex; gap: 24px; }
-    .footer-nav a { color: #98A2B3; text-decoration: none; }
-    .footer-nav a:hover { color: white; }
-    .footer-bottom {
-      max-width: 1200px;
-      margin: 30px auto 0;
-      text-align: center;
-      font-size: 0.85rem;
+    .hero-actions {
+      display: flex;
+      gap: 20px;
     }
 
-    /* Responsive */
-    @media (max-width: 768px) {
-      .pillars-grid, .highlights-grid, .footer-container { grid-template-columns: 1fr; }
-      .hero h1 { font-size: 2.2rem; }
-      nav ul { display: none; } /* Mobile menu can be simplified */
+    .btn-primary-action {
+      background-color: #5C7480;
+      color: #FFFFFF;
+      padding: 16px 36px;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 2px;
+      transition: background 0.3s;
+    }
+
+    .btn-primary-action:hover {
+      background-color: var(--eb-text-dark);
+    }
+
+    .btn-secondary-action {
+      background: transparent;
+      border: 1px solid var(--eb-border);
+      color: var(--eb-text-dark);
+      padding: 16px 36px;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 2px;
+      transition: all 0.3s;
+    }
+
+    .btn-secondary-action:hover {
+      border-color: var(--eb-text-dark);
     }
   </style>
 </head>
@@ -256,103 +225,43 @@
 
   <!-- Header -->
   <header>
-    <div class="header-container">
-      <a href="index.html" class="brand-logo">ÉRINBIO <span>Aileen Agritech Bio</span></a>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="erin.html">ÉRIN</a></li>
-          <li><a href="oem-odm.html">OEM / ODM</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="../index.html" class="lang-switch">繁中</a></li>
-        </ul>
-      </nav>
-    </div>
+    <a href="index.html" class="brand-logo">
+      <span class="glow-dot-top"></span>
+      ÉRINBIO
+      <span class="sub-text">AILEEN AGRITECH BIO</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../erin.html">Pipeline</a></li>
+        <li><a href="../oem-odm.html">Services</a></li>
+        <li><a href="../blog.html">Cases</a></li>
+        <li><a href="../contact.html" class="btn-inquiry">Inquiry</a></li>
+        <li><a href="../index.html" style="font-size: 11px; border-bottom: 1px solid;">中文</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-tag">Sustainable Agricultural Innovation & Skincare</div>
-    <h1>From Yilan's Nature to Global Purity</h1>
-    <p>Aileen Agritech Bio leverages 50 years of agricultural heritage into advanced green extraction technology, offering certified Upcycling ingredients and premium skincare OEM/ODM services.</p>
-    <div class="hero-cta">
-      <a href="oem-odm.html" class="btn btn-primary">B2B Partnership & OEM</a>
-      <a href="erin.html" class="btn btn-outline">Explore ÉRIN Brand</a>
+    <div class="hero-title-area">
+      <div class="hero-dot-center"></div>
+      <h1>ÉRINBIO</h1>
+      <div class="company-sub">Aileen Agritech Bio Co., Ltd.</div>
+      <div class="keywords">Botanical Extraction &nbsp;•&nbsp; Pure &nbsp;•&nbsp; Precise &nbsp;•&nbsp; Powerful</div>
+    </div>
+
+    <h2>Refining Nature, Powerring Global OEM/ODM Sustainable Bio-Manufacturing</h2>
+    <h3>Sustainable Botanical Science &amp; Advanced Green Manufacturing</h3>
+    
+    <p>Bridging half a century of agri-processing heritage with 20 years of advanced skincare R&amp;D.<br>Transforming natural botanicals into premium, internationally compliant sustainable bio-products.</p>
+
+    <div class="hero-actions">
+      <a href="../erin.html" class="btn-primary-action">Explore Pipeline</a>
+      <a href="../contact.html" class="btn-secondary-action">Request Inquiry</a>
     </div>
   </section>
-
-  <!-- Dual Pillars Section -->
-  <main class="container">
-    <h2 class="section-title">Core Business & Brands</h2>
-    <p class="section-subtitle">Discover our professional solutions in agricultural circular economy and pure botanical skincare.</p>
-
-    <div class="pillars-grid">
-      <!-- Pillar 1: B2B OEM/ODM -->
-      <div class="pillar-card">
-        <div>
-          <div class="pillar-tag">B2B Solutions & Sustainability</div>
-          <h3>OEM / ODM & Upcycling</h3>
-          <p>Transforming agricultural side-streams (such as Yilan kumquat peels and botanical extracts) into high-value functional cosmetic ingredients using green low-temperature extraction technology.</p>
-        </div>
-        <a href="oem-odm.html" class="pillar-link">Learn about OEM / ODM Services &rarr;</a>
-      </div>
-
-      <!-- Pillar 2: B2C Brand ÉRIN -->
-      <div class="pillar-card">
-        <div>
-          <div class="pillar-tag">Pure Skincare Brand</div>
-          <h3>ÉRIN Botanical Care</h3>
-          <p>Crafted like polishing a gem. Our minimalist repair serums and plant-infused creams deliver gentle, high-efficacy skincare rooted in sustainable natural principles.</p>
-        </div>
-        <a href="erin.html" class="pillar-link">Explore ÉRIN Collection &rarr;</a>
-      </div>
-    </div>
-  </main>
-
-  <!-- Highlights Section -->
-  <section class="highlights">
-    <div class="highlights-grid">
-      <div class="highlight-item">
-        <h4>50-Year Heritage</h4>
-        <p>Rooted in Yilan's rich fruit processing expertise, bridging traditional agriculture with modern biotechnology.</p>
-      </div>
-      <div class="highlight-item">
-        <h4>Green Extraction & Upcycling</h4>
-        <p>Committed to zero-waste circular economy, turning agricultural by-products into high-value bioactive assets.</p>
-      </div>
-      <div class="highlight-item">
-        <h4>International Standards</h4>
-        <p>ISO22716 and GMP certified manufacturing standards, providing reliable global OEM/ODM partnerships.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-info">
-        <h4>Aileen Agritech Bio Co., Ltd.</h4>
-        <p>ÉRINBIO 艾琳智農生技股份有限公司</p>
-        <p style="margin-top: 8px;">TEL: <a href="tel:+88639255985" style="color: inherit; text-decoration: none;">+886 3 925 5985</a></p>
-        <p>EMAIL: <a href="mailto:service@erinbio.com.tw" style="color: inherit; text-decoration: none;">service@erinbio.com.tw</a></p>
-        <p>ADD: 2F-1, No. 15, Yike South Rd., Yilan City, Yilan County (Yilan Science Park)</p>
-      </div>
-      <div class="footer-nav">
-        <ul>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="erin.html">ÉRIN</a></li>
-          <li><a href="oem-odm.html">OEM / ODM</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Aileen Agritech Bio Co., Ltd. All Rights Reserved.</p>
-    </div>
-  </footer>
 
 </body>
 </html>
