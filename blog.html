@@ -1,405 +1,284 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>永續智農專欄｜ÉRINBIO 艾琳智農生技</title>
-  <meta name="description" content="探索 ÉRINBIO 艾琳智農生技最新發布的專利萃取技術、農業 Upcycling 循環經濟趨勢、保養品 OEM/ODM 代工指南與品牌永續故事。">
-  <link rel="canonical" href="https://erinbio.com.tw/blog.html">
-  <link rel="alternate" hreflang="zh-TW" href="https://erinbio.com.tw/blog.html">
-  <link rel="alternate" hreflang="en" href="https://erinbio.com.tw/en/blog.html">
-  
-  <style>
-    :root {
-      --eb-bg-light: #F9F8F6;
-      --eb-bg-white: #FFFFFF;
-      --eb-primary: #8EA8B5; /* 汝窯天青色 */
-      --eb-primary-dark: #5C7480;
-      --eb-accent-orange: #E2703A; /* 金棗橘 */
-      --eb-accent-gold: #F4C430; /* 晨光金黃圓點 */
-      --eb-text-dark: #2C3539;
-      --eb-text-muted: #667085;
-      --eb-border: #E4E7EC;
-    }
-     /* 發光小黃點樣式 */
-    .glow-dot {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      background-color: var(--eb-accent-orange);
-      border-radius: 50%;
-      box-shadow: 0 0 8px rgba(226, 112, 58, 0.7), 0 0 16px rgba(226, 112, 58, 0.4);
-      margin-left: 6px;
-      vertical-align: middle;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Serif TC", "Noto Sans TC", sans-serif;
-      background-color: var(--eb-bg-light);
-      color: var(--eb-text-dark);
-      line-height: 1.8;
-      letter-spacing: 0.05em;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉRIN ｜ 照亮你的生活 — Aileen Agritech Bio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Inter:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet">
 
-    /* Header 導覽列 */
-    header {
-      background-color: var(--eb-bg-white);
-      border-bottom: 1px solid var(--eb-border);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .header-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .brand-logo {
-      font-size: 1.4rem;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      color: var(--eb-text-dark);
-      text-decoration: none;
-    }
-    .brand-logo span { color: var(--eb-primary); font-size: 0.85rem; font-weight: 400; margin-left: 6px; }
-    nav ul { display: flex; list-style: none; gap: 32px; align-items: center; }
-    nav a { text-decoration: none; color: var(--eb-text-dark); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
-    nav a:hover, nav a.active { color: var(--eb-primary); }
-    .lang-switch { border: 1px solid var(--eb-border); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; }
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        celadon:   '#7da198',
+                        celadonL:  '#a8c5be',
+                        mist:      '#4a6b6c',
+                        mistDark:  '#2e4647',
+                        goldPoint: '#d4a32b',
+                        goldLight: '#f0c84a',
+                        cream:     '#fcfbfa',
+                        creamD:    '#f0eeeb',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', '"Noto Serif TC"', 'Georgia', 'serif'],
+                        sans:  ['Inter', '"Noto Serif TC"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
 
-    /* 通用容器與標題 */
-    .container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
-    
-    /* Hero Banner */
-    .blog-hero {
-      background: linear-gradient(180deg, #FFFFFF 0%, #F4F7F9 100%);
-      padding: 80px 20px 40px;
-      text-align: center;
-      border-bottom: 1px solid var(--eb-border);
-    }
-    .blog-hero-tag {
-      font-size: 0.85rem;
-      letter-spacing: 0.2em;
-      color: var(--eb-primary-dark);
-      font-weight: 600;
-      margin-bottom: 12px;
-      text-transform: uppercase;
-    }
-    .blog-hero-title {
-      font-size: 2.4rem;
-      font-weight: 700;
-      color: var(--eb-text-dark);
-      margin-bottom: 16px;
-    }
-    .blog-hero-desc {
-      max-width: 680px;
-      margin: 0 auto;
-      color: var(--eb-text-muted);
-      font-size: 1.05rem;
-    }
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', 'Noto Serif TC', sans-serif; background: #fcfbfa; color: #2e3a3b; -webkit-font-smoothing: antialiased; }
 
-    /* 文章分類頁籤 Filters */
-    .category-filter {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      margin-bottom: 40px;
-      flex-wrap: wrap;
-    }
-    .filter-btn {
-      padding: 8px 20px;
-      border-radius: 20px;
-      border: 1px solid var(--eb-border);
-      background-color: var(--eb-bg-white);
-      color: var(--eb-text-muted);
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-    .filter-btn:hover, .filter-btn.active {
-      background-color: var(--eb-primary);
-      color: white;
-      border-color: var(--eb-primary);
-    }
+        .font-serif-title { font-family: 'Playfair Display', 'Noto Serif TC', serif; }
+        .tracking-ultra   { letter-spacing: 0.28em; }
 
-    /* 焦點文章 Featured Article */
-    .featured-post {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 40px;
-      background-color: var(--eb-bg-white);
-      border-radius: 8px;
-      border: 1px solid var(--eb-border);
-      overflow: hidden;
-      margin-bottom: 60px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-    }
-    .featured-img {
-      background-color: #E8ECEF;
-      min-height: 340px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--eb-primary-dark);
-      font-size: 1.1rem;
-    }
-    .featured-content {
-      padding: 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .post-meta {
-      font-size: 0.85rem;
-      color: var(--eb-accent-orange);
-      font-weight: 600;
-      margin-bottom: 12px;
-      display: flex;
-      gap: 16px;
-    }
-    .post-meta span.date { color: var(--eb-text-muted); font-weight: 400; }
-    .featured-content h2 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      line-height: 1.4;
-      margin-bottom: 16px;
-      color: var(--eb-text-dark);
-    }
-    .featured-content p {
-      color: var(--eb-text-muted);
-      font-size: 1rem;
-      margin-bottom: 24px;
-    }
-    .read-more-link {
-      color: var(--eb-primary-dark);
-      font-weight: 600;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .read-more-link:hover { text-decoration: underline; }
+        .mountain-gradient {
+            background: linear-gradient(175deg, #fcfbfa 0%, #eaf0ed 30%, #d3e0db 60%, #b8cac4 85%, #9ab5ae 100%);
+        }
 
-    /* 文章列表卡片 Grid */
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-    }
-    .blog-card {
-      background-color: var(--eb-bg-white);
-      border-radius: 8px;
-      border: 1px solid var(--eb-border);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .blog-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-    }
-    .blog-card-img {
-      height: 200px;
-      background-color: #EEF2F4;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--eb-primary-dark);
-      font-size: 0.95rem;
-    }
-    .blog-card-content {
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-    }
-    .blog-card-title {
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 12px;
-      line-height: 1.4;
-      color: var(--eb-text-dark);
-    }
-    .blog-card-desc {
-      font-size: 0.95rem;
-      color: var(--eb-text-muted);
-      margin-bottom: 20px;
-      flex-grow: 1;
-    }
+        .gold-dot {
+            width: 12px; height: 12px; background: #d4a32b; border-radius: 50%;
+            box-shadow: 0 0 0 3px rgba(212,163,43,0.18), 0 0 16px 5px rgba(212,163,43,0.42);
+            animation: goldPulse 2.8s ease-in-out infinite; flex-shrink: 0;
+        }
+        .gold-dot-sm {
+            width: 6px; height: 6px; background: #d4a32b; border-radius: 50%;
+            box-shadow: 0 0 0 2px rgba(212,163,43,0.15), 0 0 9px 3px rgba(212,163,43,0.36);
+            animation: goldPulse 3.2s ease-in-out infinite; flex-shrink: 0;
+        }
+        @keyframes goldPulse {
+            0%,100% { box-shadow: 0 0 0 2px rgba(212,163,43,0.15), 0 0 8px 3px rgba(212,163,43,0.3); }
+            50%     { box-shadow: 0 0 0 5px rgba(212,163,43,0.22), 0 0 22px 8px rgba(212,163,43,0.56); }
+        }
 
-    /* Footer 頁尾 */
-    footer {
-      background-color: #1F282C;
-      color: #98A2B3;
-      padding: 60px 20px 40px;
-      font-size: 0.9rem;
-      margin-top: 80px;
-    }
-    .footer-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 40px;
-      padding-bottom: 40px;
-      border-bottom: 1px solid #344054;
-    }
-    .footer-info h4 { color: white; font-size: 1.2rem; margin-bottom: 12px; }
-    .footer-nav ul { list-style: none; display: flex; gap: 24px; }
-    .footer-nav a { color: #98A2B3; text-decoration: none; }
-    .footer-nav a:hover { color: white; }
-    .footer-bottom {
-      max-width: 1200px;
-      margin: 30px auto 0;
-      text-align: center;
-      font-size: 0.85rem;
-    }
+        .gold-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d4a32b 40%, #d4a32b 60%, transparent);
+            opacity: 0.45;
+        }
 
-    /* RWD 響應式 */
-    @media (max-width: 992px) {
-      .featured-post { grid-template-columns: 1fr; }
-      .blog-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 768px) {
-      .blog-grid, .footer-container { grid-template-columns: 1fr; }
-      .blog-hero-title { font-size: 1.8rem; }
-      nav ul { gap: 16px; }
-    }
-  </style>
+        .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.9s cubic-bezier(0.22,1,0.36,1), transform 0.9s cubic-bezier(0.22,1,0.36,1); }
+        .reveal.visible { opacity: 1; transform: none; }
+        .reveal-d1 { transition-delay: 0.10s; }
+        .reveal-d2 { transition-delay: 0.20s; }
+        .reveal-d3 { transition-delay: 0.30s; }
+        .reveal-d4 { transition-delay: 0.42s; }
+
+        .card-lift { transition: transform 0.38s cubic-bezier(0.22,1,0.36,1), box-shadow 0.38s ease; }
+        .card-lift:hover { transform: translateY(-5px); box-shadow: 0 22px 60px rgba(74,107,108,0.11); }
+
+        #mobile-menu { transition: max-height 0.38s ease, opacity 0.28s ease; max-height: 0; opacity: 0; overflow: hidden; }
+        #mobile-menu.open { max-height: 480px; opacity: 1; }
+
+        @keyframes pulseSlow {
+            0%,100% { opacity: 0.06; transform: scale(1); }
+            50%     { opacity: 0.12; transform: scale(1.06); }
+        }
+        .mist-blob { animation: pulseSlow 7s ease-in-out infinite; }
+        .mist-blob-2 { animation: pulseSlow 9s ease-in-out infinite 2s; }
+    </style>
 </head>
-<body>
 
-  <!-- Header 導覽列 -->
-  <header>
-    <div class="header-container">
-      <a href="index.html" class="brand-logo">ÉRINBIO <span>Aileen Agritech Bio</span></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="erin.html">ÉRIN</a></li>
-          <li><a href="oem-odm.html">OEM / ODM</a></li>
-          <li><a href="blog.html" class="active">BLOG</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="en/blog.html" class="lang-switch">EN</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<body class="bg-cream text-gray-800 antialiased overflow-x-hidden">
 
-  <!-- Hero 區塊 -->
-  <section class="blog-hero">
-    <div class="blog-hero-tag">Insights & Research</div>
-    <h1 class="blog-hero-title">永續智農與綠色植萃專欄</h1>
-    <p class="blog-hero-desc">分享 ÉRINBIO 在農業科技、保養品專利萃取、農業資產 Upcycling 循環經濟與品牌開發的最新趨勢與專業知識。</p>
-  </section>
+<!-- NAVBAR -->
+<nav id="navbar" class="fixed w-full bg-cream/90 backdrop-blur-xl z-50 border-b border-gray-100/70 transition-shadow duration-400">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 h-[76px] flex justify-between items-center">
+        <a href="index.html" class="flex flex-col items-center group">
+            <div class="gold-dot-sm mb-1.5 group-hover:scale-125 transition-transform duration-300"></div>
+            <span class="text-lg md:text-xl font-serif-title font-light tracking-ultra text-mist group-hover:text-celadon transition-colors duration-300">ÉRIN</span>
+            <span class="text-[8px] tracking-widest text-gray-400 uppercase font-light mt-0.5 hidden md:block">ÉRINBIO Capability</span>
+        </a>
 
-  <!-- 主要內容區 -->
-  <main class="container">
-
-    <!-- 文章分類篩選 -->
-    <div class="category-filter">
-      <button class="filter-btn active">全部文章 (All)</button>
-      <button class="filter-btn">專利萃取技術 (Extraction)</button>
-      <button class="filter-btn">農業Upcycling (Sustainability)</button>
-      <button class="filter-btn">OEM/ODM 代工指南 (OEM/ODM)</button>
-      <button class="filter-btn">ÉRIN 品牌故事 (Brand Story)</button>
-    </div>
-
-    <!-- 焦點文章 (Featured Article) -->
-    <article class="featured-post">
-      <div class="featured-img">
-        [圖示/照片：宜蘭金棗專利萃取技術研發實錄]
-      </div>
-      <div class="featured-content">
-        <div class="post-meta">
-          <span>專利萃取技術</span>
-          <span class="date">2026-03-15</span>
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center space-x-8 text-[10.5px] uppercase tracking-widest text-gray-600 font-medium">
+            <a href="index.html" class="text-celadon">首頁</a>
+            <a href="brand.html" class="hover:text-celadon transition-colors">品牌故事</a>
+            <a href="oem-odm.html" class="hover:text-celadon transition-colors">研發製造</a>
+            <a href="blog.html" class="hover:text-celadon transition-colors">品牌誌</a>
+            <a href="contact.html" class="hover:text-celadon transition-colors">聯絡我們</a>
         </div>
-        <h2>翻轉農業副產物：宜蘭金棗果皮活性黃酮與生物碳萃取的創新應用</h2>
-        <p>探索艾琳智農生技團隊如何透過低溫超音波與綠色溶劑萃取技術，從鮮採金棗果皮中精煉高純度類黃酮與抗氧化成分，建立循環經濟的新典範...</p>
-        <a href="#" class="read-more-link">閱讀全文 &rarr;</a>
-      </div>
-    </article>
 
-    <!-- 文章網格列表 (Blog Cards Grid) -->
-    <div class="blog-grid">
-
-      <!-- 卡片 1 -->
-      <article class="blog-card">
-        <div class="blog-card-img">[ Upcycling 永續專題 ]</div>
-        <div class="blog-card-content">
-          <div class="post-meta">
-            <span>農業Upcycling</span>
-            <span class="date">2026-03-02</span>
-          </div>
-          <h3 class="blog-card-title">從果園到美妝：ESG 企業如何透過農業 Upcycling 原料佈局綠色供應鏈？</h3>
-          <p class="blog-card-desc">淨零碳排風潮下，國際保養品牌紛紛採用Upcycling回收原料。本文解析在地農產如何轉化為國際認證的安全成分。</p>
-          <a href="#" class="read-more-link">閱讀全文 &rarr;</a>
-        </div>
-      </article>
-
-      <!-- 卡片 2 -->
-      <article class="blog-card">
-        <div class="blog-card-img">[ 保養品代工指南 ]</div>
-        <div class="blog-card-content">
-          <div class="post-meta">
-            <span>OEM/ODM 代工指南</span>
-            <span class="date">2026-02-18</span>
-          </div>
-          <h3 class="blog-card-title">第一次打造植萃保養品牌？從配方研發到打樣小量生產的 5 個核心關鍵</h3>
-          <p class="blog-card-desc">給新創品牌與企業跨界夥伴的完整代工指南。了解專利成分選擇、安定性測試與 ISO22716 規範。</p>
-          <a href="#" class="read-more-link">閱讀全文 &rarr;</a>
-        </div>
-      </article>
-
-      <!-- 卡片 3 -->
-      <article class="blog-card">
-        <div class="blog-card-img">[ ÉRIN 品牌故事 ]</div>
-        <div class="blog-card-content">
-          <div class="post-meta">
-            <span>ÉRIN 品牌故事</span>
-            <span class="date">2026-01-28</span>
-          </div>
-          <h3 class="blog-card-title">「琢磨成寶石」：Érin 純淨保養品牌背後的研發初衷與美學哲理</h3>
-          <p class="blog-card-desc">結合草本自然與精緻工藝，ÉRIN 品牌如何透過修護精華與植萃乳霜，傳遞優雅自得的修護生活提案。</p>
-          <a href="#" class="read-more-link">閱讀全文 &rarr;</a>
-        </div>
-      </article>
-
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" aria-label="Open menu" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none">
+            <span class="w-6 h-px bg-mist transition-transform duration-300" id="bar1"></span>
+            <span class="w-6 h-px bg-mist transition-opacity duration-300" id="bar2"></span>
+            <span class="w-6 h-px bg-mist transition-transform duration-300" id="bar3"></span>
+        </button>
     </div>
 
-  </main>
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="md:hidden bg-cream/98 border-b border-gray-200/80 px-6 py-6 space-y-4 text-xs uppercase tracking-widest">
+        <a href="index.html" class="block py-2 text-celadon font-medium mobile-link">首頁</a>
+        <a href="brand.html" class="block py-2 text-gray-700 hover:text-celadon mobile-link">品牌故事</a>
+        <a href="oem-odm.html" class="block py-2 text-gray-700 hover:text-celadon mobile-link">研發製造</a>
+        <a href="blog.html" class="block py-2 text-gray-700 hover:text-celadon mobile-link">品牌誌</a>
+        <a href="contact.html" class="block py-2 text-gray-700 hover:text-celadon mobile-link">聯絡我們</a>
+    </div>
+</nav>
 
-  <!-- Footer 頁尾 -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-info">
-        <h4>ÉRINBIO 艾琳智農生技股份有限公司</h4>
-        <p>Aileen Agritech Bio Co., Ltd.</p>
-        <p style="margin-top: 8px;">TEL: <a href="tel:+88639255985" style="color: inherit; text-decoration: none;">+886 3 925 5985</a></p>
-        <p>EMAIL: <a href="mailto:service@erinbio.com.tw" style="color: inherit; text-decoration: none;">service@erinbio.com.tw</a></p>
-        <p>ADD: 宜蘭縣宜蘭市宜科南路15號2樓之1 (宜蘭科學園區)</p>
-      </div>
-      <div class="footer-nav">
-        <ul>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="erin.html">ÉRIN</a></li>
-          <li><a href="oem-odm.html">OEM / ODM</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </div>
+<!-- HERO SECTION -->
+<header id="hero" class="relative min-h-screen mountain-gradient flex flex-col justify-center items-center text-center px-6 pt-20 overflow-hidden">
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl mist-blob pointer-events-none"></div>
+    <div class="absolute bottom-1/3 right-1/4 w-80 h-80 bg-celadon/20 rounded-full blur-3xl mist-blob-2 pointer-events-none"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto space-y-6 mt-8">
+        <div class="inline-flex items-center space-x-3 px-4 py-1.5 rounded-full bg-white/60 border border-celadon/20 backdrop-blur-sm reveal reveal-d1">
+            <div class="gold-dot-sm"></div>
+            <span class="text-[11px] uppercase tracking-widest text-mist font-medium">A Botanical Skincare Brand from Taiwan</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-serif-title font-light tracking-wide text-mistDark leading-tight reveal reveal-d2">
+            照亮你的生活
+        </h1>
+
+        <p class="text-base md:text-xl font-light text-gray-600 max-w-2xl mx-auto tracking-wide leading-relaxed reveal reveal-d3">
+            從大地的一株植物，到生活裡的一點光。<br>
+            <span class="text-xs uppercase tracking-widest text-celadon mt-2 block font-normal">Rooted in Nature, Refined Through Science.</span>
+        </p>
+
+        <div class="pt-6 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 reveal reveal-d4">
+            <a href="brand.html" class="px-8 py-3.5 bg-mist text-white text-xs uppercase tracking-widest rounded-full hover:bg-mistDark transition-all shadow-lg shadow-mist/15">
+                探索品牌故事
+            </a>
+            <a href="oem-odm.html" class="px-8 py-3.5 bg-white/80 border border-celadon/40 text-mist text-xs uppercase tracking-widest rounded-full hover:bg-white hover:border-celadon transition-all">
+                了解研發製造
+            </a>
+        </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Aileen Agritech Bio Co., Ltd. All Rights Reserved.</p>
+</header>
+
+<!-- BRAND STORY PREVIEW -->
+<section class="py-32 px-6 md:px-10 max-w-5xl mx-auto">
+    <div class="text-center space-y-4 mb-20 reveal">
+        <div class="gold-dot mx-auto mb-4"></div>
+        <span class="text-xs uppercase tracking-ultra text-celadon font-medium">Brand Philosophy</span>
+        <h2 class="text-3xl md:text-5xl font-serif-title font-light text-mistDark">源自大地，淬鍊成光</h2>
+        <div class="gold-line w-28 mx-auto mt-6"></div>
     </div>
-  </footer>
+
+    <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div class="space-y-6 text-gray-600 font-light leading-relaxed text-base reveal reveal-d1">
+            <p>
+                ÉRIN 的名字，源自愛爾蘭的詩意稱呼 Erin，承載著對大地、自然與生命的想像。我們選擇這個名字，因為相信，每一份美好的生活能量，都孕育自大地。
+            </p>
+            <p>
+                從一株植物、一顆果實，到一滴被淬鍊出的精華，ÉRIN 從植物出發，以科學探索自然，將大地孕育的純粹與生命力，轉化為肌膚與日常中的美好。
+            </p>
+            <div class="pt-4">
+                <a href="brand.html" class="text-xs uppercase tracking-widest text-celadon hover:text-mist font-medium flex items-center space-x-2">
+                    <span>閱讀完整品牌故事</span>
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-white/80 p-8 md:p-12 border border-celadon/20 rounded-sm shadow-xl shadow-celadon/10 reveal reveal-d2 space-y-6 relative overflow-hidden">
+            <div class="absolute -right-8 -top-8 w-32 h-32 bg-celadon/10 rounded-full blur-2xl pointer-events-none"></div>
+            <span class="text-[10px] uppercase tracking-ultra text-celadon block">The Core Philosophy</span>
+            <h3 class="text-2xl font-serif-title text-mistDark">Nature × Science</h3>
+            <p class="text-sm text-gray-600 leading-relaxed font-light">
+                自然提供生命力，科學讓我們更精準地理解、淬鍊與使用它。ÉRINBIO 作為背後的研發與製造核心，將植物的純粹與現代生物科技完美融合。
+            </p>
+            <div class="pt-2 border-t border-gray-100 flex items-center justify-between">
+                <span class="text-xs tracking-widest text-gray-400 uppercase">Master Brand Slogan</span>
+                <span class="text-xs font-medium text-goldPoint tracking-wider">照亮你的生活</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-creamD border-t border-gray-200 py-16 px-6 md:px-10 text-xs">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10 mb-12">
+        <div class="space-y-4">
+            <div class="flex items-center space-x-2">
+                <div class="gold-dot-sm"></div>
+                <span class="font-serif-title font-light tracking-ultra text-mist text-base">ÉRIN</span>
+            </div>
+            <p class="text-gray-500 font-light leading-relaxed text-[11px]">
+                A botanical skincare brand from Taiwan, rooted in nature and refined through science. 照亮你的生活。
+            </p>
+        </div>
+
+        <div>
+            <h4 class="uppercase tracking-widest font-semibold text-gray-700 mb-4 text-[11px]">Navigation</h4>
+            <ul class="space-y-2.5 text-gray-500 font-light">
+                <li><a href="index.html" class="hover:text-celadon transition-colors">首頁</a></li>
+                <li><a href="brand.html" class="hover:text-celadon transition-colors">品牌故事</a></li>
+                <li><a href="oem-odm.html" class="hover:text-celadon transition-colors">研發製造</a></li>
+                <li><a href="blog.html" class="hover:text-celadon transition-colors">品牌誌</a></li>
+                <li><a href="contact.html" class="hover:text-celadon transition-colors">聯絡我們</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="uppercase tracking-widest font-semibold text-gray-700 mb-4 text-[11px]">Business</h4>
+            <ul class="space-y-2.5 text-gray-500 font-light">
+                <li><a href="contact.html" class="hover:text-celadon transition-colors">品牌經銷與代理洽詢</a></li>
+                <li><a href="oem-odm.html" class="hover:text-celadon transition-colors">OEM / ODM 合作</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="uppercase tracking-widest font-semibold text-gray-700 mb-4 text-[11px]">Journal</h4>
+            <ul class="space-y-2.5 text-gray-500 font-light">
+                <li><a href="blog.html" class="hover:text-celadon transition-colors">最新品牌文章</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-8 border-t border-gray-200/60 flex flex-col sm:flex-row justify-between items-center text-[10px] text-gray-400 tracking-wider">
+        <p>&copy; 2026 Aileen Agritech Bio Co., Ltd. (艾琳智農生技股份有限公司) All Rights Reserved.</p>
+        <p class="mt-2 sm:mt-0">Rooted in Yilan, Taiwan.</p>
+    </div>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const bar1 = document.getElementById('bar1');
+    const bar2 = document.getElementById('bar2');
+    const bar3 = document.getElementById('bar3');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+        const isOpen = mobileMenu.classList.contains('open');
+        bar1.style.transform = isOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none';
+        bar2.style.opacity = isOpen ? '0' : '1';
+        bar3.style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : 'none';
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+            bar1.style.transform = 'none';
+            bar2.style.opacity = '1';
+            bar3.style.transform = 'none';
+        });
+    });
+
+    const observerOptions = { threshold: 0.12, rootMargin: '0px 0px -40px 0px' };
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
