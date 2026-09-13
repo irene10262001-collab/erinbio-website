@@ -1,286 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us｜ÉRINBIO Aileen Agritech Bio</title>
-  <meta name="description" content="Get in touch with Aileen Agritech Bio (ÉRINBIO) in Yilan Science Park for OEM/ODM partnerships, botanical skincare inquiries, and sustainable collaborations.">
-  <link rel="canonical" href="https://erinbio.com.tw/en/contact.html">
-  <link rel="alternate" hreflang="zh-TW" href="https://erinbio.com.tw/contact.html">
-  <link rel="alternate" hreflang="en" href="https://erinbio.com.tw/en/contact.html">
-  
-  <style>
-    :root {
-      --eb-bg-light: #F4F7F5; /* 帶有極淡青綠感的柔和背景 */
-      --eb-bg-white: #FFFFFF;
-      --eb-primary: #7A9E8D; /* 經典高雅的天青綠（Celadon Green），完美平衡藍綠調並帶有植物生命力 */
-      --eb-primary-dark: #507362; /* 深青綠色，用於滑鼠互動與強調 */
-      --eb-accent-orange: #E2703A; /* Kumquat Orange 金柑橘 */
-      --eb-accent-gold: #F4C430; /* 發光金點 */
-      --eb-text-dark: #2C3539;
-      --eb-text-muted: #667085;
-      --eb-border: #E4E7EC;
-    }
-    /* 發光小黃點樣式 */
-    .glow-dot {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      background-color: var(--eb-accent-orange);
-      border-radius: 50%;
-      box-shadow: 0 0 8px rgba(226, 112, 58, 0.7), 0 0 16px rgba(226, 112, 58, 0.4);
-      margin-left: 6px;
-      vertical-align: middle;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", sans-serif;
-      background-color: var(--eb-bg-light);
-      color: var(--eb-text-dark);
-      line-height: 1.8;
-      letter-spacing: 0.03em;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us ｜ ÉRIN — Get in Touch with Aileen Agritech Bio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Inter:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet">
 
-    /* Header */
-    header {
-      background-color: var(--eb-bg-white);
-      border-bottom: 1px solid var(--eb-border);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .header-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .brand-logo {
-      font-size: 1.4rem;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      color: var(--eb-text-dark);
-      text-decoration: none;
-    }
-    .brand-logo span { color: var(--eb-primary); font-size: 0.85rem; font-weight: 400; margin-left: 6px; }
-    nav ul { display: flex; list-style: none; gap: 32px; align-items: center; }
-    nav a { text-decoration: none; color: var(--eb-text-dark); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
-    nav a:hover, nav a.active { color: var(--eb-primary); }
-    .lang-switch { border: 1px solid var(--eb-border); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; }
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        celadon:   '#7da198',
+                        celadonL:  '#a8c5be',
+                        mist:      '#4a6b6c',
+                        mistDark:  '#2e4647',
+                        goldPoint: '#d4a32b',
+                        goldLight: '#f0c84a',
+                        cream:     '#fcfbfa',
+                        creamD:    '#f0eeeb',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', '"Noto Serif TC"', 'Georgia', 'serif'],
+                        sans:  ['Inter', '"Noto Serif TC"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
 
-    /* Hero */
-    .page-hero {
-      background: linear-gradient(135deg, #F4F7F9 0%, #FFFFFF 100%);
-      padding: 80px 20px;
-      text-align: center;
-      border-bottom: 1px solid var(--eb-border);
-    }
-    .page-hero-tag {
-      font-size: 0.85rem;
-      letter-spacing: 0.25em;
-      color: var(--eb-primary-dark);
-      font-weight: 600;
-      margin-bottom: 12px;
-      text-transform: uppercase;
-    }
-    .page-hero h1 {
-      font-size: 2.6rem;
-      font-weight: 700;
-      color: var(--eb-text-dark);
-      margin-bottom: 16px;
-    }
-    .page-hero p {
-      max-width: 700px;
-      margin: 0 auto;
-      color: var(--eb-text-muted);
-      font-size: 1.05rem;
-    }
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', 'Noto Serif TC', sans-serif; background: #fcfbfa; color: #2e3a3b; -webkit-font-smoothing: antialiased; }
 
-    /* Container */
-    .container { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+        .font-serif-title { font-family: 'Playfair Display', 'Noto Serif TC', serif; }
+        .tracking-ultra   { letter-spacing: 0.28em; }
 
-    /* Contact Grid */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 60px;
-      align-items: start;
-    }
+        .mountain-gradient {
+            background: linear-gradient(175deg, #fcfbfa 0%, #eaf0ed 30%, #d3e0db 60%, #b8cac4 85%, #9ab5ae 100%);
+        }
 
-    /* Info Column */
-    .contact-info-card {
-      background-color: var(--eb-bg-white);
-      border: 1px solid var(--eb-border);
-      border-radius: 8px;
-      padding: 40px;
-    }
-    .contact-info-card h3 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin-bottom: 24px;
-      color: var(--eb-text-dark);
-    }
-    .info-item {
-      margin-bottom: 24px;
-    }
-    .info-item h4 {
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--eb-primary-dark);
-      margin-bottom: 6px;
-    }
-    .info-item p, .info-item a {
-      color: var(--eb-text-dark);
-      font-size: 1.05rem;
-      text-decoration: none;
-    }
-    .info-item a:hover { color: var(--eb-primary); }
+        .gold-dot {
+            width: 12px; height: 12px; background: #d4a32b; border-radius: 50%;
+            box-shadow: 0 0 0 3px rgba(212,163,43,0.18), 0 0 16px 5px rgba(212,163,43,0.42);
+            animation: goldPulse 2.8s ease-in-out infinite; flex-shrink: 0;
+        }
+        .gold-dot-sm {
+            width: 6px; height: 6px; background: #d4a32b; border-radius: 50%;
+            box-shadow: 0 0 0 2px rgba(212,163,43,0.15), 0 0 9px 3px rgba(212,163,43,0.36);
+            animation: goldPulse 3.2s ease-in-out infinite; flex-shrink: 0;
+        }
+        @keyframes goldPulse {
+            0%,100% { box-shadow: 0 0 0 2px rgba(212,163,43,0.15), 0 0 8px 3px rgba(212,163,43,0.3); }
+            50%     { box-shadow: 0 0 0 5px rgba(212,163,43,0.22), 0 0 22px 8px rgba(212,163,43,0.56); }
+        }
 
-    /* Form Column (Embedded Google Form) */
-    .contact-form-card {
-      background-color: var(--eb-bg-white);
-      border: 1px solid var(--eb-border);
-      border-radius: 8px;
-      padding: 24px;
-    }
-    .contact-form-card h3 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-      color: var(--eb-text-dark);
-    }
+        .gold-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d4a32b 40%, #d4a32b 60%, transparent);
+            opacity: 0.45;
+        }
 
-    /* Footer */
-    footer {
-      background-color: #1F282C;
-      color: #98A2B3;
-      padding: 60px 20px 40px;
-      font-size: 0.9rem;
-      margin-top: 80px;
-    }
-    .footer-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 40px;
-      padding-bottom: 40px;
-      border-bottom: 1px solid #344054;
-    }
-    .footer-info h4 { color: white; font-size: 1.2rem; margin-bottom: 12px; }
-    .footer-nav ul { list-style: none; display: flex; gap: 24px; }
-    .footer-nav a { color: #98A2B3; text-decoration: none; }
-    .footer-nav a:hover { color: white; }
-    .footer-bottom {
-      max-width: 1200px;
-      margin: 30px auto 0;
-      text-align: center;
-      font-size: 0.85rem;
-    }
+        .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.9s cubic-bezier(0.22,1,0.36,1), transform 0.9s cubic-bezier(0.22,1,0.36,1); }
+        .reveal.visible { opacity: 1; transform: none; }
+        .reveal-d1 { transition-delay: 0.10s; }
+        .reveal-d2 { transition-delay: 0.20s; }
 
-    @media (max-width: 992px) {
-      .contact-grid { grid-template-columns: 1fr; }
-    }
-  </style>
+        #mobile-menu { transition: max-height 0.38s ease, opacity 0.28s ease; max-height: 0; opacity: 0; overflow: hidden; }
+        #mobile-menu.open { max-height: 480px; opacity: 1; }
+    </style>
 </head>
-<body>
 
-  <!-- Header -->
-  <header>
-    <div class="header-container">
-      <a href="index.html" class="brand-logo">ÉRINBIO <span>Aileen Agritech Bio</span></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="erin.html">ÉRIN</a></li>
-          <li><a href="oem-odm.html">OEM / ODM</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="contact.html" class="active">CONTACT</a></li>
-          <li><a href="../contact.html" class="lang-switch">繁中</a></li>
-        </ul>
-      </nav>
+<body class="bg-cream text-gray-800 antialiased overflow-x-hidden">
+
+<!-- ═══════════════════════════════
+     NAVBAR
+═══════════════════════════════ -->
+<nav id="navbar" class="fixed w-full bg-cream/90 backdrop-blur-xl z-50 border-b border-gray-100/70 transition-shadow duration-400">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 h-[76px] flex justify-between items-center">
+        <a href="index.html" class="flex flex-col items-center group">
+            <div class="gold-dot-sm mb-1.5 group-hover:scale-125 transition-transform duration-300"></div>
+            <span class="text-lg md:text-xl font-serif-title font-light tracking-ultra text-mist group-hover:text-celadon transition-colors duration-300">ÉRIN</span>
+            <span class="text-[8px] tracking-widest text-gray-400 uppercase font-light mt-0.5 hidden md:block">With True Joy</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center space-x-8 text-[10.5px] uppercase tracking-widest text-gray-600 font-medium">
+            <a href="index.html" class="hover:text-celadon transition-colors">Home</a>
+            <a href="brand.html" class="hover:text-celadon transition-colors">Our Story</a>
+            <a href="oem-odm.html" class="hover:text-celadon transition-colors">R&D & OEM</a>
+            <a href="blog.html" class="hover:text-celadon transition-colors">Journal</a>
+            <a href="contact.html" class="text-celadon font-semibold">Contact</a>
+            <!-- Language Switcher -->
+            <div class="pl-4 border-l border-gray-200 flex items-center space-x-2">
+                <a href="../contact.html" class="text-gray-400 hover:text-mist">中文</a>
+                <span class="text-gray-300">/</span>
+                <span class="text-celadon font-semibold">EN</span>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" aria-label="Open menu" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none">
+            <span class="w-6 h-px bg-mist transition-transform duration-300" id="bar1"></span>
+            <span class="w-6 h-px bg-mist transition-opacity duration-300" id="bar2"></span>
+            <span class="w-6 h-px bg-mist transition-transform duration-300" id="bar3"></span>
+        </button>
     </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="page-hero">
-    <div class="page-hero-tag">Get in Touch</div>
-    <h1>Contact Us</h1>
-    <p>We welcome global partnerships, OEM/ODM inquiries, and sustainable skincare collaborations.</p>
-  </section>
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="md:hidden bg-cream/98 border-b border-gray-200/80 px-6 py-6 space-y-4 text-xs uppercase tracking-widest">
+        <a href="index.html" class="block py-2 text-gray-700 hover:text-celadon mobile-link">Home</a>
+        <a href="brand.html" class="block py-2 text-gray-700 hover:text-celadon mobile-link">Our Story</a>
+        <a href="oem-odm.html" class="block py-2 text-gray-700 hover:text-celadon mobile-link">R&D & OEM</a>
+        <a href="blog.html" class="block py-2 text-gray-700 hover:text-celadon mobile-link">Journal</a>
+        <a href="contact.html" class="block py-2 text-celadon font-medium mobile-link">Contact</a>
+        <div class="pt-2 border-t border-gray-100 flex items-center space-x-4">
+            <a href="../contact.html" class="text-gray-500">中文 (Traditional Chinese)</a>
+            <span class="text-celadon font-bold">English</span>
+        </div>
+    </div>
+</nav>
 
-  <!-- Main Container -->
-  <main class="container">
-    <div class="contact-grid">
-      
-      <!-- Company Information -->
-      <div class="contact-info-card">
-        <h3>Headquarters & Info</h3>
+<!-- ═══════════════════════════════
+     HEADER INTRO
+═══════════════════════════════ -->
+<header class="pt-36 pb-20 mountain-gradient text-center px-6">
+    <div class="max-w-3xl mx-auto space-y-4">
+        <div class="gold-dot mx-auto mb-4"></div>
+        <span class="text-xs uppercase tracking-ultra text-celadon font-medium">Get in Touch</span>
+        <h1 class="text-4xl md:text-6xl font-serif-title font-light text-mistDark">Contact ÉRINBIO</h1>
+        <div class="gold-line w-32 mx-auto mt-6"></div>
+        <p class="text-gray-600 font-light text-sm md:text-base max-w-xl mx-auto pt-4 leading-relaxed">
+            We welcome global distribution inquiries, OEM/ODM partnerships, and botanical skincare consultations.
+        </p>
+    </div>
+</header>
+
+<!-- ═══════════════════════════════
+     CONTACT SECTION
+═══════════════════════════════ -->
+<section class="py-28 px-6 md:px-10 max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-16 items-start">
         
-        <div class="info-item">
-          <h4>Company Name</h4>
-          <p>Aileen Agritech Bio Co., Ltd.<br>艾琳智農生技股份有限公司</p>
+        <!-- Left: Info -->
+        <div class="space-y-8 reveal">
+            <div>
+                <span class="text-[10px] uppercase tracking-ultra text-celadon font-semibold">Headquarters</span>
+                <h2 class="text-3xl font-serif-title text-mistDark mt-2">Aileen Agritech Bio Co., Ltd.</h2>
+            </div>
+            
+            <p class="text-gray-600 font-light text-sm leading-relaxed">
+                Rooted in Yilan, Taiwan. Dedicated to sustainable circular biotechnology and premium botanical skincare development.
+            </p>
+
+            <div class="space-y-4 pt-4 border-t border-gray-200/80 text-xs text-gray-600">
+                <div>
+                    <span class="text-[10px] uppercase tracking-widest text-goldPoint font-semibold block mb-1">Address</span>
+                    <p class="font-light">2F-1, No. 15, Yike South Rd., Yilan City, Yilan County 260, Taiwan</p>
+                </div>
+                <div>
+                    <span class="text-[10px] uppercase tracking-widest text-goldPoint font-semibold block mb-1">Phone</span>
+                    <p class="font-light">+886 972-122-513</p>
+                </div>
+                <div>
+                    <span class="text-[10px] uppercase tracking-widest text-goldPoint font-semibold block mb-1">Email</span>
+                    <p class="font-light">service@erinbio.com.tw</p>
+                </div>
+                <div>
+                    <span class="text-[10px] uppercase tracking-widest text-goldPoint font-semibold block mb-1">Business Hours</span>
+                    <p class="font-light">Monday – Friday: 09:00 – 18:00 (GMT+8)</p>
+                </div>
+            </div>
         </div>
 
-        <div class="info-item">
-          <h4>Address</h4>
-          <p>2F-1, No. 15, Yike South Rd., Yilan City, Yilan County 260, Taiwan (Yilan Science Park)</p>
-        </div>
+        <!-- Right: Form -->
+        <div class="bg-white p-8 md:p-12 border border-celadon/20 shadow-xl shadow-celadon/10 reveal reveal-d1">
+            <h3 class="text-2xl font-serif-title text-mistDark mb-6">Send Us a Message</h3>
+            
+            <form onsubmit="event.preventDefault(); alert('Thank you for your message. We will get back to you shortly.');" class="space-y-5">
+                <div>
+                    <label class="block text-[10px] uppercase tracking-widest text-gray-500 mb-2 font-medium">Your Name *</label>
+                    <input type="text" required class="w-full px-4 py-3 bg-cream border border-gray-200 text-xs text-gray-800 focus:outline-none focus:border-celadon transition-colors" placeholder="Full Name">
+                </div>
 
-        <div class="info-item">
-          <h4>Phone</h4>
-          <p><a href="tel:+88639255985">+886 3 925 5985</a></p>
-        </div>
+                <div>
+                    <label class="block text-[10px] uppercase tracking-widest text-gray-500 mb-2 font-medium">Email Address *</label>
+                    <input type="email" required class="w-full px-4 py-3 bg-cream border border-gray-200 text-xs text-gray-800 focus:outline-none focus:border-celadon transition-colors" placeholder="name@example.com">
+                </div>
 
-        <div class="info-item">
-          <h4>Email</h4>
-          <p><a href="mailto:service@erinbio.com.tw">service@erinbio.com.tw</a></p>
-        </div>
+                <div>
+                    <label class="block text-[10px] uppercase tracking-widest text-gray-500 mb-2 font-medium">Inquiry Type</label>
+                    <select class="w-full px-4 py-3 bg-cream border border-gray-200 text-xs text-gray-800 focus:outline-none focus:border-celadon transition-colors">
+                        <option>General Inquiry</option>
+                        <option>Distribution & Agency</option>
+                        <option>OEM / ODM Partnership</option>
+                        <option>Media & Press</option>
+                    </select>
+                </div>
 
-        <div class="info-item">
-          <h4>Business Hours</h4>
-          <p>Monday – Friday, 09:00 – 18:00 (GMT+8)</p>
-        </div>
-      </div>
+                <div>
+                    <label class="block text-[10px] uppercase tracking-widest text-gray-500 mb-2 font-medium">Message *</label>
+                    <textarea rows="4" required class="w-full px-4 py-3 bg-cream border border-gray-200 text-xs text-gray-800 focus:outline-none focus:border-celadon transition-colors" placeholder="Tell us about your project or inquiry..."></textarea>
+                </div>
 
-      <!-- Inquiry Form (Embedded Google Form) -->
-      <div class="contact-form-card">
-        <h3>Send Us a Message</h3>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdK3k09h_yvOCEVFBiRRtKOjjvebakSEU9955jXdKawjjf3bA/viewform?embedded=true" width="100%" height="1466" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      </div>
+                <button type="submit" class="w-full py-4 bg-mist text-white text-xs uppercase tracking-widest font-medium hover:bg-mistDark transition-all shadow-md">
+                    Submit Inquiry
+                </button>
+            </form>
+        </div>
 
     </div>
-  </main>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-info">
-        <h4>Aileen Agritech Bio Co., Ltd.</h4>
-        <p>ÉRINBIO 艾琳智農生技股份有限公司</p>
-        <p style="margin-top: 8px;">TEL: <a href="tel:+88639255985" style="color: inherit; text-decoration: none;">+886 3 925 5985</a></p>
-        <p>EMAIL: <a href="mailto:service@erinbio.com.tw" style="color: inherit; text-decoration: none;">service@erinbio.com.tw</a></p>
-        <p>ADD: 2F-1, No. 15, Yike South Rd., Yilan City, Yilan County (Yilan Science Park)</p>
-      </div>
-      <div class="footer-nav">
-        <ul>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="erin.html">ÉRIN</a></li>
-          <li><a href="oem-odm.html">OEM / ODM</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </div>
+<!-- ═══════════════════════════════
+     FOOTER
+═══════════════════════════════ -->
+<footer class="bg-creamD border-t border-gray-200 py-16 px-6 md:px-10 text-xs">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10 mb-12">
+        <div class="space-y-4">
+            <div class="flex items-center space-x-2">
+                <div class="gold-dot-sm"></div>
+                <span class="font-serif-title font-light tracking-ultra text-mist text-base">ÉRIN</span>
+            </div>
+            <p class="text-gray-500 font-light leading-relaxed text-[11px]">
+                A botanical skincare brand from Taiwan, rooted in nature and refined through science. With True Joy.
+            </p>
+        </div>
+
+        <div>
+            <h4 class="uppercase tracking-widest font-semibold text-gray-700 mb-4 text-[11px]">Navigation</h4>
+            <ul class="space-y-2.5 text-gray-500 font-light">
+                <li><a href="index.html" class="hover:text-celadon transition-colors">Home</a></li>
+                <li><a href="brand.html" class="hover:text-celadon transition-colors">Our Story</a></li>
+                <li><a href="oem-odm.html" class="hover:text-celadon transition-colors">R&D & OEM</a></li>
+                <li><a href="blog.html" class="hover:text-celadon transition-colors">Journal</a></li>
+                <li><a href="contact.html" class="hover:text-celadon transition-colors">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="uppercase tracking-widest font-semibold text-gray-700 mb-4 text-[11px]">Business</h4>
+            <ul class="space-y-2.5 text-gray-500 font-light">
+                <li><a href="contact.html" class="hover:text-celadon transition-colors">Distribution & Agency</a></li>
+                <li><a href="oem-odm.html" class="hover:text-celadon transition-colors">OEM / ODM Partnership</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="uppercase tracking-widest font-semibold text-gray-700 mb-4 text-[11px]">Contact Info</h4>
+            <ul class="space-y-2.5 text-gray-500 font-light">
+                <li>Address: 2F-1, No. 15, Yike South Rd., Yilan City, Yilan County, Taiwan</li>
+                <li>Phone: +886 972-122-513</li>
+                <li>Email: service@erinbio.com.tw</li>
+            </ul>
+        </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Aileen Agritech Bio Co., Ltd. All Rights Reserved.</p>
+
+    <div class="max-w-7xl mx-auto pt-8 border-t border-gray-200/60 flex flex-col sm:flex-row justify-between items-center text-[10px] text-gray-400 tracking-wider">
+        <p>&copy; 2026 Aileen Agritech Bio Co., Ltd. All Rights Reserved.</p>
+        <p class="mt-2 sm:mt-0">Rooted in Yilan, Taiwan.</p>
     </div>
-  </footer>
+</footer>
+
+<!-- ═══════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════ -->
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const bar1 = document.getElementById('bar1');
+    const bar2 = document.getElementById('bar2');
+    const bar3 = document.getElementById('bar3');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+        const isOpen = mobileMenu.classList.contains('open');
+        bar1.style.transform = isOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none';
+        bar2.style.opacity = isOpen ? '0' : '1';
+        bar3.style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : 'none';
+    });
+
+    const observerOptions = { threshold: 0.12, rootMargin: '0px 0px -40px 0px' };
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
