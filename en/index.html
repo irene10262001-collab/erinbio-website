@@ -10,7 +10,7 @@
   <link rel="alternate" hreflang="en" href="https://erinbio.com.tw/en/index.html">
   
   <style>
-    :root {
+:root {
       --eb-bg-light: #F9F8F6;
       --eb-bg-white: #FFFFFF;
       --eb-primary: #8EA8B5; /* Celadon Blue */
@@ -22,6 +22,17 @@
       --eb-border: #E4E7EC;
     }
 
+    /* 發光小黃點樣式 */
+    .glow-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: var(--eb-accent-orange);
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(226, 112, 58, 0.7), 0 0 16px rgba(226, 112, 58, 0.4);
+      margin-left: 6px;
+      vertical-align: middle;
+    }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     
     body {
