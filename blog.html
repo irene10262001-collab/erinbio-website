@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>最新動態 | 艾琳智農生技 Érinbio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        celadon: '#7da198',
+                        mist: '#4a6b6c',
+                        gold: '#d4a32b',
+                        cream: '#fcfbfa',
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-cream text-gray-800 font-sans antialiased">
+
+    <!-- 導覽列 Navigation -->
+    <nav class="fixed w-full z-50 bg-cream/90 backdrop-blur-md border-b border-celadon/20">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <span class="font-serif text-2xl font-bold tracking-widest text-mist">ÉRINBIO</span>
+                <span class="text-xs tracking-wider text-celadon border-l border-celadon/40 pl-3 uppercase hidden sm:inline">Aileen Agritech Bio</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+                <a href="index.html#about" class="hover:text-celadon transition-colors">品牌理念</a>
+                <a href="index.html#services" class="hover:text-celadon transition-colors">代工服務 OEM/ODM</a>
+                <a href="index.html#sustainability" class="hover:text-celadon transition-colors">永續循環</a>
+                <a href="blog.html" class="text-celadon font-bold">最新動態</a>
+                <a href="index.html#contact" class="px-5 py-2.5 bg-mist text-white rounded-full hover:bg-celadon transition-all shadow-sm">立即諮詢</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 頁面標頭 Hero Header -->
+    <header class="pt-36 pb-16 bg-cream border-b border-celadon/10">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <span class="text-celadon text-sm font-semibold tracking-widest uppercase">Journal & News</span>
+            <h1 class="font-serif text-4xl sm:text-5xl font-semibold text-gray-900 mt-2 mb-4">最新動態與永續專欄</h1>
+            <p class="text-gray-600 font-light">探索艾琳智農在農藝資材高值化、植萃研發與綠色保養領域的最新成果。</p>
+        </div>
+    </header>
+
+    <!-- 文章列表 Blog List Section -->
+    <main class="py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div id="blog-posts-container" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 文章 1 -->
+                <article class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="展覽新聞" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs text-celadon font-medium tracking-wider">展覽消息 · 2026-03</span>
+                            <h3 class="font-serif text-xl font-semibold text-gray-900 mt-2 mb-3">東京 Foodex 展覽捷報：永續植萃系列備受國際注目</h3>
+                            <p class="text-gray-500 text-sm line-clamp-3">艾琳智農帶領團隊赴日參展，展出最新研發之全果萃取原料與綠色保養提案，獲多國通路商熱烈洽詢...</p>
+                        </div>
+                        <a href="#" class="mt-6 inline-flex items-center gap-2 text-sm text-mist font-medium hover:text-celadon">閱讀全文 <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                </article>
+
+                <!-- 文章 2 -->
+                <article class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80" alt="生物炭保養品" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs text-celadon font-medium tracking-wider">綠色研發 · 2026-03</span>
+                            <h3 class="font-serif text-xl font-semibold text-gray-900 mt-2 mb-3">從農業副產物到頂級修護：生物炭保養品的永續創新</h3>
+                            <p class="text-gray-500 text-sm line-clamp-3">深入解析如何透過低碳炭化技術，將修剪枝條與農藝資材轉化為高活性吸附與微量元素賦活因子...</p>
+                        </div>
+                        <a href="#" class="mt-6 inline-flex items-center gap-2 text-sm text-mist font-medium hover:text-celadon">閱讀全文 <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- 頁尾 Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <span class="font-serif text-xl font-bold text-white tracking-widest">ÉRINBIO</span>
+                <p class="text-xs mt-1 text-gray-500">艾琳智農生技股份有限公司 Aileen Agritech Bio Co., Ltd.</p>
+            </div>
+            <p class="text-xs text-gray-500">© 2026 Érinbio All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
