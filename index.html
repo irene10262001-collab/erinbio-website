@@ -1,267 +1,534 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ÉRINBIO 艾琳智農生技 | Sustainable Agri-Tech & Botanical Skincare OEM/ODM</title>
-  <meta name="description" content="Aileen Agritech Bio 結合五十載農業加工底蘊與二十載美妝研發實力，將自然草木精準純化為符合國際法規的高端永續生技產品。">
-  <link rel="canonical" href="https://erinbio.com.tw/index.html">
-  <link rel="alternate" hreflang="zh-TW" href="https://erinbio.com.tw/index.html">
-  <link rel="alternate" hreflang="en" href="https://erinbio.com.tw/en/index.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉRIN ｜ 照亮你的生活 — Aileen Agritech Bio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Inter:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet">
 
-  <style>
-   :root {
-      --eb-bg-light: #F4F7F5; /* 帶有極淡青綠感的柔和背景 */
-      --eb-bg-white: #FFFFFF;
-      --eb-primary: #7A9E8D; /* 經典高雅的天青綠（Celadon Green），完美平衡藍綠調並帶有植物生命力 */
-      --eb-primary-dark: #507362; /* 深青綠色，用於滑鼠互動與強調 */
-      --eb-accent-orange: #E2703A; /* Kumquat Orange 金柑橘 */
-      --eb-accent-gold: #F4C430; /* 發光金點 */
-      --eb-text-dark: #2C3539;
-      --eb-text-muted: #667085;
-      --eb-border: #E4E7EC;
-    }
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        celadon:   '#7da198',
+                        celadonL:  '#a8c5be',
+                        mist:      '#4a6b6c',
+                        mistDark:  '#2e4647',
+                        goldPoint: '#d4a32b',
+                        goldLight: '#f0c84a',
+                        cream:     '#fcfbfa',
+                        creamD:    '#f0eeeb',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', '"Noto Serif TC"', 'Georgia', 'serif'],
+                        sans:  ['Inter', '"Noto Serif TC"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', 'Noto Serif TC', sans-serif; background: #fcfbfa; color: #2e3a3b; -webkit-font-smoothing: antialiased; }
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background-color: var(--eb-bg-light);
-      color: var(--eb-text-dark);
-      line-height: 1.6;
-    }
+        .font-serif-title { font-family: 'Playfair Display', 'Noto Serif TC', serif; }
+        .tracking-ultra   { letter-spacing: 0.28em; }
+        .tracking-mega    { letter-spacing: 0.38em; }
 
-    /* Header 導覽列 */
-    header {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 100;
-      padding: 30px 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+        .mountain-gradient {
+            background: linear-gradient(175deg,
+                #fcfbfa  0%,
+                #eaf0ed 30%,
+                #d3e0db 60%,
+                #b8cac4 85%,
+                #9ab5ae 100%);
+        }
 
-    .brand-logo {
-      position: relative;
-      text-decoration: none;
-      color: var(--eb-text-dark);
-      font-size: 22px;
-      font-weight: 300;
-      letter-spacing: 4px;
-      display: inline-block;
-      text-align: center;
-    }
+        .gold-dot {
+            width: 12px; height: 12px;
+            background: #d4a32b; border-radius: 50%;
+            box-shadow: 0 0 0 3px rgba(212,163,43,0.18), 0 0 16px 5px rgba(212,163,43,0.42);
+            animation: goldPulse 2.8s ease-in-out infinite;
+            flex-shrink: 0;
+        }
+        .gold-dot-sm {
+            width: 6px; height: 6px;
+            background: #d4a32b; border-radius: 50%;
+            box-shadow: 0 0 0 2px rgba(212,163,43,0.15), 0 0 9px 3px rgba(212,163,43,0.36);
+            animation: goldPulse 3.2s ease-in-out infinite;
+            flex-shrink: 0;
+        }
+        @keyframes goldPulse {
+            0%,100% { box-shadow: 0 0 0 2px rgba(212,163,43,0.15), 0 0 8px 3px rgba(212,163,43,0.3); }
+            50%     { box-shadow: 0 0 0 5px rgba(212,163,43,0.22), 0 0 22px 8px rgba(212,163,43,0.56); }
+        }
 
-    .brand-logo span.sub-text {
-      display: block;
-      font-size: 9px;
-      letter-spacing: 2px;
-      color: var(--eb-text-muted);
-      margin-top: 2px;
-    }
+        .gold-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d4a32b 40%, #d4a32b 60%, transparent);
+            opacity: 0.45;
+        }
 
-    /* 頂部發光小金點 */
-    .glow-dot-top {
-      position: absolute;
-      top: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 6px;
-      height: 6px;
-      background-color: var(--eb-accent-gold);
-      border-radius: 50%;
-      box-shadow: 0 0 8px var(--eb-accent-gold), 0 0 16px rgba(244, 196, 48, 0.6);
-    }
+        .reveal {
+            opacity: 0;
+            transform: translateY(26px);
+            transition: opacity 0.9s cubic-bezier(0.22,1,0.36,1),
+                        transform 0.9s cubic-bezier(0.22,1,0.36,1);
+        }
+        .reveal.visible { opacity: 1; transform: none; }
+        .reveal-d1 { transition-delay: 0.10s; }
+        .reveal-d2 { transition-delay: 0.20s; }
+        .reveal-d3 { transition-delay: 0.30s; }
+        .reveal-d4 { transition-delay: 0.42s; }
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 35px;
-      align-items: center;
-    }
+        .card-lift {
+            transition: transform 0.38s cubic-bezier(0.22,1,0.36,1),
+                        box-shadow 0.38s ease;
+        }
+        .card-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 22px 60px rgba(74,107,108,0.11);
+        }
 
-    nav ul li a {
-      text-decoration: none;
-      color: var(--eb-text-muted);
-      font-size: 13px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      transition: color 0.3s;
-    }
+        #mobile-menu {
+            transition: max-height 0.38s ease, opacity 0.28s ease;
+            max-height: 0; opacity: 0; overflow: hidden;
+        }
+        #mobile-menu.open { max-height: 480px; opacity: 1; }
 
-    nav ul li a:hover {
-      color: var(--eb-text-dark);
-    }
+        nav a.nav-active { color: #7da198; }
 
-    .btn-inquiry {
-      border: 1px solid var(--eb-text-dark);
-      padding: 10px 24px;
-      border-radius: 2px;
-      letter-spacing: 2px;
-      transition: all 0.3s;
-    }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #fcfbfa; }
+        ::-webkit-scrollbar-thumb { background: #b8cac4; border-radius: 2px; }
 
-    .btn-inquiry:hover {
-      background-color: var(--eb-text-dark);
-      color: #fff;
-    }
-
-    /* Hero 視覺主區塊 */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 120px 20px 80px 20px;
-      background: radial-gradient(circle at 50% 30%, rgba(255,255,255,0.8) 0%, rgba(142,168,181,0.15) 100%);
-    }
-
-    .hero-title-area {
-      position: relative;
-      margin-bottom: 40px;
-    }
-
-    .hero-dot-center {
-      position: absolute;
-      top: -20px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 8px;
-      height: 8px;
-      background-color: var(--eb-accent-gold);
-      border-radius: 50%;
-      box-shadow: 0 0 12px var(--eb-accent-gold), 0 0 24px rgba(244, 196, 48, 0.7);
-    }
-
-    .hero h1 {
-      font-size: 42px;
-      font-weight: 300;
-      letter-spacing: 6px;
-      color: var(--eb-text-dark);
-      margin-bottom: 12px;
-    }
-
-    .hero .company-sub {
-      font-size: 12px;
-      letter-spacing: 3px;
-      color: var(--eb-text-muted);
-      text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-
-    .hero .keywords {
-      font-size: 13px;
-      letter-spacing: 4px;
-      color: var(--eb-text-muted);
-      margin-bottom: 40px;
-    }
-
-    .hero h2 {
-      font-size: 28px;
-      font-weight: 300;
-      letter-spacing: 2px;
-      max-width: 900px;
-      margin-bottom: 15px;
-      color: var(--eb-text-dark);
-    }
-
-    .hero h3 {
-      font-size: 16px;
-      font-weight: 400;
-      color: var(--eb-accent-orange);
-      letter-spacing: 3px;
-      margin-bottom: 25px;
-    }
-
-    .hero p {
-      font-size: 14px;
-      color: var(--eb-text-muted);
-      max-width: 750px;
-      margin-bottom: 50px;
-      letter-spacing: 1px;
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 20px;
-    }
-
-    .btn-primary-action {
-      background-color: #5C7480;
-      color: #FFFFFF;
-      padding: 16px 36px;
-      text-decoration: none;
-      font-size: 13px;
-      letter-spacing: 2px;
-      transition: background 0.3s;
-    }
-
-    .btn-primary-action:hover {
-      background-color: var(--eb-text-dark);
-    }
-
-    .btn-secondary-action {
-      background: transparent;
-      border: 1px solid var(--eb-border);
-      color: var(--eb-text-dark);
-      padding: 16px 36px;
-      text-decoration: none;
-      font-size: 13px;
-      letter-spacing: 2px;
-      transition: all 0.3s;
-    }
-
-    .btn-secondary-action:hover {
-      border-color: var(--eb-text-dark);
-    }
-  </style>
+        @keyframes pulseSlow {
+            0%,100% { opacity: 0.06; transform: scale(1); }
+            50%     { opacity: 0.12; transform: scale(1.06); }
+        }
+        .mist-blob { animation: pulseSlow 7s ease-in-out infinite; }
+        .mist-blob-2 { animation: pulseSlow 9s ease-in-out infinite 2s; }
+    </style>
 </head>
-<body>
 
-  <!-- 頂部導覽列 -->
-  <header>
-    <a href="index.html" class="brand-logo">
-      <span class="glow-dot-top"></span>
-      ÉRINBIO
-      <span class="sub-text">AILEEN AGRITECH BIO</span>
-    </a>
-    <nav>
-      <ul>
-        <li><a href="about.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="erin.html">Pipeline</a></li>
-        <li><a href="oem-odm.html">Services</a></li>
-        <li><a href="blog.html">Cases</a></li>
-        <li><a href="contact.html" class="btn-inquiry">Inquiry</a></li>
-        <li><a href="en/index.html" style="font-size: 11px; border-bottom: 1px solid;">EN</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="bg-cream text-gray-800 antialiased overflow-x-hidden">
 
-  <!-- 首頁主視覺 Hero 區塊 -->
-  <section class="hero">
-    <div class="hero-title-area">
-      <div class="hero-dot-center"></div>
-      <h1>ÉRINBIO</h1>
-      <div class="company-sub">Aileen Agritech Bio Co., Ltd.</div>
-      <div class="keywords">Botanical Extraction &nbsp;•&nbsp; Pure &nbsp;•&nbsp; Precise &nbsp;•&nbsp; Powerful</div>
+<!-- ═══════════════════════════════
+     NAVBAR
+═══════════════════════════════ -->
+<nav id="navbar" class="fixed w-full bg-cream/90 backdrop-blur-xl z-50 border-b border-gray-100/70 transition-shadow duration-400">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 h-[76px] flex justify-between items-center">
+
+        <!-- Logo -->
+        <a href="#hero" class="flex flex-col items-center group">
+            <div class="gold-dot-sm mb-1.5 group-hover:scale-125 transition-transform duration-300"></div>
+            <span class="text-lg md:text-xl font-serif-title font-light tracking-ultra text-mist group-hover:text-celadon transition-colors duration-300">ÉRIN</span>
+            <span class="text-[8px] tracking-widest text-gray-400 uppercase font-light mt-0.5 hidden md:block">ÉRINBIO Capability</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center space-x-10 text-[10.5px] uppercase tracking-widest text-gray-600 font-medium">
+            <a href="#story" class="hover:text-celadon transition-colors">Brand Story</a>
+            <a href="#pillars" class="hover:text-celadon transition-colors">Four Pillars</a>
+            <a href="#capability" class="hover:text-celadon transition-colors">ÉRINBIO Capability</a>
+            <a href="#partnership" class="hover:text-celadon transition-colors">Partnership</a>
+            <a href="#contact" class="px-5 py-2 border border-celadon text-celadon rounded-full hover:bg-celadon hover:text-white transition-all">Contact Us</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" aria-label="Open menu" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none">
+            <span class="w-6 h-px bg-mist transition-transform duration-300" id="bar1"></span>
+            <span class="w-6 h-px bg-mist transition-opacity duration-300" id="bar2"></span>
+            <span class="w-6 h-px bg-mist transition-transform duration-300" id="bar3"></span>
+        </button>
     </div>
 
-    <h2>Refining Nature, Powerring Global OEM/ODM Sustainable Bio-Manufacturing</h2>
-    <h3>淬鍊自然，開創全球 OEM/ODM 永續生技製造</h3>
-    
-    <p>Bridging half a century of agri-processing heritage with 20 years of advanced skincare R&amp;D.<br>結合五十載農業加工底蘊與二十載美妝研發實力，將自然草木精準純化為符合國際法規的高端永續生技術品。</p>
-
-    <div class="hero-actions">
-      <a href="erin.html" class="btn-primary-action">Explore Pipeline / 一條龍服務</a>
-      <a href="contact.html" class="btn-secondary-action">Request Inquiry / 立即詢盤</a>
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="md:hidden bg-cream/98 border-b border-gray-200/80 px-6 py-6 space-y-4 text-xs uppercase tracking-widest">
+        <a href="#story" class="block py-2 text-gray-700 hover:text-celadon mobile-link">Brand Story</a>
+        <a href="#pillars" class="block py-2 text-gray-700 hover:text-celadon mobile-link">Four Pillars</a>
+        <a href="#capability" class="block py-2 text-gray-700 hover:text-celadon mobile-link">ÉRINBIO Capability</a>
+        <a href="#partnership" class="block py-2 text-gray-700 hover:text-celadon mobile-link">Partnership</a>
+        <a href="#contact" class="block py-2 text-celadon font-medium mobile-link">Contact Us</a>
     </div>
-  </section>
+</nav>
+
+<!-- ═══════════════════════════════
+     HERO SECTION
+═══════════════════════════════ -->
+<header id="hero" class="relative min-h-screen mountain-gradient flex flex-col justify-center items-center text-center px-6 pt-20 overflow-hidden">
+    <!-- Ambient Mist Blobs -->
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl mist-blob pointer-events-none"></div>
+    <div class="absolute bottom-1/3 right-1/4 w-80 h-80 bg-celadon/20 rounded-full blur-3xl mist-blob-2 pointer-events-none"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto space-y-6 mt-8">
+        <div class="inline-flex items-center space-x-3 px-4 py-1.5 rounded-full bg-white/60 border border-celadon/20 backdrop-blur-sm reveal reveal-d1">
+            <div class="gold-dot-sm"></div>
+            <span class="text-[11px] uppercase tracking-widest text-mist font-medium">A Botanical Skincare Brand from Taiwan</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-serif-title font-light tracking-wide text-mistDark leading-tight reveal reveal-d2">
+            照亮你的生活
+        </h1>
+
+        <p class="text-base md:text-xl font-light text-gray-600 max-w-2xl mx-auto tracking-wide leading-relaxed reveal reveal-d3">
+            從大地的一株植物，到生活裡的一點光。<br>
+            <span class="text-xs uppercase tracking-widest text-celadon mt-2 block font-normal">Rooted in Nature, Refined Through Science.</span>
+        </p>
+
+        <div class="pt-6 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 reveal reveal-d4">
+            <a href="#story" class="px-8 py-3.5 bg-mist text-white text-xs uppercase tracking-widest rounded-full hover:bg-mistDark transition-all shadow-lg shadow-mist/15">
+                Explore Brand Story
+            </a>
+            <a href="#capability" class="px-8 py-3.5 bg-white/80 border border-celadon/40 text-mist text-xs uppercase tracking-widest rounded-full hover:bg-white hover:border-celadon transition-all">
+                ÉRINBIO R&D Capability
+            </a>
+        </div>
+    </div>
+
+    <!-- Bottom Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center space-y-2 opacity-60">
+        <span class="text-[9px] uppercase tracking-widest text-mist">Scroll</span>
+        <div class="w-px h-8 bg-mist"></div>
+    </div>
+</header>
+
+<!-- ═══════════════════════════════
+     BRAND STORY SECTION
+═══════════════════════════════ -->
+<section id="story" class="py-32 px-6 md:px-10 max-w-5xl mx-auto">
+    <div class="text-center space-y-4 mb-20 reveal">
+        <div class="gold-dot mx-auto mb-4"></div>
+        <span class="text-xs uppercase tracking-ultra text-celadon font-medium">Brand Story</span>
+        <h2 class="text-3xl md:text-5xl font-serif-title font-light text-mistDark">源自大地，淬鍊成光</h2>
+        <div class="gold-line w-28 mx-auto mt-6"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div class="space-y-6 text-gray-600 font-light leading-relaxed text-base reveal reveal-d1">
+            <p>
+                ÉRIN 的名字，源自愛爾蘭的詩意稱呼 Erin，承載著對大地、自然與生命的想像。我們選擇這個名字，因為相信，每一份美好的生活能量，都孕育自大地。
+            </p>
+            <p>
+                從一株植物、一顆果實，到一滴被淬鍊出的精華，ÉRIN 從植物出發，以科學探索自然，將大地孕育的純粹與生命力，轉化為肌膚與日常中的美好。
+            </p>
+            <p class="text-mist font-serif-title italic text-lg pt-2">
+                「從大地的一株植物，到生活裡的一點光。」
+            </p>
+        </div>
+
+        <div class="bg-white/80 p-8 md:p-12 border border-celadon/20 rounded-sm shadow-xl shadow-celadon/10 reveal reveal-d2 space-y-6 relative overflow-hidden">
+            <div class="absolute -right-8 -top-8 w-32 h-32 bg-celadon/10 rounded-full blur-2xl pointer-events-none"></div>
+            <span class="text-[10px] uppercase tracking-ultra text-celadon block">The Core Philosophy</span>
+            <h3 class="text-2xl font-serif-title text-mistDark">Nature × Science</h3>
+            <p class="text-sm text-gray-600 leading-relaxed font-light">
+                自然提供生命力，科學讓我們更精準地理解、淬鍊與使用它。ÉRINBIO 作為背後的研發與製造核心，將植物的純粹與現代生物科技完美融合。
+            </p>
+            <div class="pt-2 border-t border-gray-100 flex items-center justify-between">
+                <span class="text-xs tracking-widest text-gray-400 uppercase">Master Brand Slogan</span>
+                <span class="text-xs font-medium text-goldPoint tracking-wider">照亮你的生活</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════
+     FOUR BRAND PILLARS
+═══════════════════════════════ -->
+<section id="pillars" class="py-28 bg-creamD/50 border-y border-gray-200/80 px-6 md:px-10">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center space-y-4 mb-20 reveal">
+            <span class="text-xs uppercase tracking-ultra text-celadon font-medium">Four Brand Pillars</span>
+            <h2 class="text-3xl md:text-4xl font-serif-title font-light text-mistDark">完整的產品哲學路徑</h2>
+            <p class="text-xs tracking-widest text-gray-500 uppercase">Botanical → Pure → Precise → Radiant</p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-8">
+            <!-- Pillar 1 -->
+            <div class="bg-cream p-8 border border-celadon/15 card-lift reveal reveal-d1 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="text-xs font-mono text-celadon font-semibold">01</span>
+                        <div class="gold-dot-sm"></div>
+                    </div>
+                    <h3 class="text-lg font-serif-title text-mistDark mb-3">BOTANICAL</h3>
+                    <h4 class="text-xs uppercase tracking-wider text-celadon font-medium mb-3">植物本源</h4>
+                    <p class="text-xs text-gray-600 leading-relaxed font-light">
+                        從植物與土地出發，探索自然蘊藏的生命力，根植於台灣宜蘭的純淨脈絡。
+                    </p>
+                </div>
+                <div class="mt-8 pt-4 border-t border-gray-100 text-[10px] text-gray-400 uppercase tracking-widest">Source of Life</div>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="bg-cream p-8 border border-celadon/15 card-lift reveal reveal-d2 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="text-xs font-mono text-celadon font-semibold">02</span>
+                        <div class="gold-dot-sm"></div>
+                    </div>
+                    <h3 class="text-lg font-serif-title text-mistDark mb-3">PURE</h3>
+                    <h4 class="text-xs uppercase tracking-wider text-celadon font-medium mb-3">純粹</h4>
+                    <p class="text-xs text-gray-600 leading-relaxed font-light">
+                        尊重自然原有的純粹，剔除不必要的負擔，留下肌膚真正需要的美好能量。
+                    </p>
+                </div>
+                <div class="mt-8 pt-4 border-t border-gray-100 text-[10px] text-gray-400 uppercase tracking-widest">Natural Essence</div>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="bg-cream p-8 border border-celadon/15 card-lift reveal reveal-d3 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="text-xs font-mono text-celadon font-semibold">03</span>
+                        <div class="gold-dot-sm"></div>
+                    </div>
+                    <h3 class="text-lg font-serif-title text-mistDark mb-3">PRECISE</h3>
+                    <h4 class="text-xs uppercase tracking-wider text-celadon font-medium mb-3">科學精準</h4>
+                    <p class="text-xs text-gray-600 leading-relaxed font-light">
+                        以研發、配方與專業製程，精準淬鍊植物價值，實現 Nature × Science 的核心承諾。
+                    </p>
+                </div>
+                <div class="mt-8 pt-4 border-t border-gray-100 text-[10px] text-gray-400 uppercase tracking-widest">Scientific R&D</div>
+            </div>
+
+            <!-- Pillar 4 -->
+            <div class="bg-cream p-8 border border-celadon/15 card-lift reveal reveal-d4 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="text-xs font-mono text-celadon font-semibold">04</span>
+                        <div class="gold-dot-sm"></div>
+                    </div>
+                    <h3 class="text-lg font-serif-title text-mistDark mb-3">RADIANT</h3>
+                    <h4 class="text-xs uppercase tracking-wider text-celadon font-medium mb-3">綻放光采</h4>
+                    <p class="text-xs text-gray-600 leading-relaxed font-light">
+                        讓來自植物的生命力轉化為肌膚的光采，照亮你每一個瞬間，成為生活裡的一點光。
+                    </p>
+                </div>
+                <div class="mt-8 pt-4 border-t border-gray-100 text-[10px] text-gray-400 uppercase tracking-widest">Everyday Radiance</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════
+     CAPABILITY & DUAL PATHWAY
+═══════════════════════════════ -->
+<section id="capability" class="py-32 px-6 md:px-10 max-w-6xl mx-auto">
+    <div class="text-center space-y-4 mb-20 reveal">
+        <div class="gold-dot mx-auto mb-4"></div>
+        <span class="text-xs uppercase tracking-ultra text-celadon font-medium">Dual Structure</span>
+        <h2 class="text-3xl md:text-5xl font-serif-title font-light text-mistDark">ÉRINBIO Capability & ÉRIN Brand</h2>
+        <p class="text-xs tracking-widest text-gray-500 uppercase mt-2">兩者相輔相成，展現完整的植物生技與品牌轉化實力</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+        <!-- ÉRINBIO B2B -->
+        <div class="bg-white p-10 border border-celadon/20 shadow-lg shadow-celadon/10 reveal reveal-d1 flex flex-col justify-between">
+            <div class="space-y-6">
+                <div class="flex items-center justify-between">
+                    <span class="text-xs uppercase tracking-ultra text-mist font-semibold">B2B Manufacturing</span>
+                    <span class="text-[10px] uppercase tracking-widest px-3 py-1 bg-celadon/10 text-celadon rounded-full">Capability</span>
+                </div>
+                <h3 class="text-2xl font-serif-title text-mistDark">ÉRINBIO</h3>
+                <p class="text-xs text-gray-600 leading-relaxed font-light">
+                    背後的研發與製造能力，專注於植物萃取、配方研發、OEM/ODM、永續應用與產品共同開發。
+                </p>
+                <ul class="space-y-2 text-xs text-gray-500 font-light border-t border-gray-100 pt-4">
+                    <li>• Botanical Extraction & Formulation R&D</li>
+                    <li>• OEM / ODM Services</li>
+                    <li>• Sustainable Applications & Co-development</li>
+                </ul>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-100">
+                <a href="#contact" class="text-xs uppercase tracking-widest text-mist hover:text-celadon font-medium flex items-center space-x-2">
+                    <span>Inquire OEM / ODM Partnership</span>
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- ÉRIN Brand -->
+        <div class="bg-white p-10 border border-celadon/20 shadow-lg shadow-celadon/10 reveal reveal-d2 flex flex-col justify-between">
+            <div class="space-y-6">
+                <div class="flex items-center justify-between">
+                    <span class="text-xs uppercase tracking-ultra text-celadon font-semibold">Skincare Brand</span>
+                    <span class="text-[10px] uppercase tracking-widest px-3 py-1 bg-goldPoint/20 text-goldPoint rounded-full">Brand</span>
+                </div>
+                <h3 class="text-2xl font-serif-title text-mistDark">ÉRIN</h3>
+                <p class="text-xs text-gray-600 leading-relaxed font-light">
+                    ÉRINBIO 所建立的自有保養品牌，具備完整的 Brand Story、產品系列與視覺識別，向全球市場展現研發實力的結晶。
+                </p>
+                <ul class="space-y-2 text-xs text-gray-500 font-light border-t border-gray-100 pt-4">
+                    <li>• Brand Distribution & Agency Opportunities</li>
+                    <li>• Retail Partnership & Global Expansion</li>
+                    <li>• Quiet Beauty & Botanical Skincare</li>
+                </ul>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-100">
+                <a href="#contact" class="text-xs uppercase tracking-widest text-celadon hover:text-mist font-medium flex items-center space-x-2">
+                    <span>Explore Distribution & Agency</span>
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════
+     PARTNERSHIP & CONTACT
+═══════════════════════════════ -->
+<section id="partnership" class="py-28 bg-creamD/50 border-t border-gray-200/80 px-6 md:px-10">
+    <div id="contact" class="max-w-4xl mx-auto bg-white p-8 md:p-14 border border-celadon/20 shadow-xl reveal">
+        <div class="text-center space-y-4 mb-12">
+            <div class="gold-dot-sm mx-auto"></div>
+            <h2 class="text-2xl md:text-4xl font-serif-title font-light text-mistDark">展開合作與洽詢</h2>
+            <p class="text-xs text-gray-500 uppercase tracking-widest">
+                無論是品牌代理經銷（Brand Distribution）或研發代工合作（OEM / ODM），我們期待與您聯繫。
+            </p>
+        </div>
+
+        <form class="space-y-6 max-w-2xl mx-auto" onsubmit="event.preventDefault(); alert('感謝您的洽詢，我們將盡快與您聯繫。');">
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-[10.5px] uppercase tracking-widest text-gray-500 mb-2">Name / 姓名</label>
+                    <input type="text" required class="w-full px-4 py-3 bg-cream border border-gray-200 text-xs focus:outline-none focus:border-celadon transition-colors" placeholder="請輸入您的姓名">
+                </div>
+                <div>
+                    <label class="block text-[10.5px] uppercase tracking-widest text-gray-500 mb-2">Email / 電子郵件</label>
+                    <input type="email" required class="w-full px-4 py-3 bg-cream border border-gray-200 text-xs focus:outline-none focus:border-celadon transition-colors" placeholder="name@example.com">
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-[10.5px] uppercase tracking-widest text-gray-500 mb-2">Inquiry Type / 洽詢項目</label>
+                <select class="w-full px-4 py-3 bg-cream border border-gray-200 text-xs focus:outline-none focus:border-celadon transition-colors">
+                    <option>ÉRIN Brand Distribution / 品牌經銷與代理洽詢</option>
+                    <option>ÉRINBIO OEM / ODM / 研發與代工合作</option>
+                    <option>Botanical Development / 植物素材共同開發</option>
+                    <option>Other Inquiries / 其他合作</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="block text-[10.5px] uppercase tracking-widest text-gray-500 mb-2">Message / 訊息內容</label>
+                <textarea rows="4" required class="w-full px-4 py-3 bg-cream border border-gray-200 text-xs focus:outline-none focus:border-celadon transition-colors resize-none" placeholder="請簡述您的需求與合作方向..."></textarea>
+            </div>
+
+            <div class="text-center pt-4">
+                <button type="submit" class="px-10 py-3.5 bg-mist text-white text-xs uppercase tracking-widest rounded-full hover:bg-mistDark transition-all shadow-lg shadow-mist/15">
+                    Send Inquiry
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════
+     FOOTER
+═══════════════════════════════ -->
+<footer class="bg-creamD border-t border-gray-200 py-16 px-6 md:px-10 text-xs">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10 mb-12">
+        <div class="space-y-4">
+            <div class="flex items-center space-x-2">
+                <div class="gold-dot-sm"></div>
+                <span class="font-serif-title font-light tracking-ultra text-mist text-base">ÉRIN</span>
+            </div>
+            <p class="text-gray-500 font-light leading-relaxed text-[11px]">
+                A botanical skincare brand from Taiwan, rooted in nature and refined through science. 照亮你的生活。
+            </p>
+        </div>
+
+        <div>
+            <h4 class="uppercase tracking-widest font-semibold text-gray-700 mb-4 text-[11px]">Brand & Story</h4>
+            <ul class="space-y-2.5 text-gray-500 font-light">
+                <li><a href="#story" class="hover:text-celadon transition-colors">Brand Story</a></li>
+                <li><a href="#pillars" class="hover:text-celadon transition-colors">Four Pillars</a></li>
+                <li><a href="#hero" class="hover:text-celadon transition-colors">Master Slogan</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="uppercase tracking-widest font-semibold text-gray-700 mb-4 text-[11px]">ÉRINBIO Capability</h4>
+            <ul class="space-y-2.5 text-gray-500 font-light">
+                <li><a href="#capability" class="hover:text-celadon transition-colors">Botanical Extraction</a></li>
+                <li><a href="#capability" class="hover:text-celadon transition-colors">OEM / ODM Services</a></li>
+                <li><a href="#capability" class="hover:text-celadon transition-colors">Sustainable Applications</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="uppercase tracking-widest font-semibold text-gray-700 mb-4 text-[11px]">Legal & Privacy</h4>
+            <ul class="space-y-2.5 text-gray-500 font-light">
+                <li><a href="privacy.html" class="hover:text-celadon transition-colors">Privacy Policy / 隱私權政策</a></li>
+                <li><a href="disclaimer.html" class="hover:text-celadon transition-colors">Disclaimer / 免責聲明</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-8 border-t border-gray-200/60 flex flex-col sm:flex-row justify-between items-center text-[10px] text-gray-400 tracking-wider">
+        <p>&copy; 2026 Aileen Agritech Bio Co., Ltd. (艾琳智農生技股份有限公司) All Rights Reserved.</p>
+        <p class="mt-2 sm:mt-0">Rooted in Yilan, Taiwan.</p>
+    </div>
+</footer>
+
+<!-- ═══════════════════════════════
+     JAVASCRIPT INTERACTIVITY
+═══════════════════════════════ -->
+<script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const bar1 = document.getElementById('bar1');
+    const bar2 = document.getElementById('bar2');
+    const bar3 = document.getElementById('bar3');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+        const isOpen = mobileMenu.classList.contains('open');
+        bar1.style.transform = isOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none';
+        bar2.style.opacity = isOpen ? '0' : '1';
+        bar3.style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : 'none';
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+            bar1.style.transform = 'none';
+            bar2.style.opacity = '1';
+            bar3.style.transform = 'none';
+        });
+    });
+
+    // Scroll reveal observer
+    const observerOptions = { threshold: 0.12, rootMargin: '0px 0px -40px 0px' };
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Navbar shadow on scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 20) {
+            navbar.classList.add('shadow-md');
+        } else {
+            navbar.classList.remove('shadow-md');
+        }
+    });
+</script>
 
 </body>
 </html>
