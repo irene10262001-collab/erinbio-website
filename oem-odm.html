@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OEM / ODM 代工與客製研發｜ÉRINBIO 艾琳智農生技</title>
+  <meta name="description" content="艾琳智農生技（ÉRINBIO）提供專業保養品 OEM / ODM 代工、植物萃取研發、農業資產 Upcycling 永續開發與法規 PIF 支援服務。">
+  <link rel="canonical" href="https://erinbio.com.tw/oem-odm.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://erinbio.com.tw/oem-odm.html">
+  <link rel="alternate" hreflang="en" href="https://erinbio.com.tw/en/oem-odm.html">
+  
+  <style>
+    :root {
+      --eb-bg-light: #F9F8F6;
+      --eb-bg-white: #FFFFFF;
+      --eb-primary: #8EA8B5; /* 汝窯天青色 */
+      --eb-primary-dark: #5C7480;
+      --eb-accent-orange: #E2703A; /* 金棗橘 */
+      --eb-accent-gold: #F4C430; /* 晨光金黃圓點 */
+      --eb-text-dark: #2C3539;
+      --eb-text-muted: #667085;
+      --eb-border: #E4E7EC;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Serif TC", "Noto Sans TC", sans-serif;
+      background-color: var(--eb-bg-light);
+      color: var(--eb-text-dark);
+      line-height: 1.8;
+      letter-spacing: 0.05em;
+    }
+
+    /* Header 導覽列 */
+    header {
+      background-color: var(--eb-bg-white);
+      border-bottom: 1px solid var(--eb-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand-logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: var(--eb-text-dark);
+      text-decoration: none;
+    }
+    .brand-logo span { color: var(--eb-primary); font-size: 0.85rem; font-weight: 400; margin-left: 6px; }
+    nav ul { display: flex; list-style: none; gap: 32px; align-items: center; }
+    nav a { text-decoration: none; color: var(--eb-text-dark); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: var(--eb-primary); }
+    .lang-switch { border: 1px solid var(--eb-border); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; }
+
+    /* 通用容器與標題 */
+    .container { max-width: 1100px; margin: 0 auto; padding: 80px 20px; }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 16px;
+      color: var(--eb-text-dark);
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 36px;
+      height: 3px;
+      background-color: var(--eb-accent-gold);
+      margin: 16px auto 0;
+      border-radius: 2px;
+    }
+    .section-subtitle {
+      text-align: center;
+      color: var(--eb-text-muted);
+      font-size: 1.05rem;
+      margin-bottom: 60px;
+    }
+
+    /* Hero Section */
+    .oem-hero {
+      background: linear-gradient(180deg, #FFFFFF 0%, #F4F7F9 100%);
+      padding: 100px 20px 80px;
+      text-align: center;
+      border-bottom: 1px solid var(--eb-border);
+    }
+    .oem-hero-tag {
+      font-size: 0.9rem;
+      letter-spacing: 0.2em;
+      color: var(--eb-primary-dark);
+      font-weight: 600;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+    .oem-hero-title {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: var(--eb-text-dark);
+      margin-bottom: 20px;
+      line-height: 1.35;
+    }
+    .oem-hero-desc {
+      max-width: 760px;
+      margin: 0 auto;
+      color: var(--eb-text-muted);
+      font-size: 1.1rem;
+    }
+
+    /* 4 大代工與研發服務項目 */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    .service-card {
+      background-color: var(--eb-bg-white);
+      padding: 40px;
+      border-radius: 8px;
+      border: 1px solid var(--eb-border);
+      transition: border-color 0.2s;
+    }
+    .service-card:hover {
+      border-color: var(--eb-primary);
+    }
+    .service-num {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--eb-accent-orange);
+      margin-bottom: 12px;
+    }
+    .service-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 16px;
+      color: var(--eb-text-dark);
+    }
+    .service-card p {
+      color: var(--eb-text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+    .service-list {
+      list-style: none;
+      padding: 0;
+    }
+    .service-list li {
+      font-size: 0.9rem;
+      color: var(--eb-text-dark);
+      margin-bottom: 8px;
+      position: relative;
+      padding-left: 18px;
+    }
+    .service-list li::before {
+      content: '✓';
+      color: var(--eb-primary);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    /* 合作流程 Process (5 Steps) */
+    .process-section { background-color: var(--eb-bg-white); }
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+    .process-step {
+      background-color: var(--eb-bg-light);
+      padding: 30px 20px;
+      border-radius: 6px;
+      border-top: 4px solid var(--eb-primary);
+      text-align: center;
+    }
+    .step-badge {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--eb-primary-dark);
+      margin-bottom: 10px;
+    }
+    .process-step h4 {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      color: var(--eb-text-dark);
+    }
+    .process-step p {
+      font-size: 0.85rem;
+      color: var(--eb-text-muted);
+      line-height: 1.6;
+    }
+
+    /* 研發與品質亮點 Highlights */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    .highlight-card {
+      background: var(--eb-bg-white);
+      padding: 36px 24px;
+      border-radius: 8px;
+      border: 1px solid var(--eb-border);
+      text-align: center;
+    }
+    .highlight-card h4 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      color: var(--eb-primary-dark);
+    }
+    .highlight-card p {
+      font-size: 0.9rem;
+      color: var(--eb-text-muted);
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--eb-primary-dark) 0%, var(--eb-primary) 100%);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .cta-section h2 { font-size: 2rem; margin-bottom: 16px; }
+    .cta-section p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 32px; }
+    .btn-cta {
+      display: inline-block;
+      background-color: var(--eb-accent-orange);
+      color: white;
+      padding: 14px 36px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+    .btn-cta:hover { background-color: #c95927; }
+
+    /* Footer */
+    footer {
+      background-color: #1F282C;
+      color: #98A2B3;
+      padding: 60px 20px 40px;
+      font-size: 0.9rem;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #344054;
+    }
+    .footer-info h4 { color: white; font-size: 1.2rem; margin-bottom: 12px; }
+    .footer-nav ul { list-style: none; display: flex; gap: 24px; }
+    .footer-nav a { color: #98A2B3; text-decoration: none; }
+    .footer-nav a:hover { color: white; }
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 30px auto 0;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    /* RWD 響應式 */
+    @media (max-width: 900px) {
+      .process-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    }
+    @media (max-width: 768px) {
+      .services-grid, .highlights-grid, .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .process-grid { grid-template-columns: 1fr; }
+      .oem-hero-title { font-size: 2rem; }
+      nav ul { gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 導覽列 -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">ÉRINBIO <span>Aileen Agritech Bio</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="erin.html">ÉRIN</a></li>
+          <li><a href="oem-odm.html" class="active">OEM / ODM</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="en/oem-odm.html" class="lang-switch">EN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero 區塊 -->
+  <section class="oem-hero">
+    <div class="oem-hero-tag">B2B Solutions & Bio-Manufacturing</div>
+    <h1 class="oem-hero-title">植萃研發與保養品客製化製造</h1>
+    <p class="oem-hero-desc">從植物活性萃取、專屬配方設計到成品量產與國際法規支援，ÉRINBIO 提供專業、靈活且具前瞻永續思維的一瞻式代工開發服務。</p>
+  </section>
+
+  <!-- 4 大核心代工與研發服務 -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">核心合作領域</h2>
+      <p class="section-subtitle">Our B2B Services & Development Scope</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <h3>保養品 OEM / ODM 代工</h3>
+          <p>針對不同市場與定位，開發具顯著體感與安定性的優質護膚劑型。</p>
+          <ul class="service-list">
+            <li>精華液、乳霜、植物油、敷膜與清潔產品</li>
+            <li>敏弱肌防護與抗衰老配方調製</li>
+            <li>客製化香氣、質地與使用體驗設計</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <h3>植物活性成分專利萃取</h3>
+          <p>結合宜蘭科學園區研發優勢，提供綠色高純度植萃原料開發。</p>
+          <ul class="service-list">
+            <li>低溫與綠色溶劑高效萃取技術</li>
+            <li>植物多酚、黃酮與活性物質富集</li>
+            <li>原料穩定性與微生物測試</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <h3>農業資產 Upcycling 永續開發</h3>
+          <p>協助品牌與農企將特色作物或副產物轉化為高值化美容成分。</p>
+          <ul class="service-list">
+            <li>全株資源極致利用方案設計</li>
+            <li>ESG 永續綠色保養原料開發</li>
+            <li>打造獨一無二的品牌故事故事鏈</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <h3>法規 PIF 與小量試製支援</h3>
+          <p>降低品牌研發門檻，迅速對接生產並確保國際上市合規。</p>
+          <ul class="service-list">
+            <li>產品資訊檔案（PIF）與成分審查</li>
+            <li>靈活的小量打樣與小批次試製</li>
+            <li>符合 ISO / GMP 生產標準對接</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 步驟標準化合作流程 -->
+  <section class="process-section">
+    <div class="container">
+      <h2 class="section-title">合作開發流程</h2>
+      <p class="section-subtitle">Standard Working Process</p>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="step-badge">STEP 01</div>
+          <h4>需求溝通</h4>
+          <p>瞭解產品定位、預算規模、目標市場與活性訴求。</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-badge">STEP 02</div>
+          <h4>配方與萃取打樣</h4>
+          <p>進行原料萃取測試、配方設計與初版打樣提供。</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-badge">STEP 03</div>
+          <h4>安定性與測試</h4>
+          <p>執行質地調整、微生物檢驗與高低溫安定測試。</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-badge">STEP 04</div>
+          <h4>合規與法規整理</h4>
+          <p>協助完成成分審查、衛生局登錄與 PIF 文件準備。</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-badge">STEP 05</div>
+          <h4>量產與交付</h4>
+          <p>按照品質規範執行批量充填包裝與品質檢驗交貨。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 代工品質與優勢 -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">為什麼選擇 ÉRINBIO？</h2>
+      <p class="section-subtitle">Why Partner With Us</p>
+
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <h4>科學園區研發實力</h4>
+          <p>專業研發團隊與標準化實驗室，確保每一款配方兼具安全性與功效實證。</p>
+        </div>
+
+        <div class="highlight-card">
+          <h4>在地農業資產創新</h4>
+          <p>掌握台灣獨特植物資源萃取技術，為您的品牌打造不可替代的原料競爭力。</p>
+        </div>
+
+        <div class="highlight-card">
+          <h4>靈活且嚴謹的服務</h4>
+          <p>從新創品牌小量開發到成熟企業大批量產，提供最符合效益的量身方案。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <h2>預約您的專屬配方諮詢</h2>
+    <p>歡迎與我們的研發工程師與 B2B 團隊聯繫，開啟您的綠色生技產品開發計畫。</p>
+    <a href="contact.html" class="btn-cta">立即洽詢代工合作</a>
+  </section>
+
+  <!-- Footer 頁尾 -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <h4>ÉRINBIO 艾琳智農生技股份有限公司</h4>
+        <p>Aileen Agritech Bio Co., Ltd.</p>
+        <p style="margin-top: 8px;">TEL: <a href="tel:+88639255985" style="color: inherit; text-decoration: none;">+886 3 925 5985</a></p>
+        <p>EMAIL: <a href="mailto:service@erinbio.com.tw" style="color: inherit; text-decoration: none;">service@erinbio.com.tw</a></p>
+        <p>ADD: 宜蘭縣宜蘭市宜科南路15號2樓之1 (宜蘭科學園區)</p>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="erin.html">ÉRIN</a></li>
+          <li><a href="oem-odm.html">OEM / ODM</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aileen Agritech Bio Co., Ltd. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
